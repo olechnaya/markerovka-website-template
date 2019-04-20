@@ -56,15 +56,15 @@ blockquote{
     overflow:hidden;
 }
 .container{
-    max-width:1170px;
+    max-width:1280px;
     margin:0 auto;
     position:relative;
 }
 #header{
-    
+
 }
 .top{
-    background:#403e72;
+    background:#e2e2e2;
 }
 .welcome{
     color: #1c1c1c;
@@ -80,24 +80,62 @@ blockquote{
 }
 .top-support{
     margin:0;
-    padding:15px 0;
-    float:left;
+    padding:7px 0;
+    float:right;
 }
 .top-support li{
     float:left;
     list-style:none;
-    color:#fff;
     font-size:13px;
+    margin-right: 40px;
 }
-.top-support li:first-child{
-    margin-right:17px;
-}
+
 .top-support li a{
-    color:#fff;
+    color:#000;
+      display: inline-block;
 }
-.top-support li a i{
-    color:#2a2955;
+
+.top-support li a span {
+    background-image: linear-gradient(120deg, #ee2455 0%, #ff7f00 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 0.2em;
+    background-position: 0 99%;
+    transition: background-size  0.25s ease-in, color 0.25s ease-in;
 }
+
+.top-support li a span:hover {
+  background-size: 100% 88%;
+  color: #fff;
+}
+.top-support li a i {
+    background: url('images/css_sprites.png');
+}
+
+.top-control a i.fa-search {
+    width: 16px; height: 16px;
+    background:url('images/top-menu-icon-envelope.svg');
+}
+
+.top-control a i.fa-search {
+    width: 16px; height: 16px;
+    background:url('images/top-menu-icon-search.svgg');
+}
+
+.top-support li a i.fa-delivery  {
+    width: 16px; height: 16px;
+    background-position: -10px -10px;
+}
+
+.top-support li a i.fa-money {
+    width: 17px; height: 20px;
+    background-position: -10px -43px;
+}
+
+.top-support li a i.fa-phone {
+    width: 16px; height: 16px;
+    background-position: -46px -10px;
+}
+
 .top-support li i{
     font-size:20px;
     color:#2a2955;
@@ -131,19 +169,24 @@ blockquote{
 }
 .top-control{
     float:right;
-    padding:15px 0;
+    padding:7px 0;
 }
 .homepage-2.gold .top-control{
     float:right;
     padding:5px 0;
 }
 .top-control a{
-    color:#fff;
+    color:#777c80;
     text-decoration: none;
    transition: all .3s ease;
     -moz-transition: all .3s ease;
     -webkit-transition: all .3s ease;
 }
+
+.top-control a:hover {
+  color: #000;
+}
+
 .homepage-2 .top-control a{
     color:#364a62;
     font-size: 14px;
@@ -160,10 +203,7 @@ blockquote{
 .homepage-2.gold .top-control a.call{
     color:#3a342d;
 }
-.top-control span{
-    color:#2a2955;
-    margin:0 5px;
-}
+
 .homepage-2 .top-control span{
     color:#bdc6d2;
     margin:0 22px;
@@ -183,12 +223,7 @@ blockquote{
     padding-bottom: 0px;
     margin-bottom: 0px;
 }
-.top-control a:hover{
-    color:#66cef6;
-   transition: all .3s ease;
-    -moz-transition: all .3s ease;
-    -webkit-transition: all .3s ease;
-}
+
 #believe-nav{
     padding:30px 0;
 }
@@ -314,7 +349,7 @@ blockquote{
     border:none;
     box-shadow:none;
     border-radius: 0;
-    
+
 }
 .dropdown-menu>li{
     margin-bottom:10px;
@@ -398,7 +433,7 @@ blockquote{
     -moz-transition: all .3s ease;
     -webkit-transition: all .3s ease;
     position:relative;
-    
+
 }
 #cat-nav ul li a{
     color:#747475;
@@ -437,7 +472,7 @@ blockquote{
     background: #f3f5f8 url(images/srch-2.png) center right no-repeat;
     padding-right:35px;
     border-radius: 0;
-    
+
 }
 .homepage-2 .side-search .search-wid, .homepage-2 .side-search .search-wid:focus {
     background: #f3f5f8 url(images/srch-2.png) center right no-repeat;
@@ -634,10 +669,10 @@ blockquote{
     line-height:20px;
     padding:0 15px;
     text-transform: uppercase;
-    
+
 }
 .product-name a{
-    color:#2b2a2f;   
+    color:#2b2a2f;
 }
 .product-price{
     color:#66cef6;
@@ -648,7 +683,7 @@ blockquote{
     margin:0 5px;
 }
 .product-price span{
-    text-decoration: line-through;   
+    text-decoration: line-through;
     color:#878788;
 }
 .prdct-grid{
@@ -674,7 +709,7 @@ blockquote{
 
 #content{}
 .home-content{
-    
+
 }
 .cat-offers{
     padding-top: 65px;
@@ -691,7 +726,7 @@ blockquote{
 }
 .cat-inner{
     display:inline-block;
-    
+
 }
 .cat-sec-1 .cat-desc{
     float:left;
@@ -856,14 +891,14 @@ blockquote{
     font-weight: 600;
 }
 .homepage-2.gold .cat-sec-1 .cat-desc .btn:hover{
-    
+
     background: #855e29;
-    
+
 }
 .homepage-2.gold .cat-sec-1.wht .cat-desc .btn:hover{
-    
+
     background: #e9d6b9;
-    
+
 }
 .homepage-2 .cat-sec-1 .cat-desc.fourth .btn{
     border:none;
@@ -1001,12 +1036,12 @@ blockquote{
 }
 .nav-tabs.newest>li.active>a, .nav-tabs.newest>li.active>a:focus, .nav-tabs.newest>li.active>a:hover{
     color: #2b2a2f;
-    
+
     cursor: default;
     background-color: #fff;
     border:none;
     border-bottom: 2px solid #66cef6;
-    
+
 }
 .nav-tabs.newest>li>a:hover{
     background:none;
@@ -1033,7 +1068,7 @@ blockquote{
 	transition:all .3s ease;
 	-moz-transition:all .3s ease;
 	-webkit-transition:all .3s ease;
-	
+
 }
 .product-fade:hover .product-fade-wrap:after{
 	opacity: .5;
@@ -1075,7 +1110,7 @@ blockquote{
 .product-fade-control .owl-item{
     width:auto !important;
     cursor: pointer;
-    
+
 }
 .product-fade-control .item{
     margin:0 3px;
@@ -1144,7 +1179,7 @@ blockquote{
     width:100%;
     background:url(images/bg-offers.jpg) no-repeat left center;
     margin-bottom:100px;
-    
+
 }
 .ct-offers{
     max-width:435px;
@@ -1219,7 +1254,7 @@ blockquote{
     font-weight:700;
     font-size: 13px;
     text-transform: uppercase;
-    
+
     display:inline-block;
     padding-bottom:10px;
 }
@@ -1293,7 +1328,7 @@ blockquote{
     font-weight:700;
     font-size: 13px;
     text-transform: uppercase;
-    
+
     display:inline-block;
     padding-bottom:10px;
 }
@@ -1307,18 +1342,18 @@ blockquote{
     line-height:20px;
     padding:0 5px;
     text-transform: uppercase;
-    
+
 }
 .blog-ct-title a{
-    color:#2b2a2f;   
+    color:#2b2a2f;
 }
 .blog-ct-title span{
-    color:#808080; 
+    color:#808080;
     text-transform: capitalize;
     display:block;
 }
 .homepage-2.gold .rb-sect-1 .blog-ct-title span{
-    color:#a2855e; 
+    color:#a2855e;
     text-transform: uppercase;
     display:block;
     text-align: left;
@@ -1369,7 +1404,7 @@ blockquote{
 .faq-page, .shortcode{
     padding-top:90px;
     padding-bottom:110px;
-   
+
 }
 .about-page{
 	padding-top:90px;
@@ -1593,7 +1628,7 @@ blockquote{
 }
 .blog-image img{
     border-radius: 3px;
-    
+
 }
 .blog-post-title{
     text-transform: uppercase;
@@ -1640,7 +1675,7 @@ blockquote{
     padding-top:12px;
 }
 .blog-block{
-    
+
 }
 .blog-content .detail .blog-block{
     border-bottom:1px dashed #d7d7d7;
@@ -1660,7 +1695,7 @@ blockquote{
     background:#66cef6 ;
     border-radius:3px;
     color:#fff;
-    
+
 }
 .blockquote-post{
     position: relative;
@@ -1693,7 +1728,7 @@ blockquote{
     border-radius:3px;
     color:#fff;
     z-index: 2;
-    
+
 }
 .pag-center{
 	text-align:center;
@@ -1731,12 +1766,12 @@ blockquote{
     height:40px;
     border:1px solid #f9f9f9;
     box-shadow:none;
-    background: #f9f9f9 
+    background: #f9f9f9
 }
 .search-wid:focus{
     border:1px solid #f9f9f9;
     box-shadow:none;
-    background: #f9f9f9 
+    background: #f9f9f9
 }
 .btn-side-serach{
     font-size: 18px;
@@ -1782,7 +1817,7 @@ blockquote{
 .side-recent h5, .side-last h5{
     font-size: 16px;
     font-weight: 700;
-    
+
     margin:0;
     text-transform: uppercase;
     margin-bottom:10px;
@@ -1854,8 +1889,8 @@ blockquote{
     font-weight: 700;
     margin-bottom:10px;
     font-size: 13px;
-    
-    
+
+
 }
 .blog-side-tag a:hover{
     background: #66ccf4  ;
@@ -1905,7 +1940,7 @@ blockquote{
     background: #eaf6fa ;
     padding:30px;
     margin-bottom:80px;
-    
+
 }
 .author-name{
     margin-top: 10px;
@@ -1931,7 +1966,7 @@ blockquote{
     margin:0;
 	font-size:14px;
     margin-top:25px;
-    
+
 }
 #comment-sec{
     margin-bottom:130px;
@@ -2195,7 +2230,7 @@ blockquote{
 .shop-sidebar .search-widget .side-search .search-wid{
     background:#ffffff ;
     border-color:#ededed ;
-    
+
 }
 .shop-sidebar .search-widget .side-search .btn-side-serach, .shop-sidebar .search-widget .side-search .btn-side-serach:hover,  .shop-sidebar  .search-widget .side-search  .btn-side-serach:focus{
     color:#747475 ;
@@ -2630,7 +2665,7 @@ blockquote{
     color:#2b2a2f ;
     font-size: 16px;
     margin-bottom:15px;
-        
+
 }
 .contact-form .btn-blue{
     width:145px;
@@ -2738,12 +2773,12 @@ blockquote{
 .ft-soc li a{
     color:#808080;
     font-size:22px;
-    
+
 }
 .author-block .ft-soc li a{
     color:#808080;
     font-size:20px;
-    
+
 }
 .homepage-2 .ft-soc li a{
     color:#364a62;
@@ -2918,7 +2953,7 @@ blockquote{
     font-weight: 700;
     border-radius: 3px;
     border:2px solid #000000;
-    
+
     border-radius:0;
     transition: all .3s ease;
     -moz-transition: all .3s ease;
@@ -3047,7 +3082,7 @@ blockquote{
     background: none;
     color: #66cef6;
     border: 2px solid #ededed;
-    
+
 }
 
 .pagination.pag-2>li:first-child>a, .pagination.pag-2>li:first-child>span, .pagination.pag-2>li:last-child>a, .pagination.pag-2>li:last-child>span{
@@ -3062,7 +3097,7 @@ blockquote{
     font-weight: 700;
     border: 2px solid #ededed;
     margin-left:-2px;
-    
+
     padding-left:25px;
     padding-right:25px;
 }
@@ -3072,7 +3107,7 @@ blockquote{
     color: #fff;
     z-index: 2;
     position: relative;
-    
+
 }
 
 .pagination.pag-3>li:first-child>a, .pagination.pag-3>li:first-child>span, .pagination.pag-3>li:last-child>a, .pagination.pag-3>li:last-child>span{
@@ -3097,7 +3132,7 @@ blockquote{
     color: #66cef6;
     z-index: 2;
     position: relative;
-    
+
 }
 .pagination.pag-4>li:first-child>a, .pagination.pag-4>li:first-child>span, .pagination.pag-4>li:last-child>a, .pagination.pag-4>li:last-child>span{
     border-radius:0;
@@ -3120,7 +3155,7 @@ blockquote{
     color: #fff;
     z-index: 2;
     position: relative;
-    
+
 }
 .pagination.pag-1.pager, .pagination.pag-2.pager, .pagination.pag-3.pager, .pagination.pag-4.pager{
     width:100%;
@@ -3170,7 +3205,7 @@ blockquote{
     padding-top: 40px;
     padding-bottom: 40px;
     font-size: 16px;
-    line-height: 26px; 
+    line-height: 26px;
 }
 .tab-1 .nav-tabs>li{
     margin-bottom: -2px;
@@ -3295,7 +3330,7 @@ blockquote{
     padding-top: 40px;
     padding-bottom: 40px;
     font-size: 16px;
-    line-height: 26px; 
+    line-height: 26px;
     text-align: left;
 }
 .tab-5 .nav-tabs>li{
@@ -3304,11 +3339,11 @@ blockquote{
 .tab-5{
     text-align: center;
     margin-bottom: 140px;
-    
+
 }
 .tab-1, .tab-4{
     margin-bottom: 140px;
-    
+
 }
 
 .tab-4 .nav-tabs>li>a {
@@ -3355,7 +3390,7 @@ blockquote{
     float:left;
 }
 .sbHolder:focus .sbSelector{
-	
+
 }
 .sbSelector{
 	display: block;
@@ -3399,10 +3434,10 @@ blockquote{
 	border: solid 1px #515151;
 }
 .sbHolderDisabled .sbHolder{
-	
+
 }
 .sbHolderDisabled .sbToggle{
-	
+
 }
 .sbOptions{
 	background-color: #292828;
@@ -3604,7 +3639,7 @@ blockquote{
 .spin-pos{
 	text-align:center;
 	margin:0 auto;
-    
+
 }
 .gobuy.form-inline{
     margin-top:0;
@@ -3629,14 +3664,14 @@ blockquote{
     color: #727475;
     padding-left: 30px;
     padding-right: 30px;
-        
+
 }
 .dif-ship>thead>tr>th span{
     font-size: 20px;
     float:left;
     display:block;
 	color:#2b2a2f;
-        
+
 }
 .table>tbody>tr>td{
     border:2px solid #ededed;
@@ -3677,13 +3712,13 @@ blockquote{
    text-align: center;
     padding-top:20px;
     padding-bottom:20px;
-    
+
 }
 .table>tbody>tr>td h4{
    color: #000;
     text-transform: uppercase;
     font-weight: 700;
-    
+
 }
 .table>tbody>tr>td img{
     max-width:100px;
@@ -3725,10 +3760,10 @@ blockquote{
     border-bottom-right-radius: 20px;
     font-size: 13px;
     text-transform: uppercase;
-    
+
 }
 .form-cart-right .btn-blue, .form-cart .btn-blue {
-    width:155px;  
+    width:155px;
 }
 .form-cart-right .btn-magenta{
     width:245px;
@@ -3749,14 +3784,14 @@ blockquote{
     border-bottom-right-radius: 20px;
     font-size: 13px;
     text-transform: uppercase;
-    
+
 }
 .total-cart{
     margin-top:100px;
     margin-bottom:150px;
 }
 .total-cart .table>thead>tr>th{
-    
+
 }
 .country .sbHolder{
 	background-color: #ffffff;
@@ -3798,7 +3833,7 @@ blockquote{
 	top: 0;
 	width: 43px;
     border-left: solid 2px #ededed;
-    
+
 }
 
 .country .sbHolderDisabled{
@@ -3909,7 +3944,7 @@ blockquote{
     width:20px;
     height:20px;
     background:#fff;
-    
+
 }
 .dif-ship .checkbox{
     margin-bottom: 0!important;
@@ -4078,8 +4113,8 @@ blockquote{
     max-width: 220px;
     width: 100%;
     padding:5px 30px 30px 20px;
-    
-    
+
+
 }
 #cat-nav .mega-sub ul li a{
     color: #2b2a2f;
@@ -4191,4 +4226,3 @@ blockquote{
 .cent{
     text-align:center;
 }
-
