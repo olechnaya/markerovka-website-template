@@ -1,0 +1,33 @@
+<svg id="logo.svg" xmlns="http://www.w3.org/2000/svg" width="230" height="96" viewBox="0 0 230 96">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3 {
+        fill: #ee2455;
+      }
+
+      .cls-1 {
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        font-size: 19px;
+        font-family: "Artegra Slab";
+      }
+
+      .cls-2, .cls-3 {
+        text-transform: uppercase;
+      }
+
+      .cls-3 {
+        font-size: 49px;
+        font-family: "Artegra Slab Condensed";
+        font-weight: 500;
+      }
+    </style>
+  </defs>
+  <path id="Artegra_Slab_Condensed_Mediym_copy" data-name="Artegra Slab Condensed Mediym copy" class="cls-1" d="M575.227,124.178h4.616" transform="translate(-533 -49)"/>
+  <path class="cls-1" d="M579,119v-9h-3V79h3V74H568v5h3v31h-9V79h3V74H554v5h4v31h-4v5h20v4m23-37h5V74H583v5h3v31h-3v4h19v-8h-4v4h-7l-1-14h8V91h-8V79h7v3Zm17,10V79h3V74H606v5h3v31h-3v5h11v-5h-3V96h9v14h-3v5h11v-5h-4V79h4V74H620v5h3V92h-9Zm21-10h4V79h3v31h-3v5h11v-5h-3V79h3v3h5V74H635v8Zm35,33v-5h-3V99h3.152a10.111,10.111,0,0,0,4.266-.847,8.079,8.079,0,0,0,3.079-2.458,11.067,11.067,0,0,0,1.855-3.931,22.786,22.786,0,0,0,0-10.542,10.925,10.925,0,0,0-1.855-3.931,8.141,8.141,0,0,0-3.079-2.444A10.119,10.119,0,0,0,670.152,74H659v5h3v31h-3v5h11Zm-3-36h3.039a4.234,4.234,0,0,1,2.384.62,4.3,4.3,0,0,1,1.473,1.69,8.277,8.277,0,0,1,.748,2.535,23.8,23.8,0,0,1,0,6.31,8.27,8.27,0,0,1-.748,2.535,4.3,4.3,0,0,1-1.473,1.69,4.231,4.231,0,0,1-2.384.62H667V79Zm37,0h2V74H696v5h3v31h-3v5h10v-5h-2v-9.97l2.02-4.337L711.634,115H718v-5h-2.918l-6-19.326L714.9,79H718V74H708v5h1.631L704,91V79Zm18,3h5V79h3v31h-3v5h10v-5h-3V79h3v3h5V74H722v8Z" transform="translate(-533 -49)"/>
+  <path class="cls-1" d="M625,138H536V58h19V55H533v86h92v-3ZM739,55v3h21v80H670v3h93V55H739Z" transform="translate(-533 -49)"/>
+  <text id="всё_для_маркировки" data-name="всё для маркировки" class="cls-2" transform="translate(28.766 12.833) scale(0.693 0.802)">всё для маркировки</text>
+  <text id="_2005" data-name="2005" class="cls-3" transform="translate(98.735 96) scale(0.354 0.469)">2005</text>
+</svg>

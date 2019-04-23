@@ -22,6 +22,9 @@
     <link href="style.css" rel="stylesheet">
     <link href="responsive.css" rel="stylesheet">
 
+
+    <link href="css/hamburgers.css" rel="stylesheet">
+
     <!-- Slider -->
     <link href="css/owl.carousel.css" rel="stylesheet">
     <link href="css/owl.theme.css" rel="stylesheet">
@@ -85,21 +88,27 @@ font-family: 'IBM Plex Serif', serif;
                                           <span class="icon-bar"></span>
                                           <span class="icon-bar"></span>
                                       </button>
-                                      <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt=""></a>
+                                      <a class="navbar-brand" href="index.html"><img src="images/logo.svg" alt=""></a>
                                   </div>
 
                                   <!-- Collect the nav links, forms, and other content for toggling -->
                                   <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                                      <ul class="nav navbar-nav">
-                                          <li class="active"><a href="index.html">Home <span class="sr-only">(current)</span></a></li>
-                                          <li><a href="blog.html">Blog</a></li>
-                                          <li><a href="blog-detail.html">Blog Post</a></li>
-                                          <li><a href="contact.html">Contact</a></li>
-                                          <li><a href="#">Buy Pro Version</a></li>
+                                      <ul class="nav navbar-nav secondary">
+                                          <li class="location">
+                                            <a href="" class="city ">
+                                            <div>Москва<span class="arrow"></span></div>
+                                              <span class="ph1">+7 (495) 123-3600 </span><span class="metro1">м. Петровско-Разумосвская</span>
+                                              <span class="ph2">+7 (495) 249-2908</span><span class="metro2">м. Нагорная</span>
+                                            </a>
+                                          </li>
+                                          <li class="bh">Работаем <br> с 9:30 до 18:30 <br>с Пн по Пт</li>
+                                          <li class="delivery">Доставка в любую точку России</li>
+                                          <li class=""><button class="btn btn-magenta btn-image call-back">Обратный звонок</button></li>
                                       </ul>
 
-                                      <ul class="nav navbar-nav navbar-right">
-                                          <li class="menu-search-form">
+                                    <!--  <ul class="nav navbar-nav navbar-right">
+
+                                           <li class="menu-search-form">
                                               <a href="#" id="open-srch-form"><img src="images/srch.png" alt="srch"></a>
                                           </li>
                                           <li><a href="#"><img src="images/pav.png" alt="pav"><span>2</span></a></li>
@@ -113,7 +122,7 @@ font-family: 'IBM Plex Serif', serif;
                                                       </div>
                                                   </form>
                                               </div>
-                                          </li>
+                                          </li> -->
                                       </ul>
 
                                   </div><!-- /.navbar-collapse -->
@@ -121,14 +130,14 @@ font-family: 'IBM Plex Serif', serif;
 
                           </nav>
                       </div>
-                      <div class="srch-form">
+                      <!-- <div class="srch-form">
                           <form class="side-search">
                               <div class="input-group">
                                   <input type="text" class="form-control search-wid" placeholder="Search Here" aria-describedby="basic-addon2">
                                   <a href="" class="input-group-addon btn-side-serach" id="basic-addon2"><i class="fa fa-search"></i></a>
                               </div>
                           </form>
-                      </div>
+                      </div> -->
                   </div>
               </div> <!-- Nav -->
 
@@ -168,9 +177,21 @@ font-family: 'IBM Plex Serif', serif;
                       <!-- Collect the nav links, forms, and other content for toggling -->
                       <div class="collapse navbar-collapse" id="cat-nav-mega">
                           <ul class="nav navbar-nav">
-                              <li class="active"><a href="index.html">ELECTRONICS</a></li>
+                              <!-- <li class="active"><a href="index.html">Каталог</a></li> -->
+
                               <li class="dropdown menu-large">
-                                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">MEN <i class="fa fa-angle-down"></i></a>
+
+
+                                  <a href="#" class="dropdown-toggle"
+                                  data-toggle="dropdown"
+                                  role="button"
+                                  aria-expanded="false"><button class="hamburger hamburger hamburger--minus js-hamburger" type="button">
+                                  <span class="hamburger-box">
+                                    <span class="hamburger-inner"></span>
+                                  </span>
+                                </button>Каталог
+                                  <!-- <i class="fa fa-angle-down"></i> -->
+                                </a>
                                   <ul class="dropdown-menu megamenu" role="menu">
                                       <li>
                                           <div class="">
@@ -297,13 +318,13 @@ font-family: 'IBM Plex Serif', serif;
                                       </li>
                                   </ul>
                               </li>
-                              <li><a href="blog.html">WOMEN </a></li>
-                              <li><a href="contact.html">BABY & KIDS </a></li>
-                              <li><a href="contact.html">BOOKS & MEDIA </a></li>
-                              <li><a href="contact.html">HOME & KITCHEN </a></li>
-                              <li><a href="contact.html">MORE STORES </a></li>
-                              <li><a href="contact.html">OFFERS ZONE </a></li>
-                              <li class="cat-img-off"><img src="images/offers.png" alt="off"></li>
+                              <li><a href="">Этикетки </a></li>
+                              <li><a href="">Риббоны </a></li>
+                              <li><a href="">Сфера применения</a></li>
+                              <li><a href="">Услуги по печати</a></li>
+                              <li><a href="">Оборудование для торговли</a></li>
+                              <!-- <li class="cat-img-off"><img src="images/offers.png" alt="off"></li> -->
+
                           </ul>
 
                       </div><!-- /.navbar-collapse -->
@@ -312,8 +333,8 @@ font-family: 'IBM Plex Serif', serif;
               </div>
               </div>
           </div> <!-- header -->
-
-          <div id="main-slider"> <!-- Slider -->
+<!---->
+          <div id="main-slider">
               <div id="home-slider" class="owl-carousel owl-theme">
                   <div class="item">
                       <img src="images/slider-1.jpg" alt="slide-1" class="img-responsive">
@@ -358,7 +379,8 @@ font-family: 'IBM Plex Serif', serif;
                       </div>
                   </div>
               </div>
-          </div> <!-- Slider -->
+          </div>
+          <!---->
 
           <div id="content"> <!-- Content -->
               <div class="container">

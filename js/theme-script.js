@@ -7,10 +7,10 @@ Developer URL: http://info@bootstrapmart.com
 
 jQuery(document).ready(function($) {
 	"use strict";
-    
-    
+
+
     /*------------------------------- brand carousel ---------------------------------------*/
-    
+
     $(function(){
         $("#brand-carousel").owlCarousel({
             autoPlay: 3000, //Set AutoPlay to 3 seconds
@@ -20,7 +20,7 @@ jQuery(document).ready(function($) {
             pagination: false,
             navigation: false,
         });
-        
+
         $("#brand-carousel-2").owlCarousel({
             autoPlay: 3000, //Set AutoPlay to 3 seconds
             singleItem:true,
@@ -30,9 +30,9 @@ jQuery(document).ready(function($) {
             navigation: false,
         });
     });
-    
+
     /*------------------------------- Price range slider ---------------------------------------*/
-    
+
     $(function(){
         $(function() {
             $( "#range-slider" ).slider({
@@ -48,11 +48,11 @@ jQuery(document).ready(function($) {
 		  " - $" + $( "#range-slider" ).slider( "values", 1 ) );
         });
     });
-    
+
     /*------------------------------- Home Slider ---------------------------------------*/
     $(function(){
 		$("#home-slider").owlCarousel({
-		 
+
             slideSpeed : 300,
             paginationSpeed : 300,
             singleItem:true,
@@ -67,12 +67,12 @@ jQuery(document).ready(function($) {
             // itemsDesktopSmall : false,
             // itemsTablet: false,
             // itemsMobile : false
-		 
+
 		});
 	});
     $(function(){
 		$("#sect-1").owlCarousel({
-		 
+
             slideSpeed : 400,
             paginationSpeed : 300,
             singleItem:true,
@@ -87,12 +87,12 @@ jQuery(document).ready(function($) {
             // itemsDesktopSmall : false,
             // itemsTablet: false,
             // itemsMobile : false
-		 
+
 		});
 	});
     $(function(){
 		$("#sect-2").owlCarousel({
-		 
+
             slideSpeed : 400,
             paginationSpeed : 300,
             singleItem:true,
@@ -107,12 +107,12 @@ jQuery(document).ready(function($) {
             // itemsDesktopSmall : false,
             // itemsTablet: false,
             // itemsMobile : false
-		 
+
 		});
 	});
     $(function(){
 		$("#sect-3").owlCarousel({
-		 
+
             slideSpeed : 500,
             paginationSpeed : 300,
             singleItem:true,
@@ -127,12 +127,12 @@ jQuery(document).ready(function($) {
             // itemsDesktopSmall : false,
             // itemsTablet: false,
             // itemsMobile : false
-		 
+
 		});
 	});
     $(function(){
 		$("#sect-4").owlCarousel({
-		 
+
             slideSpeed : 600,
             paginationSpeed : 300,
             singleItem:true,
@@ -146,13 +146,13 @@ jQuery(document).ready(function($) {
             // itemsDesktopSmall : false,
             // itemsTablet: false,
             // itemsMobile : false
-		 
+
 		});
 	});
-    
+
     $(function(){
 		$("#3-sect-1").owlCarousel({
-		 
+
             slideSpeed : 600,
             paginationSpeed : 300,
             singleItem:true,
@@ -167,13 +167,13 @@ jQuery(document).ready(function($) {
             // itemsDesktopSmall : false,
             // itemsTablet: false,
             // itemsMobile : false
-		 
+
 		});
 	});
-    
+
     $(function(){
 		$("#3-sect-6").owlCarousel({
-		 
+
             slideSpeed : 600,
             paginationSpeed : 300,
             singleItem:true,
@@ -188,13 +188,13 @@ jQuery(document).ready(function($) {
             // itemsDesktopSmall : false,
             // itemsTablet: false,
             // itemsMobile : false
-		 
+
 		});
 	});
-    
+
     $(function(){
 		$("#3-sect-2").owlCarousel({
-		 
+
             slideSpeed : 300,
             paginationSpeed : 300,
             singleItem:true,
@@ -209,13 +209,13 @@ jQuery(document).ready(function($) {
             // itemsDesktopSmall : false,
             // itemsTablet: false,
             // itemsMobile : false
-		 
+
 		});
 	});
-    
+
     $(function(){
 		$("#3-sect-3").owlCarousel({
-		 
+
             slideSpeed : 300,
             paginationSpeed : 300,
             singleItem:true,
@@ -230,13 +230,13 @@ jQuery(document).ready(function($) {
             // itemsDesktopSmall : false,
             // itemsTablet: false,
             // itemsMobile : false
-		 
+
 		});
 	});
-    
+
     $(function(){
 		$("#3-sect-4").owlCarousel({
-		 
+
             slideSpeed : 300,
             paginationSpeed : 300,
             singleItem:true,
@@ -251,13 +251,13 @@ jQuery(document).ready(function($) {
             // itemsDesktopSmall : false,
             // itemsTablet: false,
             // itemsMobile : false
-		 
+
 		});
 	});
-    
+
     $(function(){
 		$("#3-sect-5").owlCarousel({
-		 
+
             slideSpeed : 300,
             paginationSpeed : 300,
             singleItem:true,
@@ -271,14 +271,14 @@ jQuery(document).ready(function($) {
             // itemsDesktopSmall : false,
             // itemsTablet: false,
             // itemsMobile : false
-		 
+
 		});
 	});
-    
+
     /*------------------------------- Shop detail 1 image carousel  ---------------------------------------*/
     $(function(){
 		$("#detail-shop-1").owlCarousel({
-		 
+
             slideSpeed : 300,
             paginationSpeed : 300,
             singleItem:true,
@@ -292,10 +292,10 @@ jQuery(document).ready(function($) {
             // itemsDesktopSmall : false,
             // itemsTablet: false,
             // itemsMobile : false
-		 
+
 		});
 	});
-    
+
     /*------------------------------- search form ---------------------------------------*/
     /*$(function() {
         $(".dropdown").hover(
@@ -310,7 +310,7 @@ jQuery(document).ready(function($) {
 		  });
 		});
 	});
-    
+
     /*------------------------------- category open ---------------------------------------*/
     $(function() {
 		$("#to-open-cat").on('click', function() {
@@ -318,32 +318,32 @@ jQuery(document).ready(function($) {
 		  });
 		});
 	});
-    
+
     /*------------------------------- Product preview ---------------------------------------*/
-    
+
     $(function(){
         var sync1 = $("#product-image");
         var sync2 = $("#product-control");
- 
-        sync1.owlCarousel({
-            singleItem : true,
-            slideSpeed : 1000,
-            navigation: false,
-            pagination:false,
-            afterAction : syncPosition,
-            responsiveRefreshRate : 200,
-        });
- 
-        sync2.owlCarousel({
-            items : 4,
-            pagination:false,
-            responsive:false,
-            responsiveRefreshRate : 100,
-            afterInit : function(el){
-                el.find(".owl-item").eq(0).addClass("synced");
-            }
-        });
- 
+
+        // sync1.owlCarousel({
+        //     singleItem : true,
+        //     slideSpeed : 1000,
+        //     navigation: false,
+        //     pagination:false,
+        //     afterAction : syncPosition,
+        //     responsiveRefreshRate : 200,
+        // });
+				//
+        // sync2.owlCarousel({
+        //     items : 4,
+        //     pagination:false,
+        //     responsive:false,
+        //     responsiveRefreshRate : 100,
+        //     afterInit : function(el){
+        //         el.find(".owl-item").eq(0).addClass("synced");
+        //     }
+        // });
+
         function syncPosition(el){
             var current = this.currentItem;
             $("#product-control")
@@ -355,13 +355,13 @@ jQuery(document).ready(function($) {
                 center(current)
             }
         }
- 
+
         $("#product-control").on("click", ".owl-item", function(e){
             e.preventDefault();
             var number = $(this).data("owlItem");
             sync1.trigger("owl.goTo",number);
         });
- 
+
         function center(number){
             var sync2visible = sync2.data("owlCarousel").owl.visibleItems;
             var num = number;
@@ -371,7 +371,7 @@ jQuery(document).ready(function($) {
                     var found = true;
                 }
             }
- 
+
             if(found===false){
                 if(num>sync2visible[sync2visible.length-1]){
                     sync2.trigger("owl.goTo", num - sync2visible.length+2)
@@ -386,15 +386,15 @@ jQuery(document).ready(function($) {
             } else if(num === sync2visible[0]){
                 sync2.trigger("owl.goTo", num-1)
             }
-    
+
         }
 
     });
-    
+
     $(function(){
         var sync1 = $("#product-image2");
         var sync2 = $("#product-control2");
- 
+
         sync1.owlCarousel({
             singleItem : true,
             slideSpeed : 1000,
@@ -403,7 +403,7 @@ jQuery(document).ready(function($) {
             afterAction : syncPosition,
             responsiveRefreshRate : 200,
         });
- 
+
         sync2.owlCarousel({
             items : 4,
             pagination:false,
@@ -413,7 +413,7 @@ jQuery(document).ready(function($) {
                 el.find(".owl-item").eq(0).addClass("synced");
             }
         });
- 
+
         function syncPosition(el){
             var current = this.currentItem;
             $("#product-control2")
@@ -425,13 +425,13 @@ jQuery(document).ready(function($) {
                 center(current)
             }
         }
- 
+
         $("#product-control2").on("click", ".owl-item", function(e){
             e.preventDefault();
             var number = $(this).data("owlItem");
             sync1.trigger("owl.goTo",number);
         });
- 
+
         function center(number){
             var sync2visible = sync2.data("owlCarousel").owl.visibleItems;
             var num = number;
@@ -441,7 +441,7 @@ jQuery(document).ready(function($) {
                     var found = true;
                 }
             }
- 
+
             if(found===false){
                 if(num>sync2visible[sync2visible.length-1]){
                     sync2.trigger("owl.goTo", num - sync2visible.length+2)
@@ -456,17 +456,17 @@ jQuery(document).ready(function($) {
             } else if(num === sync2visible[0]){
                 sync2.trigger("owl.goTo", num-1)
             }
-    
+
         }
 
     });
-    
-   
-    
+
+
+
     $(function(){
         var sync1 = $("#product-image3");
         var sync2 = $("#product-control3");
- 
+
         sync1.owlCarousel({
             singleItem : true,
             slideSpeed : 1000,
@@ -475,7 +475,7 @@ jQuery(document).ready(function($) {
             afterAction : syncPosition,
             responsiveRefreshRate : 200,
         });
- 
+
         sync2.owlCarousel({
             items : 4,
             responsive:false,
@@ -485,7 +485,7 @@ jQuery(document).ready(function($) {
                 el.find(".owl-item").eq(0).addClass("synced");
             }
         });
- 
+
         function syncPosition(el){
             var current = this.currentItem;
             $("#product-control3")
@@ -497,13 +497,13 @@ jQuery(document).ready(function($) {
                 center(current)
             }
         }
- 
+
         $("#product-control3").on("click", ".owl-item", function(e){
             e.preventDefault();
             var number = $(this).data("owlItem");
             sync1.trigger("owl.goTo",number);
         });
- 
+
         function center(number){
             var sync2visible = sync2.data("owlCarousel").owl.visibleItems;
             var num = number;
@@ -513,7 +513,7 @@ jQuery(document).ready(function($) {
                     var found = true;
                 }
             }
- 
+
             if(found===false){
                 if(num>sync2visible[sync2visible.length-1]){
                     sync2.trigger("owl.goTo", num - sync2visible.length+2)
@@ -528,21 +528,21 @@ jQuery(document).ready(function($) {
             } else if(num === sync2visible[0]){
                 sync2.trigger("owl.goTo", num-1)
             }
-    
+
         }
 
     });
-    
+
     $(function(){
         $('.star-1').raty({ readOnly: true, score: 3 });
-    }); 
+    });
     $(function(){
         $('.star-0').raty();
     });
     $(function(){
         var sync1 = $("#product-image4");
         var sync2 = $("#product-control4");
- 
+
         sync1.owlCarousel({
             singleItem : true,
             slideSpeed : 1000,
@@ -551,7 +551,7 @@ jQuery(document).ready(function($) {
             afterAction : syncPosition,
             responsiveRefreshRate : 200,
         });
- 
+
         sync2.owlCarousel({
             items : 4,
             pagination:false,
@@ -561,7 +561,7 @@ jQuery(document).ready(function($) {
                 el.find(".owl-item").eq(0).addClass("synced");
             }
         });
- 
+
         function syncPosition(el){
             var current = this.currentItem;
             $("#product-control4")
@@ -573,13 +573,13 @@ jQuery(document).ready(function($) {
                 center(current)
             }
         }
- 
+
         $("#product-control4").on("click", ".owl-item", function(e){
             e.preventDefault();
             var number = $(this).data("owlItem");
             sync1.trigger("owl.goTo",number);
         });
- 
+
         function center(number){
             var sync2visible = sync2.data("owlCarousel").owl.visibleItems;
             var num = number;
@@ -589,7 +589,7 @@ jQuery(document).ready(function($) {
                     var found = true;
                 }
             }
- 
+
             if(found===false){
                 if(num>sync2visible[sync2visible.length-1]){
                     sync2.trigger("owl.goTo", num - sync2visible.length+2)
@@ -604,15 +604,15 @@ jQuery(document).ready(function($) {
             } else if(num === sync2visible[0]){
                 sync2.trigger("owl.goTo", num-1)
             }
-    
+
         }
 
     });
-    
+
     $(function(){
         var sync1 = $("#product-image5");
         var sync2 = $("#product-control5");
- 
+
         sync1.owlCarousel({
             singleItem : true,
             slideSpeed : 1000,
@@ -621,7 +621,7 @@ jQuery(document).ready(function($) {
             afterAction : syncPosition,
             responsiveRefreshRate : 200,
         });
- 
+
         sync2.owlCarousel({
             items : 4,
             pagination:false,
@@ -631,7 +631,7 @@ jQuery(document).ready(function($) {
                 el.find(".owl-item").eq(0).addClass("synced");
             }
         });
- 
+
         function syncPosition(el){
             var current = this.currentItem;
             $("#product-control5")
@@ -643,13 +643,13 @@ jQuery(document).ready(function($) {
                 center(current)
             }
         }
- 
+
         $("#product-control5").on("click", ".owl-item", function(e){
             e.preventDefault();
             var number = $(this).data("owlItem");
             sync1.trigger("owl.goTo",number);
         });
- 
+
         function center(number){
             var sync2visible = sync2.data("owlCarousel").owl.visibleItems;
             var num = number;
@@ -659,7 +659,7 @@ jQuery(document).ready(function($) {
                     var found = true;
                 }
             }
- 
+
             if(found===false){
                 if(num>sync2visible[sync2visible.length-1]){
                     sync2.trigger("owl.goTo", num - sync2visible.length+2)
@@ -674,15 +674,15 @@ jQuery(document).ready(function($) {
             } else if(num === sync2visible[0]){
                 sync2.trigger("owl.goTo", num-1)
             }
-    
+
         }
 
     });
-    
+
     $(function(){
         var sync1 = $("#product-image6");
         var sync2 = $("#product-control6");
- 
+
         sync1.owlCarousel({
             singleItem : true,
             slideSpeed : 1000,
@@ -691,7 +691,7 @@ jQuery(document).ready(function($) {
             afterAction : syncPosition,
             responsiveRefreshRate : 200,
         });
- 
+
         sync2.owlCarousel({
             items : 4,
             pagination:false,
@@ -701,7 +701,7 @@ jQuery(document).ready(function($) {
                 el.find(".owl-item").eq(0).addClass("synced");
             }
         });
- 
+
         function syncPosition(el){
             var current = this.currentItem;
             $("#product-control6")
@@ -713,13 +713,13 @@ jQuery(document).ready(function($) {
                 center(current)
             }
         }
- 
+
         $("#product-control6").on("click", ".owl-item", function(e){
             e.preventDefault();
             var number = $(this).data("owlItem");
             sync1.trigger("owl.goTo",number);
         });
- 
+
         function center(number){
             var sync2visible = sync2.data("owlCarousel").owl.visibleItems;
             var num = number;
@@ -729,7 +729,7 @@ jQuery(document).ready(function($) {
                     var found = true;
                 }
             }
- 
+
             if(found===false){
                 if(num>sync2visible[sync2visible.length-1]){
                     sync2.trigger("owl.goTo", num - sync2visible.length+2)
@@ -744,15 +744,15 @@ jQuery(document).ready(function($) {
             } else if(num === sync2visible[0]){
                 sync2.trigger("owl.goTo", num-1)
             }
-    
+
         }
 
     });
-    
+
     $(function(){
         var sync1 = $("#product-image7");
         var sync2 = $("#product-control7");
- 
+
         sync1.owlCarousel({
             singleItem : true,
             slideSpeed : 1000,
@@ -761,7 +761,7 @@ jQuery(document).ready(function($) {
             afterAction : syncPosition,
             responsiveRefreshRate : 200,
         });
- 
+
         sync2.owlCarousel({
             items : 4,
             pagination:false,
@@ -771,7 +771,7 @@ jQuery(document).ready(function($) {
                 el.find(".owl-item").eq(0).addClass("synced");
             }
         });
- 
+
         function syncPosition(el){
             var current = this.currentItem;
             $("#product-control7")
@@ -783,13 +783,13 @@ jQuery(document).ready(function($) {
                 center(current)
             }
         }
- 
+
         $("#product-control7").on("click", ".owl-item", function(e){
             e.preventDefault();
             var number = $(this).data("owlItem");
             sync1.trigger("owl.goTo",number);
         });
- 
+
         function center(number){
             var sync2visible = sync2.data("owlCarousel").owl.visibleItems;
             var num = number;
@@ -799,7 +799,7 @@ jQuery(document).ready(function($) {
                     var found = true;
                 }
             }
- 
+
             if(found===false){
                 if(num>sync2visible[sync2visible.length-1]){
                     sync2.trigger("owl.goTo", num - sync2visible.length+2)
@@ -814,15 +814,15 @@ jQuery(document).ready(function($) {
             } else if(num === sync2visible[0]){
                 sync2.trigger("owl.goTo", num-1)
             }
-    
+
         }
 
     });
-    
+
     $(function(){
         var sync1 = $("#product-image8");
         var sync2 = $("#product-control8");
- 
+
         sync1.owlCarousel({
             singleItem : true,
             slideSpeed : 1000,
@@ -831,7 +831,7 @@ jQuery(document).ready(function($) {
             afterAction : syncPosition,
             responsiveRefreshRate : 200,
         });
- 
+
         sync2.owlCarousel({
             items : 4,
             pagination:false,
@@ -841,7 +841,7 @@ jQuery(document).ready(function($) {
                 el.find(".owl-item").eq(0).addClass("synced");
             }
         });
- 
+
         function syncPosition(el){
             var current = this.currentItem;
             $("#product-control8")
@@ -853,13 +853,13 @@ jQuery(document).ready(function($) {
                 center(current)
             }
         }
- 
+
         $("#product-control8").on("click", ".owl-item", function(e){
             e.preventDefault();
             var number = $(this).data("owlItem");
             sync1.trigger("owl.goTo",number);
         });
- 
+
         function center(number){
             var sync2visible = sync2.data("owlCarousel").owl.visibleItems;
             var num = number;
@@ -869,7 +869,7 @@ jQuery(document).ready(function($) {
                     var found = true;
                 }
             }
- 
+
             if(found===false){
                 if(num>sync2visible[sync2visible.length-1]){
                     sync2.trigger("owl.goTo", num - sync2visible.length+2)
@@ -884,15 +884,15 @@ jQuery(document).ready(function($) {
             } else if(num === sync2visible[0]){
                 sync2.trigger("owl.goTo", num-1)
             }
-    
+
         }
 
     });
-    
+
     $(function(){
         var sync1 = $("#product-image9");
         var sync2 = $("#product-control9");
- 
+
         sync1.owlCarousel({
             singleItem : true,
             slideSpeed : 1000,
@@ -901,7 +901,7 @@ jQuery(document).ready(function($) {
             afterAction : syncPosition,
             responsiveRefreshRate : 200,
         });
- 
+
         sync2.owlCarousel({
             items : 4,
             pagination:false,
@@ -911,7 +911,7 @@ jQuery(document).ready(function($) {
                 el.find(".owl-item").eq(0).addClass("synced");
             }
         });
- 
+
         function syncPosition(el){
             var current = this.currentItem;
             $("#product-control9")
@@ -923,13 +923,13 @@ jQuery(document).ready(function($) {
                 center(current)
             }
         }
- 
+
         $("#product-control9").on("click", ".owl-item", function(e){
             e.preventDefault();
             var number = $(this).data("owlItem");
             sync1.trigger("owl.goTo",number);
         });
- 
+
         function center(number){
             var sync2visible = sync2.data("owlCarousel").owl.visibleItems;
             var num = number;
@@ -939,7 +939,7 @@ jQuery(document).ready(function($) {
                     var found = true;
                 }
             }
- 
+
             if(found===false){
                 if(num>sync2visible[sync2visible.length-1]){
                     sync2.trigger("owl.goTo", num - sync2visible.length+2)
@@ -954,15 +954,15 @@ jQuery(document).ready(function($) {
             } else if(num === sync2visible[0]){
                 sync2.trigger("owl.goTo", num-1)
             }
-    
+
         }
 
     });
-    
+
     $(function(){
         var sync1 = $("#product-image10");
         var sync2 = $("#product-control10");
- 
+
         sync1.owlCarousel({
             singleItem : true,
             slideSpeed : 1000,
@@ -971,7 +971,7 @@ jQuery(document).ready(function($) {
             afterAction : syncPosition,
             responsiveRefreshRate : 200,
         });
- 
+
         sync2.owlCarousel({
             items : 4,
             pagination:false,
@@ -981,7 +981,7 @@ jQuery(document).ready(function($) {
                 el.find(".owl-item").eq(0).addClass("synced");
             }
         });
- 
+
         function syncPosition(el){
             var current = this.currentItem;
             $("#product-control10")
@@ -993,13 +993,13 @@ jQuery(document).ready(function($) {
                 center(current)
             }
         }
- 
+
         $("#product-control10").on("click", ".owl-item", function(e){
             e.preventDefault();
             var number = $(this).data("owlItem");
             sync1.trigger("owl.goTo",number);
         });
- 
+
         function center(number){
             var sync2visible = sync2.data("owlCarousel").owl.visibleItems;
             var num = number;
@@ -1009,7 +1009,7 @@ jQuery(document).ready(function($) {
                     var found = true;
                 }
             }
- 
+
             if(found===false){
                 if(num>sync2visible[sync2visible.length-1]){
                     sync2.trigger("owl.goTo", num - sync2visible.length+2)
@@ -1024,15 +1024,15 @@ jQuery(document).ready(function($) {
             } else if(num === sync2visible[0]){
                 sync2.trigger("owl.goTo", num-1)
             }
-    
+
         }
 
     });
-    
+
     $(function(){
         var sync1 = $("#product-image11");
         var sync2 = $("#product-control11");
- 
+
         sync1.owlCarousel({
             singleItem : true,
             slideSpeed : 1000,
@@ -1041,7 +1041,7 @@ jQuery(document).ready(function($) {
             afterAction : syncPosition,
             responsiveRefreshRate : 200,
         });
- 
+
         sync2.owlCarousel({
             items : 4,
             pagination:false,
@@ -1051,7 +1051,7 @@ jQuery(document).ready(function($) {
                 el.find(".owl-item").eq(0).addClass("synced");
             }
         });
- 
+
         function syncPosition(el){
             var current = this.currentItem;
             $("#product-control11")
@@ -1063,13 +1063,13 @@ jQuery(document).ready(function($) {
                 center(current)
             }
         }
- 
+
         $("#product-control11").on("click", ".owl-item", function(e){
             e.preventDefault();
             var number = $(this).data("owlItem");
             sync1.trigger("owl.goTo",number);
         });
- 
+
         function center(number){
             var sync2visible = sync2.data("owlCarousel").owl.visibleItems;
             var num = number;
@@ -1079,7 +1079,7 @@ jQuery(document).ready(function($) {
                     var found = true;
                 }
             }
- 
+
             if(found===false){
                 if(num>sync2visible[sync2visible.length-1]){
                     sync2.trigger("owl.goTo", num - sync2visible.length+2)
@@ -1094,12 +1094,12 @@ jQuery(document).ready(function($) {
             } else if(num === sync2visible[0]){
                 sync2.trigger("owl.goTo", num-1)
             }
-    
+
         }
 
     });
-    
-    
+
+
     $(function(){
         var sync1 = $("#detail-3");
           var sync2 = $("#detail-control-3");
@@ -1169,23 +1169,23 @@ jQuery(document).ready(function($) {
 
           }
     });
-    
+
     $(function(){
 		$("a[data-rel^='prettyPhoto']").prettyPhoto({
 			autoplay:false,
 			social_tools:false,
 		});
 	});
-    
+
     $(function () {
         $("#select-size select").selectbox();
-        
+
     });
     $(function () {
         $("#short select").selectbox();
-        
+
     });
-    
+
     $(function () {
         $("#select-color select").selectbox();
     });
@@ -1193,8 +1193,8 @@ jQuery(document).ready(function($) {
         $(".country select").selectbox();
     });
 
-    
 
 
-    
+
+
 });
