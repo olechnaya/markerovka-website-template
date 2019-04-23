@@ -102,15 +102,15 @@
     .collapse.in{
   		display:block !important;
 	}
-    #believe-nav .navbar-nav>li{
+    #markerovka-nav .navbar-nav>li{
         padding-left:0;
         margin-bottom:20px;
     }
-    #believe-nav .navbar-nav>li>a{
+    #markerovka-nav .navbar-nav>li>a{
         padding-left:0;
         padding-right:0;
     }
-    #believe-nav .navbar-nav.navbar-right>li>a{
+    #markerovka-nav .navbar-nav.navbar-right>li>a{
         display:inline-block;
     }
     .navbar-default .navbar-collapse, .navbar-default .navbar-form{
@@ -785,7 +785,7 @@
         margin-bottom: 8px;
         
     }
-    .navbar-default .navbar-toggle, #believe-nav .navbar-brand h1{
+    .navbar-default .navbar-toggle, #markerovka-nav .navbar-brand h1{
         font-size: 24px;
         
     }

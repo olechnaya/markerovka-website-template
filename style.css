@@ -12,7 +12,7 @@ html,body{
     margin:0;
     padding:0;
     height:auto;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     color:#2b2a2f;
 }
@@ -85,10 +85,11 @@ blockquote{
 
 .top-support{
     margin:0;
-    padding:7px 0;
+    padding:10px 0 5px;
     float:right;
 }
-.top-support li{
+.top-support li,
+.top-control a {
     float:left;
     list-style:none;
     font-size:13px;
@@ -120,13 +121,13 @@ blockquote{
 }
 
 .top-control a i.fa-search {
-    width: 16px; height: 16px; float: left;
+    width: 14px; height: 14px; float: left; margin-right: 8px;
     background:url('images/top-menu-icon-search.svg');
 }
 
 .top-control a i.fa-envelope {
-    width: 16px; height: 16px; float: left;
-    background:url('images/top-menu-icon-envelope.svg');
+    width: 20px; height: 13px; float: left; margin-right: 8px;
+    background:url('images/top-menu-icon-envelope.svg') no-repeat;
 }
 
 .top-support li a i.fa-delivery  {
@@ -177,7 +178,7 @@ blockquote{
 }
 .top-control{
     float:right;
-    padding:7px 0;
+    padding:10px 0 8px;
 }
 .homepage-2.gold .top-control{
     float:right;
@@ -186,6 +187,7 @@ blockquote{
 .top-control a{
     color:#777c80;
     text-decoration: none;
+        line-height: 15px;
    transition: all .3s ease;
     -moz-transition: all .3s ease;
     -webkit-transition: all .3s ease;
@@ -193,6 +195,10 @@ blockquote{
 
 .top-control a:hover {
   color: #000;
+}
+
+.top-control a:first-child {
+  margin-right: 45px;
 }
 
 .homepage-2 .top-control a{
@@ -232,23 +238,23 @@ blockquote{
     margin-bottom: 0px;
 }
 
-#believe-nav{
-    padding:20px 0;
+#markerovka-nav{
+    padding:20px 0 0;
 }
-.homepage-2 #believe-nav{
+.homepage-2 #markerovka-nav{
     padding:15px 0 35px;
 }
-#believe-nav .navbar-default{
+#markerovka-nav .navbar-default{
     border:none;
     margin:0;
     border-radius:0;
     min-height:0;
     background:none;
 }
-#believe-nav .navbar-brand{
+#markerovka-nav .navbar-brand{
     padding:0;
 }
-.homepage-2 #believe-nav .navbar-brand h1{
+.homepage-2 #markerovka-nav .navbar-brand h1{
     padding:0 0;
     height:auto;
     color: #364a62;
@@ -256,7 +262,7 @@ blockquote{
     text-transform: uppercase;
     font-weight: 800;
 }
-.homepage-2.gold #believe-nav .navbar-brand h1{
+.homepage-2.gold #markerovka-nav .navbar-brand h1{
     color: #3a342d;
 }
 
@@ -333,7 +339,7 @@ blockquote{
      background-image : url(images/call-back.svg);
 }
 
-.homepage-2 #believe-nav .navbar-nav>li>a{
+.homepage-2 #markerovka-nav .navbar-nav>li>a{
     padding-top:0px;
     padding-bottom:0px;
     font-weight:700;
@@ -344,7 +350,7 @@ blockquote{
     -moz-transition: all .3s ease;
     -webkit-transition: all .3s ease;
 }
-.homepage-2.gold #believe-nav .navbar-nav>li>a{
+.homepage-2.gold #markerovka-nav .navbar-nav>li>a{
     color:#9c9996;
 }
 
@@ -355,63 +361,63 @@ blockquote{
   flex-direction: column;
 }
 
-.homepage-2 #believe-nav .navbar-nav>li{
+.homepage-2 #markerovka-nav .navbar-nav>li{
     padding-left:0px;
 }
-#believe-nav .navbar-nav.navbar-right>li{
+#markerovka-nav .navbar-nav.navbar-right>li{
     padding-left:0px;
 }
-#believe-nav .navbar-nav>li>a i{
+#markerovka-nav .navbar-nav>li>a i{
     margin-left:10px;
 }
 .min-marg{
     margin-left:-15px;
     margin-right:-15px;
 }
-/* #believe-nav .navbar-default .navbar-nav>.active>a, #believe-nav .navbar-default .navbar-nav>.active>a:focus, #believe-nav .navbar-default .navbar-nav>.active>a:hover, #believe-nav .navbar-default .navbar-nav a:hover{
+/* #markerovka-nav .navbar-default .navbar-nav>.active>a, #markerovka-nav .navbar-default .navbar-nav>.active>a:focus, #markerovka-nav .navbar-default .navbar-nav>.active>a:hover, #markerovka-nav .navbar-default .navbar-nav a:hover{
     background:none;
     color:#66cef6;
 
 } */
-.homepage-2 #believe-nav .navbar-default .navbar-nav>.active>a, .homepage-2 #believe-nav .navbar-default .navbar-nav>.active>a:focus, .homepage-2 #believe-nav .navbar-default .navbar-nav>.active>a:hover, .homepage-2 #believe-nav .navbar-default .navbar-nav a:hover{
+.homepage-2 #markerovka-nav .navbar-default .navbar-nav>.active>a, .homepage-2 #markerovka-nav .navbar-default .navbar-nav>.active>a:focus, .homepage-2 #markerovka-nav .navbar-default .navbar-nav>.active>a:hover, .homepage-2 #markerovka-nav .navbar-default .navbar-nav a:hover{
     background:none;
     color:#293b51;
 
 }
-.homepage-2.gold #believe-nav .navbar-default .navbar-nav>.active>a, .homepage-2.gold #believe-nav .navbar-default .navbar-nav>.active>a:focus, .homepage-2.gold #believe-nav .navbar-default .navbar-nav>.active>a:hover, .homepage-2.gold #believe-nav .navbar-default .navbar-nav a:hover{
+.homepage-2.gold #markerovka-nav .navbar-default .navbar-nav>.active>a, .homepage-2.gold #markerovka-nav .navbar-default .navbar-nav>.active>a:focus, .homepage-2.gold #markerovka-nav .navbar-default .navbar-nav>.active>a:hover, .homepage-2.gold #markerovka-nav .navbar-default .navbar-nav a:hover{
     background:none;
     color:#a2855e;
 
 }
-#believe-nav .navbar-default .navbar-nav>.open>a, #believe-nav .navbar-default .navbar-nav>.open>a:focus, #believe-nav .navbar-default .navbar-nav>.open>a:hover{
+#markerovka-nav .navbar-default .navbar-nav>.open>a, #markerovka-nav .navbar-default .navbar-nav>.open>a:focus, #markerovka-nav .navbar-default .navbar-nav>.open>a:hover{
     background:none;
     color:#66cef6;
 }
-.homepage-2 #believe-nav .navbar-nav>li.cart-link>a{
+.homepage-2 #markerovka-nav .navbar-nav>li.cart-link>a{
     font-size: 18px;
     font-weight: 800;
 }
-.homepage-2 #believe-nav .navbar-nav>li.cart-link>a i{
+.homepage-2 #markerovka-nav .navbar-nav>li.cart-link>a i{
     font-size: 20px;
     margin-right:10px;
     color:#6bbfff;
 }
-.homepage-2.gold #believe-nav .navbar-nav>li.cart-link>a i{
+.homepage-2.gold #markerovka-nav .navbar-nav>li.cart-link>a i{
     color:#a2855e;
 }
 .homepage-2 .navbar-nav{
     margin-top:18px;
 }
-.homepage-2 #believe-nav .navbar-nav>li span{
+.homepage-2 #markerovka-nav .navbar-nav>li span{
     color: #bdc6d2;
 }
-.homepage-2.gold #believe-nav .navbar-nav>li span{
+.homepage-2.gold #markerovka-nav .navbar-nav>li span{
     color: #9c9996;
 }
-#believe-nav .navbar-right img{
+#markerovka-nav .navbar-right img{
     float:left;
 }
-#believe-nav .navbar-right span{
+#markerovka-nav .navbar-right span{
     float:right;
     vertical-align: middle;
     margin-top:3px;
