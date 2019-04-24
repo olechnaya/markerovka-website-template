@@ -16,6 +16,8 @@ html,body{
     font-weight: 400;
     color:#2b2a2f;
 }
+
+
 a{
     color:#66cef6;
     text-decoration:none;
@@ -89,11 +91,19 @@ blockquote{
     float:right;
 }
 .top-support li,
-.top-control a {
+.top-control a,
+.top-control label {
     float:left;
     list-style:none;
     font-size:13px;
     margin-right: 40px;
+}
+
+.top-control label {
+  padding: 5px 0;
+}
+.top-control a {
+  padding: 12px 0;
 }
 
 .top-support li a{
@@ -119,6 +129,55 @@ blockquote{
 .top-support li a i {
     background: url('images/css_sprites.png');
 }
+
+.expandSearch{
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+}
+.expandSearch i{
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  padding: 8px 4px 8px 8px;
+  color: #777;
+  cursor: pointer;
+  user-select: none;
+  transition: 0.24s;
+  width: 14px;
+  height: 14px;
+  background: url('images/top-menu-icon-search.svg') no-repeat;
+  margin-top: -7px;
+}
+.expandSearch i:hover{
+  color: #0bf;
+}
+.expandSearch input{
+  border:none;
+  background: transparent;
+  font: 14px/1.5 sans-serif;
+  padding-left: 26px;
+  background: #e2e2e2;
+  transition: 0.24s;
+  width: 76px;
+  padding: 4px 0px 4px 34px;
+  cursor: pointer;
+  font: 700 normal 13px/18px Montserrat;
+}
+.expandSearch input:focus{
+  border-color: #aaa;
+  outline: none;
+  width:200px;
+  padding: 4px 12px 4px 34px;
+  border-color: #0bf;
+  background: #fff;
+}
+.expandSearch input:focus + i{
+  /*padding: 8px 4px 8px 8px ;*/
+  color: #ddd;
+  pointer-events: none;
+}
+
 
 .top-control a i.fa-search {
     width: 14px; height: 14px; float: left; margin-right: 8px;
@@ -178,7 +237,7 @@ blockquote{
 }
 .top-control{
     float:right;
-    padding:10px 0 8px;
+    padding:0;
 }
 .homepage-2.gold .top-control{
     float:right;
@@ -187,7 +246,7 @@ blockquote{
 .top-control a{
     color:#777c80;
     text-decoration: none;
-        line-height: 15px;
+        line-height: 13px;
    transition: all .3s ease;
     -moz-transition: all .3s ease;
     -webkit-transition: all .3s ease;
