@@ -858,7 +858,61 @@ blockquote{
 	color:#21708e;
 }
 
-#content{}
+#content{
+    background: rgba(250, 228, 0, 1);
+  background: url(images/dot-pattern.png), radial-gradient(circle at 34.71% 5.02%, rgb(251, 241, 112), transparent 25%) repeat scroll 0% 0%, radial-gradient(circle at 29.66% 99.92%, rgb(253, 218, 0), transparent 100%) repeat scroll 0% 0%, rgba(0, 0, 0, 0) radial-gradient(circle at 50% 50%, rgb(253, 218, 0), rgb(253, 218, 0) 100%) repeat scroll 0% 0%;
+}
+
+.item {
+  position: relative;
+    display: inline-block;
+    border: 2px solid;
+    border-image-source: linear-gradient(40deg,#5e225f, #8f6a8c);
+    border-image-slice: 1;
+    padding: 3px;
+}
+
+.item:hover {
+  text-decoration: none;
+  color: inherit;
+}
+.item span {
+  height: 100%;
+    display: block;
+    padding: 15px;
+    background: -moz-linear-gradient(40deg, rgba(94,34,95,1) 0%, rgba(93,50,94,1) 46%, rgba(143,106,140,1) 100%);
+    background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(94,34,95,1)), color-stop(46%, rgba(93,50,94,1)), color-stop(100%, rgba(143,106,140,1)));
+    background: -webkit-linear-gradient(40deg, rgba(94,34,95,1) 0%, rgba(93,50,94,1) 46%, rgba(143,106,140,1) 100%);
+    background: -o-linear-gradient(40deg, rgba(94,34,95,1) 0%, rgba(93,50,94,1) 46%, rgba(143,106,140,1) 100%);
+    background: -ms-linear-gradient(40deg, rgba(94,34,95,1) 0%, rgba(93,50,94,1) 46%, rgba(143,106,140,1) 100%);
+    background: linear-gradient(40deg, rgba(94,34,95,1) 0%, rgba(93,50,94,1) 46%, rgba(143,106,140,1) 100%);
+}
+
+.item img {
+  margin: 17px;
+  box-shadow: 3px 2px 10px #410e42;
+transform:          rotate(-1deg);
+-ms-transform:      rotate(-1deg);
+-moz-transform:     rotate(-1deg);
+-webkit-transform:  rotate(-1deg);
+-o-transform:       rotate(-1deg);
+transition: all .3s ease-in;
+}
+
+.item:hover img {
+    transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+
+}
+
+.item h3 {
+  font-size: 14px;
+  color: #fff;
+}
+
 .home-content{
 
 }
