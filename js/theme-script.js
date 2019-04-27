@@ -12,6 +12,15 @@ jQuery(document).ready(function($) {
     /*------------------------------- brand carousel ---------------------------------------*/
 
     $(function(){
+			$("#a_slider").owlCarousel({
+					autoPlay: 3000, //Set AutoPlay to 3 seconds
+					items: 1,
+					slideSpeed : 300,
+					paginationSpeed : 400,
+					pagination: false,
+					navigation: true
+			});
+
         $("#brand-carousel").owlCarousel({
             autoPlay: 3000, //Set AutoPlay to 3 seconds
             items : 5,
