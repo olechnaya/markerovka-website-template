@@ -5,7 +5,14 @@ Develop By: BoostrapMart
 Developer URL: http://info@bootstrapmart.com
 ************************************************/
 
+@font-face {
+    font-family: 'heading_pro_ultracompresseXBd';
+    src: url('fonts/heading_pro_ultracompressed_extrabold-digits.woff2') format('woff2'),
+         url('fonts/heading_pro_ultracompressed_extrabold-digits.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 
+}
 
 html,body{
     width:100%;
@@ -929,7 +936,7 @@ display: block;
 .articles {
   position: relative;
   background: #e4e4e4 url(images/articles-bg-2.jpg);
-  margin: 70px auto;
+  margin: 70px auto 0;
 }
 
 
@@ -989,25 +996,210 @@ display: block;
   opacity: 1;
   position: absolute;
   width: 23px;
-  height: 44px;
+  height: 41px;
   padding: 0;
     border-radius: 0;
 }
 
 #a_slider .owl-prev {
-      background-position: 0 -122px;
+      background-position: 0 0;
       left:0;
 }
 #a_slider  .owl-next {
-  background-position: 0 -80px;
+  background-position: 0 -41px;
   right: 0;
 }
 #a_slider .owl-prev:hover {
-background-position: 0 4px;
+background-position: 0 -82px;
 }
 #a_slider .owl-next:hover {
-background-position: 0 -36px;
+background-position: 0 -123px;
 }
+#a_slider .owl-wrapper-outer {
+  margin: 0 20px;
+  /* padding-left: 28px; */
+}
+.latest {
+  background: #f3f3f3;
+  padding-top: 28px;
+}
+.annual-addings {
+  position: relative;
+  height: 245px;
+  padding: 40px 0;
+}
+.annual-addings .text {
+  height: 100px;
+
+  -webkit-border-top-left-radius: 100px;
+
+  -webkit-border-bottom-left-radius: 100px;
+
+  -moz-border-radius-topleft: 100px;
+
+  -moz-border-radius-bottomleft: 100px;
+
+  border-top-left-radius: 100px;
+
+  border-bottom-left-radius: 100px;
+
+  background: rgba(228,142,43,1);
+
+  background: -moz-linear-gradient(left, rgba(228,142,43,1) 0%, rgba(245,169,55,1) 100%);
+
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(228,142,43,1)), color-stop(100%, rgba(245,169,55,1)));
+
+  background: -webkit-linear-gradient(left, rgba(228,142,43,1) 0%, rgba(245,169,55,1) 100%);
+
+  background: -o-linear-gradient(left, rgba(228,142,43,1) 0%, rgba(245,169,55,1) 100%);
+
+  background: -ms-linear-gradient(left, rgba(228,142,43,1) 0%, rgba(245,169,55,1) 100%);
+
+  background: linear-gradient(to right, rgba(228,142,43,1) 0%, rgba(245,169,55,1) 100%);
+
+  width: 475px;
+
+  position: absolute;
+
+  left: 0;
+
+  line-height: 89px;
+
+  border: 4px solid #fff;
+
+  padding: 0 34px;
+}
+
+
+.annual-addings .date {
+
+    color: #fff;
+    font-size: 12px;
+    font-weight: 900;
+    letter-spacing: 2px;
+
+}
+.annual-addings .description {
+  font-size: 16px;
+  font-style: italic;
+  color: #fff;
+  padding-left: 15px;
+}
+
+.annual-addings .description:hover {
+  text-decoration: none;
+}
+
+.annual-addings .item img {
+  position: absolute;
+    top: -74px;
+    left: 50%;
+}
+.link-arrowed {
+  display: inline-block;
+  height: 2rem;
+  line-height: 2rem;
+}
+.link-arrowed .arrow-icon {
+  position: relative;
+  top: -1px;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+  vertical-align: middle;
+}
+.link-arrowed .arrow-icon-circle {
+  transition: stroke-dashoffset .3s ease;
+  stroke-dasharray: 95;
+  stroke-dashoffset: 95;
+}
+.link-arrowed:hover .arrow-icon {
+  -webkit-transform: translate3d(5px, 0, 0);
+          transform: translate3d(5px, 0, 0);
+}
+.link-arrowed:hover .arrow-icon-circle {
+  stroke-dashoffset: 0;
+}
+.link-arrowed {
+  display: inline-block;
+  height: 2rem;
+  line-height: 2rem;
+}
+.link-arrowed .arrow-icon {
+  position: relative;
+  top: -1px;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+  vertical-align: middle;
+}
+.link-arrowed .arrow-icon-circle {
+  transition: stroke-dashoffset .3s ease;
+  stroke-dasharray: 95;
+  stroke-dashoffset: 95;
+}
+.link-arrowed:hover .arrow-icon {
+  -webkit-transform: translate3d(5px, 0, 0);
+          transform: translate3d(5px, 0, 0);
+}
+.link-arrowed:hover .arrow-icon-circle {
+  stroke-dashoffset: 0;
+}
+
+.annual-addings .year{
+  position: absolute;
+    width: 100px;
+    height: 100px;
+  top:25px;left: 25px;
+    font: 50px/112.5px 'heading_pro_ultracompresseXBd';
+    background: #fff;
+    border-radius: 100px;
+    color: #ed9b31;
+    box-sizing: border-box;
+  margin: 0;
+   box-shadow: inset 5px 3px 6px rgba(0,0,0,0.4),
+     0 0 0 10px #fff;
+vertical-align: 100px;
+  text-align: center;
+}
+
+.annual-addings .circle{
+  position: absolute;
+
+  width: 90px;
+
+  height: 90px;
+
+  border-radius: 100px;
+
+  padding: 75px;
+
+  background: rgba(228,142,43,1);
+
+  background: -moz-linear-gradient(left, rgba(228,142,43,1) 0%, rgba(245,169,55,1) 100%);
+
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(228,142,43,1)), color-stop(100%, rgba(245,169,55,1)));
+
+  background: -webkit-linear-gradient(left, rgba(228,142,43,1) 0%, rgba(245,169,55,1) 100%);
+
+  background: -o-linear-gradient(left, rgba(228,142,43,1) 0%, rgba(245,169,55,1) 100%);
+
+  background: -ms-linear-gradient(left, rgba(228,142,43,1) 0%, rgba(245,169,55,1) 100%);
+
+  background: linear-gradient(to right, rgba(228,142,43,1) 0%, rgba(245,169,55,1) 100%);
+
+  border: 4px solid #fff;
+
+  left: 425px;
+
+  top: 10px;
+}
+
+
+.p0 {
+  padding: 0!important;
+}
+
 .article .img-holder {
   border: 1px solid #ef2950;
     background: #e4e4e4;

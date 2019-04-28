@@ -13,7 +13,6 @@ jQuery(document).ready(function($) {
 
     $(function(){
 			$("#a_slider").owlCarousel({
-					autoPlay: 3000, //Set AutoPlay to 3 seconds
 					items: 1,
 					slideSpeed : 300,
 					paginationSpeed : 400,
