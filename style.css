@@ -86,6 +86,7 @@ blockquote {
 } */
 .top {
   background: #e2e2e2;
+  /* margin-top: 4px; */
 }
 
 .welcome {
@@ -123,11 +124,11 @@ blockquote {
 }
 
 .top-control label {
-  padding: 5px 0;
+  margin-bottom: 0;
 }
 
 .top-control a {
-  padding: 12px 0;
+
 }
 
 .top-support li a {
@@ -218,10 +219,16 @@ blockquote {
 
 .top-control a i.fa-envelope {
   width: 20px;
+
   height: 13px;
-  float: left;
+
+  display: inline-block;
+
   margin-right: 8px;
+
   background: url('images/top-menu-icon-envelope.svg') no-repeat;
+
+  margin-bottom: -2px;
 }
 
 .top-support li a i.fa-delivery {
@@ -281,7 +288,7 @@ blockquote {
 
 .top-control {
   float: right;
-  padding: 0;
+  padding: 5px 0;
 }
 
 .homepage-2.gold .top-control {
@@ -292,7 +299,7 @@ blockquote {
 .top-control a {
   color: #777c80;
   text-decoration: none;
-  line-height: 13px;
+  line-height: 26px;
   transition: all .3s ease;
   -moz-transition: all .3s ease;
   -webkit-transition: all .3s ease;
