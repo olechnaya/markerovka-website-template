@@ -12,13 +12,60 @@ jQuery(document).ready(function($) {
     /*------------------------------- brand carousel ---------------------------------------*/
 
     $(function(){
-			$("#a_slider").owlCarousel({
-					items: 1,
-					slideSpeed : 300,
-					paginationSpeed : 400,
-					pagination: false,
-					navigation: true
+			const siemas = document.querySelectorAll('.annual-addings .siema');
+
+			// this is fairly new way of looping through DOM Elements
+			// More about ithere: https://pawelgrzybek.com/loop-through-a-collection-of-dom-elements/
+			// For better compatibility I suggest using for loop
+			for(const siema of siemas) {
+			  new Siema({
+			    selector: siema
+			  })
+			}
+
+
+			const mySiema = new Siema({
+			selector: '#a_slider .seima',
+			duration: 200,
+			easing: 'ease-out',
+			perPage: 1,
+			startIndex: 0,
+			draggable: true,
+			multipleDrag: true,
+			threshold: 20,
+			loop: true,
+			rtl: false,
+			onInit: () => {},
+			onChange: () => {},
 			});
+			document.querySelector('.prev').addEventListener('click', () => mySiema.prev());
+			document.querySelector('.next').addEventListener('click', () => mySiema.next());
+			// Add a function that generates pagination to prototype
+			Siema.prototype.addPagination = function() {
+			  for (let i = 0; i < this.innerElements.length; i++) {
+			    const btn = document.createElement('button');
+			    btn.textContent = i;
+			    btn.addEventListener('click', () => this.goTo(i));
+			    this.selector.appendChild(btn);
+			  }
+			}
+
+			// Trigger pagination creator
+			mySiema.addPagination();
+
+			$(".owl-carousel").owlCarousel({
+				loop:true,
+		    nav:true,items:2,
+    margin:30,
+    stagePadding:30,
+			});
+
+
+			// $("#a_slider").owlCarousel({
+			// 		loop:true,
+			// 		pagination: false,
+			// 		nav:true
+			// });
 
         $("#brand-carousel").owlCarousel({
             autoPlay: 3000, //Set AutoPlay to 3 seconds
