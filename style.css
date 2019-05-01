@@ -1417,6 +1417,10 @@ background: linear-gradient(to right, rgba(94,34,95,1) 0%, rgba(143,106,140,1) 1
   padding: 0 !important;
 }
 
+.mb40 {
+  margin-bottom: 40px!important;
+}
+
 .article .img-holder {
   border: 1px solid #ef2950;
   background: #e4e4e4;
@@ -3838,51 +3842,48 @@ background: url(images/backfeed-bubbles.png);
 #footer {}
 
 .footer-widget {
-  background: #2b2a2f;
+  background: #282f39;
   padding-top: 40px;
   padding-bottom: 30px;
   color: #fff;
 }
 
-.homepage-2 .footer-widget {
-  background: #f4f5f7;
-  padding-top: 70px;
-  padding-bottom: 80px;
-  color: #fff;
-}
-
 .text-widget a {
-  color: #808080;
+  color: #fff;
+  font-weight: bold;
 }
 
 .text-widget p {
   line-height: 20px;
-  font-size: 13px;
-  margin-top: 25px;
+  font: italic 12px/18px 'Montserrat Alternates', sans-serif;
+    margin-top: 25px;
 }
 
-.homepage-2 .text-widget p, .homepage-2 .subscribe p {
-  color: #60686f;
+.footer-ico {
+  background: url(images/footer-ico.png) no-repeat;
+  display: inline-block;
+  margin-right: 10px;
+  width: 19px;
 }
 
-.wid-title {
-  color: #808080;
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: 13px;
-  margin-bottom: 15px;
+.footer-ico-footer-ico-brush {
+    height: 16px;
+    background-position: -3px -3px;
 }
 
-.homepage-2 .wid-title {
-  color: #364a62;
-  text-transform: uppercase;
-  font-weight: 600;
-  font-size: 24px;
-  margin-bottom: 45px;
+.footer-ico-footer-ico-faq {
+    height: 16px;
+    background-position: -3px -25px;
 }
 
-.homepage-2.gold .wid-title {
-  color: #a2855e;
+.footer-ico-footer-ico-sitemap {
+    height: 16px;
+    background-position: -3px -47px;
+}
+
+.footer-ico-footer-ico-vacancies {
+  height: 15px;
+    background-position: -3px -69px;
 }
 
 .ft-soc {
@@ -3892,9 +3893,6 @@ background: url(images/backfeed-bubbles.png);
   clear: both;
 }
 
-.homepage-2 .ft-soc {
-  margin-top: 60px;
-}
 
 .ft-soc li {
   float: left;
@@ -3938,26 +3936,41 @@ background: url(images/backfeed-bubbles.png);
   color: #66cef6;
   text-decoration: none;
 }
-
-.homepage-2.gold .ft-soc li a:hover {
-  color: #a2855e;
-  text-decoration: none;
+.bottom-logo {
+  width: 90%;
 }
 
 .quick-links a {
   color: #fff;
-  text-transform: uppercase;
   text-decoration: none;
 }
 
-.homepage-2 .quick-links a, .homepage-2 .term a {
-  color: #60686f;
-  text-transform: uppercase;
-  text-decoration: none;
+.quick-links.other-links .wid-title{
+  color: #a4b8d6;
+
+text-shadow: 2px 1px 0px #282f39, 1px 2px 0px #b7b7b7;
+
+text-transform: uppercase;
+
+margin-bottom: 30px;
+
+font: 700 normal 16px 'IBM Plex Serif', serif;
 }
+
+.btn-white {
+    font-size: 12px;
+    display: block;
+    border: 1px solid #fff;
+    border-radius: 20px;
+}
+
 
 .quick-links a:hover {
   color: #66cef6;
+}
+
+.quick-links a.btn:hover {
+  border: 1px solid #66cef6;
 }
 
 .quick-links ul {
@@ -3969,22 +3982,6 @@ background: url(images/backfeed-bubbles.png);
   list-style: none;
   margin-bottom: 8px;
   font-size: 13px;
-}
-
-.term p {
-  color: #fff;
-  line-height: 25px;
-  text-transform: uppercase;
-  font-size: 13px;
-}
-
-.term a {
-  color: #fff;
-  text-decoration: none;
-}
-
-.term a:hover {
-  color: #66cef6;
 }
 
 .subscribe p {
