@@ -3866,6 +3866,39 @@ background: url(images/backfeed-bubbles.png);
   width: 19px;
 }
 
+.footer-ico-block span{
+  background-image: linear-gradient(120deg, #fff 0%, #ffffff1a 100%);
+
+background-repeat: no-repeat;
+
+background-size: 100% 0.2em;
+
+background-position: 0 99%;
+
+background-image: linear-gradient(120deg, #fff 0%, #ffffff1a 100%);
+
+background-size: 0 5px, auto;
+
+background-repeat: no-repeat;
+
+background-position: center bottom;
+
+transition: all .2s ease-out;
+}
+
+.footer-ico-block span:hover {
+
+    background-size: 100% 1px, auto;
+
+}
+
+.quick-links.other-links a {
+  color: #a4b8d6;
+}
+.quick-links.other-links a:hover {
+  color: #fff;
+}
+
 .footer-ico-footer-ico-brush {
     height: 16px;
     background-position: -3px -3px;
@@ -3947,12 +3980,9 @@ background: url(images/backfeed-bubbles.png);
 
 .quick-links.other-links .wid-title{
   color: #a4b8d6;
-
-text-shadow: 2px 1px 0px #282f39, 1px 2px 0px #b7b7b7;
-
-text-transform: uppercase;
-
-margin-bottom: 30px;
+  text-shadow: 2px 1px 0px #282f39, 1px 2px 0px #b7b7b7;
+  text-transform: uppercase;
+  margin-bottom: 30px;
 
 font: 700 normal 16px 'IBM Plex Serif', serif;
 }
@@ -3964,13 +3994,9 @@ font: 700 normal 16px 'IBM Plex Serif', serif;
     border-radius: 20px;
 }
 
-
-.quick-links a:hover {
-  color: #66cef6;
-}
-
 .quick-links a.btn:hover {
-  border: 1px solid #66cef6;
+  background: #fff;
+  border-color: #fff;
 }
 
 .quick-links ul {
@@ -3982,6 +4008,12 @@ font: 700 normal 16px 'IBM Plex Serif', serif;
   list-style: none;
   margin-bottom: 8px;
   font-size: 13px;
+}
+
+.other-links li:last-child {
+
+    margin-bottom: 30px;
+
 }
 
 .subscribe p {
@@ -4032,35 +4064,30 @@ font: 700 normal 16px 'IBM Plex Serif', serif;
 }
 
 .footer-text {
-  background: #27262b;
-  padding: 15px 0;
-}
-
-.footer-text p {
+  background: #282f39;
   text-align: center;
-  margin: 0;
-  font-size: 13px;
-  color: #808080;
+    font: italic 14px 'Montserrat Alternates';
+    letter-spacing: 2px;
 }
 
-.footer-text p a {
-  color: #fff;
-}
-
-.homepage-2 .footer-text {
-  background: #f4f5f7;
+.cities .container {
   padding: 15px 0;
+    border-top: 1px solid #535860;
 }
 
-.homepage-2 .footer-text p {
-  text-align: center;
-  margin: 0;
-  font-size: 13px;
-  color: #364a62;
+.footer-text.cities a {
+    color: #8495ad;
+    border-right: 1px solid #8495ad;
+    padding-right: 16px;
+    padding-left: 10px;
+}
+.footer-text.cities a:last-child {
+  border-right: none; 
 }
 
-.homepage-2 .footer-text p a {
-  color: #364a62;
+.footer-text.cities a:hover {
+  text-decoration: none;
+  color: #b2c3dc;
 }
 
 .btn-purple {
