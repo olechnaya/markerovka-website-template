@@ -53,6 +53,14 @@ jQuery(document).ready(function($) {
 			// Trigger pagination creator
 			mySiema.addPagination();
 
+			$('body').materialScrollTop({
+          revealElement: '#header',
+          revealPosition: 'bottom',
+          onScrollEnd: function() {
+              console.log('Scrolling End');
+          }
+      });
+
 			$(".owl-carousel").owlCarousel({
 				loop:true,
 		    nav:true,items:2,
