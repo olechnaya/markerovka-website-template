@@ -1502,6 +1502,13 @@ blockquote {
 .fr {
   float: right;
 }
+.fl {
+  float: left;
+}
+
+.w50 {
+  width: 50%;
+}
 
 .ml-20 {
   margin-left: 20px;
