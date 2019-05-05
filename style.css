@@ -3652,32 +3652,6 @@ blockquote {
   border: none;
 }
 
-.related {
-  margin-top: 75px;
-}
-
-.related .product-name {
-  text-align: center;
-}
-
-.related .star-3 {
-  margin-left: 0;
-  margin-bottom: 0px;
-  margin-top: 0px;
-  display: inline-block;
-}
-
-.related .prdct-grid {
-  text-align: center;
-}
-
-.related .title {
-  font-size: 20px;
-  text-transform: uppercase;
-  font-weight: 700;
-  margin-bottom: 45px;
-}
-
 .detail-2 {
   background: #f9f9f9;
   padding-left: 55px;

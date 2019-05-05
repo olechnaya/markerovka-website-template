@@ -47,6 +47,7 @@ hgroup span {
 hgroup h1 {
   display: inline-block;
   font: 700 43px 'IBM Plex Serif', serif;
+  margin-right: 15px;
 }
 
 .ct-item {
@@ -145,16 +146,96 @@ hgroup h1 {
 
 
 .additional {
-  background: #f3f3f3s;
+  background: #f3f3f3;
 }
 
 .catalog-articles,
 .related,
 .similar {
     background: #fff;
+    width: 48%;
 }
 
+.related h2,
+.similar h2 {
+margin: 0;
+padding: 20px 36px 20px 32px;
+font-size: 18px;
+color: #fff;
+}
 
+.related h2 {
+  background: rgba(238,36,85,1);
+background: -moz-linear-gradient(left, rgba(238,36,85,1) 0%, rgba(254,121,4,1) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(238,36,85,1)), color-stop(100%, rgba(254,121,4,1)));
+background: -webkit-linear-gradient(left, rgba(238,36,85,1) 0%, rgba(254,121,4,1) 100%);
+background: -o-linear-gradient(left, rgba(238,36,85,1) 0%, rgba(254,121,4,1) 100%);
+background: -ms-linear-gradient(left, rgba(238,36,85,1) 0%, rgba(254,121,4,1) 100%);
+background: linear-gradient(to right, rgba(238,36,85,1) 0%, rgba(254,121,4,1) 100%);
+text-shadow: 0px 1px 0px #ef2851, 1px 2px 0px #fbb7a1;
+}
+
+.similar h2 {
+  background: rgba(255,132,0,1);
+background: -moz-linear-gradient(left, rgba(255,132,0,1) 0%, rgba(250,221,0,1) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,132,0,1)), color-stop(100%, rgba(250,221,0,1)));
+background: -webkit-linear-gradient(left, rgba(255,132,0,1) 0%, rgba(250,221,0,1) 100%);
+background: -o-linear-gradient(left, rgba(255,132,0,1) 0%, rgba(250,221,0,1) 100%);
+background: -ms-linear-gradient(left, rgba(255,132,0,1) 0%, rgba(250,221,0,1) 100%);
+background: linear-gradient(to right, rgba(255,132,0,1) 0%, rgba(250,221,0,1) 100%);
+text-shadow: 0px 1px 0px #fe9200, 1px 2px 0px #ffea8f;
+}
+
+.related h2 .siema-nav,
+.similar h2 .siema-nav {
+  float: right;
+}
+
+.related h2 .siema-nav span,
+.similar h2 .siema-nav span {
+  color: transparent;
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.related h2 .siema-nav span:hover,
+.similar h2 .siema-nav span:hover {
+  background: #000;
+}
+
+.related h2 .siema-nav span.active,
+.similar h2 .siema-nav span.active {
+  background: #ee2455;
+}
+.related .siema .item {
+  display: block;
+  float: left;
+  text-align: center;
+
+padding: 26px 15px 38px;
+
+overflow: hidden;
+
+  text-decoration: none;
+  color: #ee2455;
+  font: 500 12px 'Montserrat Alternates', sans-serif;
+}
+
+.related .siema .item {
+  float: left; width: 33.3333%;
+}
+
+.related .siema .item img {
+  margin-bottom: 15px;
+}
+
+.related .siema .item:hover {
+  background: #fafafa;;
+}
 .catalog-articles h2{
   font-size: 16px;
   margin: 25px 0 45px 20px;
