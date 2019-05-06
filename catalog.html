@@ -484,7 +484,7 @@ font-family: 'IBM Plex Serif', serif;
                   <span data-slide="2"></span> -->
                 </span>
               </h2>
-                <div class="siema">
+                <div class="siema" id="relatedStuff">
                 <div>
                   <a href="" class="item"><img src="images/img-placeholder.jpg" alt="">Текстильные ленты</a>
                     <a href="" class="item"><img src="images/img-placeholder.jpg" alt="">Гарантийные этикетки</a>
@@ -504,16 +504,22 @@ font-family: 'IBM Plex Serif', serif;
               </div>
               <div class="similar fr">
                 <h2>Аналогичные товары
-                  <span class="siema-nav">
-                    <span data-slide="0"></span>
-                    <span class="active" data-slide="1"></span>
+                  <span class="siema-nav" id="similarSiemaNav">
+
                   </span>
                 </h2>
-                <div class="siema">
-                  <a href="" class="item"><img src="images/img-placeholder.jpg" alt="">Текстильные ленты</a>
-                    <a href="" class="item"><img src="images/img-placeholder.jpg" alt="">Гарантийные этикетки</a>
-                      <a href="" class="item"><img src="images/img-placeholder.jpg" alt="">Этикетки для весов</a>
-                        <a href="" class="item"><img src="images/img-placeholder.jpg" alt="">Аппликаторы этикеток</a>
+                <div class="siema" id="similarStuff">
+                  <div>
+                    <a href="" class="item"><img src="images/img-placeholder.jpg" alt="">Текстильные ленты</a>
+                      <a href="" class="item"><img src="images/img-placeholder.jpg" alt="">Гарантийные этикетки</a>
+                        <a href="" class="item"><img src="images/img-placeholder.jpg" alt="">Этикетки для весов</a>
+                  </div>
+                        <div>
+                          <a href="" class="item"><img src="images/img-placeholder.jpg" alt="">Аппликаторы этикеток</a>
+                          <a href="" class="item"><img src="images/img-placeholder.jpg" alt="">Текстильные ленты 2</a>
+                            <a href="" class="item"><img src="images/img-placeholder.jpg" alt="">Гарантийные этикетки 3</a>
+                        </div>
+
                 </div>
 
               </div>
@@ -736,34 +742,66 @@ font-family: 'IBM Plex Serif', serif;
   <script src="js/material-scrolltop.js"></script>
   <script src="js/theme-script.js"></script>
   <script>
-  const mySiema =  new Siema({
-selector: '.siema',
-duration: 200,
-easing: 'ease-out',
-perPage: 1,
-startIndex: 0,
-draggable: true,
-multipleDrag: true,
-threshold: 20,
-loop: false,
-rtl: false
-});
-// Add a function that generates pagination to prototype
-Siema.prototype.addPagination = function() {
-  for (let i = 0; i < this.innerElements.length; i++) {
 
-    const span = $('<span />').attr('data-slide', i).appendTo('#relatedSiemaNav');
-
-
-
-    span.on('click', () => this.goTo(i));
-    //span.addEventListener('click', () => this.goTo(i));
-    //this.selector.appendChild(span);
+  const siemas = document.querySelectorAll('.siema');
+  function notify() {
+    alert( "clicked" );
   }
-}
+  // this is fairly new way of looping through DOM Elements
+  // More about ithere: https://pawelgrzybek.com/loop-through-a-collection-of-dom-elements/
+  // For better compatibility I suggest using for loop
+  for(const siema of siemas) {
+    var id = siema.id;
+    const mySiema =  new Siema({
+                  selector: siema,
+                  duration: 600,
+                   easing: 'cubic-bezier(.17,.67,.68,1.73)',
+                  perPage: 1,
+                  startIndex: 0,
+                  draggable: true,
+                  multipleDrag: true,
+                  threshold: 20,
+                  rtl: false
+              });
+          // Add a function that generates pagination to prototype
+              Siema.prototype.addPagination = function() {
+                //debugger;
+                var siemaInstance = this.selector.id;
 
-// Trigger pagination creator
-mySiema.addPagination();
+                  switch (this.selector.id) {
+                    case "relatedStuff":
+                        for (let i = 0; i < this.innerElements.length; i++) {
+                          const span = $('<span />').attr('data-slide', i).appendTo('#relatedSiemaNav');
+$('#similarSiemaNav').on('click', 'span',notify )
+                          span.on('click', () => {
+                            console.log(i);
+                            return this.goTo(i); });
+                          //span.addEventListener('click', () => this.goTo(i));
+                          //this.selector.appendChild(span);
+                        }
+                      break;
+                    case "similarStuff":
+                        for (let i = 0; i < this.innerElements.length; i++) {
+                          const span = $('<span />').attr('data-slide', i).appendTo('#similarSiemaNav');
+                          span.on('click', function(){
+
+                           this.goTo(i)
+                          });
+                        }
+                      break;
+                    default:
+                      console.log( 'no siema instances' );
+                  }
+
+              }
+
+              // Trigger pagination creator
+              mySiema.addPagination();
+
+  }
+
+
+
   </script>
 </body>
 

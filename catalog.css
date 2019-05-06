@@ -144,7 +144,6 @@ hgroup h1 {
   background: url(images/cat-icons.png) -3px -72px;
 }
 
-
 .additional {
   background: #f3f3f3;
 }
@@ -152,38 +151,38 @@ hgroup h1 {
 .catalog-articles,
 .related,
 .similar {
-    background: #fff;
-    width: 48%;
+  background: #fff;
+  width: 48%;
 }
 
 .related h2,
 .similar h2 {
-margin: 0;
-padding: 20px 36px 20px 32px;
-font-size: 18px;
-color: #fff;
+  margin: 0;
+  padding: 20px 36px 20px 32px;
+  font-size: 18px;
+  color: #fff;
 }
 
 .related h2 {
-  background: rgba(238,36,85,1);
-background: -moz-linear-gradient(left, rgba(238,36,85,1) 0%, rgba(254,121,4,1) 100%);
-background: -webkit-gradient(left top, right top, color-stop(0%, rgba(238,36,85,1)), color-stop(100%, rgba(254,121,4,1)));
-background: -webkit-linear-gradient(left, rgba(238,36,85,1) 0%, rgba(254,121,4,1) 100%);
-background: -o-linear-gradient(left, rgba(238,36,85,1) 0%, rgba(254,121,4,1) 100%);
-background: -ms-linear-gradient(left, rgba(238,36,85,1) 0%, rgba(254,121,4,1) 100%);
-background: linear-gradient(to right, rgba(238,36,85,1) 0%, rgba(254,121,4,1) 100%);
-text-shadow: 0px 1px 0px #ef2851, 1px 2px 0px #fbb7a1;
+  background: rgba(238, 36, 85, 1);
+  background: -moz-linear-gradient(left, rgba(238, 36, 85, 1) 0%, rgba(254, 121, 4, 1) 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(238, 36, 85, 1)), color-stop(100%, rgba(254, 121, 4, 1)));
+  background: -webkit-linear-gradient(left, rgba(238, 36, 85, 1) 0%, rgba(254, 121, 4, 1) 100%);
+  background: -o-linear-gradient(left, rgba(238, 36, 85, 1) 0%, rgba(254, 121, 4, 1) 100%);
+  background: -ms-linear-gradient(left, rgba(238, 36, 85, 1) 0%, rgba(254, 121, 4, 1) 100%);
+  background: linear-gradient(to right, rgba(238, 36, 85, 1) 0%, rgba(254, 121, 4, 1) 100%);
+  text-shadow: 0px 1px 0px #ef2851, 1px 2px 0px #fbb7a1;
 }
 
 .similar h2 {
-  background: rgba(255,132,0,1);
-background: -moz-linear-gradient(left, rgba(255,132,0,1) 0%, rgba(250,221,0,1) 100%);
-background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,132,0,1)), color-stop(100%, rgba(250,221,0,1)));
-background: -webkit-linear-gradient(left, rgba(255,132,0,1) 0%, rgba(250,221,0,1) 100%);
-background: -o-linear-gradient(left, rgba(255,132,0,1) 0%, rgba(250,221,0,1) 100%);
-background: -ms-linear-gradient(left, rgba(255,132,0,1) 0%, rgba(250,221,0,1) 100%);
-background: linear-gradient(to right, rgba(255,132,0,1) 0%, rgba(250,221,0,1) 100%);
-text-shadow: 0px 1px 0px #fe9200, 1px 2px 0px #ffea8f;
+  background: rgba(255, 132, 0, 1);
+  background: -moz-linear-gradient(left, rgba(255, 132, 0, 1) 0%, rgba(250, 221, 0, 1) 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255, 132, 0, 1)), color-stop(100%, rgba(250, 221, 0, 1)));
+  background: -webkit-linear-gradient(left, rgba(255, 132, 0, 1) 0%, rgba(250, 221, 0, 1) 100%);
+  background: -o-linear-gradient(left, rgba(255, 132, 0, 1) 0%, rgba(250, 221, 0, 1) 100%);
+  background: -ms-linear-gradient(left, rgba(255, 132, 0, 1) 0%, rgba(250, 221, 0, 1) 100%);
+  background: linear-gradient(to right, rgba(255, 132, 0, 1) 0%, rgba(250, 221, 0, 1) 100%);
+  text-shadow: 0px 1px 0px #fe9200, 1px 2px 0px #ffea8f;
 }
 
 .related h2 .siema-nav,
@@ -200,6 +199,12 @@ text-shadow: 0px 1px 0px #fe9200, 1px 2px 0px #ffea8f;
   background: #fff;
   border-radius: 6px;
   cursor: pointer;
+  margin: 0 1px;
+}
+
+.related .siema .item,
+.similar .siema .item {
+  display: none;
 }
 
 .related h2 .siema-nav span:hover,
@@ -211,56 +216,51 @@ text-shadow: 0px 1px 0px #fe9200, 1px 2px 0px #ffea8f;
 .similar h2 .siema-nav span.active {
   background: #ee2455;
 }
-.related .siema .item {
+
+.related .siema .item,
+.similar .siema .item {
   display: block;
   float: left;
   text-align: center;
-
-padding: 26px 15px 38px;
-
-overflow: hidden;
-
+  padding: 26px 15px 38px;
+  overflow: hidden;
   text-decoration: none;
   color: #ee2455;
   font: 500 12px 'Montserrat Alternates', sans-serif;
+  width: 33.3333%;
 }
 
-.related .siema .item {
-  float: left; width: 33.3333%;
-}
-
-.related .siema .item img {
+.related .siema .item img,
+.similar .siema .item img {
   margin-bottom: 15px;
 }
 
-.related .siema .item:hover {
-  background: #fafafa;;
+.related .siema .item:hover,
+.similar .siema .item:hover {
+  background: #fafafa;
 }
-.catalog-articles h2{
+
+.catalog-articles h2 {
   font-size: 16px;
   margin: 25px 0 45px 20px;
 }
 
 .catalog-articles h3 {
-
-    font-weight: 700;
-    font-size: 14px;
-    position: relative;
-    z-index: 0;
-    margin: 0 0 13px 0px;
-
+  font-weight: 700;
+  font-size: 14px;
+  position: relative;
+  z-index: 0;
+  margin: 0 0 13px 0px;
 }
 
 .catalog-articles h3::before {
-
-    content: '';
-    display: block;
-    top: -15px;
-    left: 17px;
-    right: 0;
-    bottom: -8px;
-    background: #fcee7f;
-    position: absolute;
-    z-index: -1;
-
+  content: '';
+  display: block;
+  top: -15px;
+  left: 17px;
+  right: 0;
+  bottom: -8px;
+  background: #fcee7f;
+  position: absolute;
+  z-index: -1;
 }
