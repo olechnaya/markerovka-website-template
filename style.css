@@ -1066,11 +1066,12 @@ blockquote {
   padding: 0 20px;
 }
 
-#a_slider {
+#a_slider,
+#saeSiemaSlider {
   position: relative;
 }
 
-#a_slider button {
+#a_slider button, #saeSiemaSlider button {
   background: url(images/articles-arrows.png) no-repeat;
   color: transparent;
   margin: 0;
@@ -1090,7 +1091,8 @@ blockquote {
   transition: all .2s ease-in;
 }
 
-#a_slider .buttons {
+#a_slider .buttons,
+#saeSiemaSlider .buttons {
   position: absolute;
   left: 0;
   right: 0;
@@ -1113,6 +1115,25 @@ blockquote {
 }
 
 #a_slider .next:hover {
+  background-position: 0 -123px;
+}
+
+
+#saeSiemaSlider .prev {
+  background-position: 0 0;
+  left: -50px;
+}
+
+#saeSiemaSlider .next {
+  background-position: 0 -41px;
+  right: -50px;
+}
+
+#saeSiemaSlider .prev:hover {
+  background-position: 0 -82px;
+}
+
+#saeSiemaSlider .next:hover {
   background-position: 0 -123px;
 }
 
@@ -1329,8 +1350,6 @@ blockquote {
   vertical-align: middle;
 }
 
-
-
 .link-arrowed .arrow-icon-circle {
   transition: stroke-dashoffset .3s ease;
   stroke-dasharray: 95;
@@ -1408,26 +1427,21 @@ blockquote {
   position: relative;
   display: inline-block;
   height: 164px;
-
-width: 595px;
-
-clear: both;
-
-float: right;
-
-margin-bottom: 50px;
+  width: 595px;
+  clear: both;
+  float: right;
+  margin-bottom: 50px;
 }
 
 .btn-sticker .text {
   height: 100px;
   width: 475px;
   position: absolute;
-  top:50%;
+  top: 50%;
   left: 67px;
   line-height: 85px;
   border: 3px solid #fff;
   margin-top: -50px;
-
   border-top-right-radius: 100px;
   border-bottom-right-radius: 100px;
   -webkit-border-top-right-radius: 100px;
@@ -1459,22 +1473,20 @@ margin-bottom: 50px;
 .btn-sticker .link {
   position: relative;
   display: inline-block;
-height: 100%;
+  height: 100%;
   padding: 28px 34px 15px 110px;
   box-sizing: border-box;
-width: 100%;
+  width: 100%;
   font-size: 16px;
   font-weight: 700;
-
   color: #fff;
 }
+
 .btn-sticker .link span {
   font-size: 12px;
   display: inline-block;
-
-font-style: italic;
-
-font-weight: 400;
+  font-style: italic;
+  font-weight: 400;
 }
 
 .btn-sticker .link:hover {
@@ -1484,8 +1496,7 @@ font-weight: 400;
 .btn-sticker .link-arrowed .arrow-icon {
   position: absolute;
   right: 29px;
-
-top: 28px;
+  top: 28px;
 }
 
 .btn-sticker .circle {
@@ -1496,9 +1507,8 @@ top: 28px;
   padding: 75px;
   border: 3px solid #fff;
   top: 50%;
-
-margin-top: -82.5px;
-box-shadow: 2px 2px 3px #0003;
+  margin-top: -82.5px;
+  box-shadow: 2px 2px 3px #0003;
 }
 
 .green .text {
@@ -1532,7 +1542,7 @@ box-shadow: 2px 2px 3px #0003;
   background-position: 26px 26px;
 }
 
-.btn-sticker .img.popular-sizes{
+.btn-sticker .img.popular-sizes {
   background-image: url(images/popular-icon.png);
   background-repeat: no-repeat;
   background-position: 28px 16px;
@@ -1558,7 +1568,7 @@ box-shadow: 2px 2px 3px #0003;
   line-height: 27px;
 }
 
-.delivery-img  {
+.delivery-img {
   margin-top: -80px;
   margin-bottom: 40px;
 }
@@ -1574,6 +1584,7 @@ box-shadow: 2px 2px 3px #0003;
 .fr {
   float: right;
 }
+
 .fl {
   float: left;
 }
@@ -4287,11 +4298,11 @@ box-shadow: 2px 2px 3px #0003;
 .about-company p {
   margin: 25px 0;
 }
+
 .about-company li {
-
-    margin-bottom: 10px;
-
+  margin-bottom: 10px;
 }
+
 a.in-text {
   background: rgba(169, 5, 8, 1);
   background: -moz-linear-gradient(left, rgba(169, 5, 8, 1) 0%, rgba(251, 105, 100, 1) 100%);
