@@ -1329,6 +1329,8 @@ blockquote {
   vertical-align: middle;
 }
 
+
+
 .link-arrowed .arrow-icon-circle {
   transition: stroke-dashoffset .3s ease;
   stroke-dasharray: 95;
@@ -1405,17 +1407,47 @@ blockquote {
 .btn-sticker {
   position: relative;
   display: inline-block;
-  height: 245px;
-  width: 595px;
+  height: 164px;
+
+width: 595px;
+
+clear: both;
+
+float: right;
+
+margin-bottom: 50px;
 }
 
 .btn-sticker .text {
   height: 100px;
   width: 475px;
   position: absolute;
-  line-height: 89px;
+  top:50%;
+  left: 67px;
+  line-height: 85px;
   border: 3px solid #fff;
-  padding: 0 34px;
+  margin-top: -50px;
+
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 100px;
+  -webkit-border-top-right-radius: 100px;
+  -webkit-border-bottom-right-radius: 100px;
+  -moz-border-radius-topright: 100px;
+  -moz-border-radius-bottomright: 100px;
+}
+
+.btn-sticker .shadow {
+  position: absolute;
+  width: 470px;
+  height: 82px;
+  box-shadow: 0 2px 12px #515151;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  top: 50%;
+  left: 65px;
+  margin-top: -37px;
+  -webkit-transform: rotate(1.5deg);
   border-top-right-radius: 100px;
   border-bottom-right-radius: 100px;
   -webkit-border-top-right-radius: 100px;
@@ -1425,13 +1457,35 @@ blockquote {
 }
 
 .btn-sticker .link {
+  position: relative;
+  display: inline-block;
+height: 100%;
+  padding: 28px 34px 15px 110px;
+  box-sizing: border-box;
+width: 100%;
   font-size: 16px;
   font-weight: 700;
+
   color: #fff;
+}
+.btn-sticker .link span {
+  font-size: 12px;
+  display: inline-block;
+
+font-style: italic;
+
+font-weight: 400;
 }
 
 .btn-sticker .link:hover {
   text-decoration: none;
+}
+
+.btn-sticker .link-arrowed .arrow-icon {
+  position: absolute;
+  right: 29px;
+
+top: 28px;
 }
 
 .btn-sticker .circle {
@@ -1441,8 +1495,10 @@ blockquote {
   border-radius: 100px;
   padding: 75px;
   border: 3px solid #fff;
-  left: -130px;
-  top: 25px;
+  top: 50%;
+
+margin-top: -82.5px;
+box-shadow: 2px 2px 3px #0003;
 }
 
 .green .text {
@@ -1455,20 +1511,31 @@ blockquote {
   background: linear-gradient(to right, rgba(90, 150, 7, 1) 0%, rgba(124, 192, 29, 1) 100%);
 }
 
-.btn-sticker .year {
+.btn-sticker .img {
   position: absolute;
   width: 100px;
   height: 100px;
   top: 25px;
   left: 25px;
-  font: 50px/112.5px 'heading_pro_ultracompresseXBd';
   background: #fff;
   border-radius: 100px;
   box-sizing: border-box;
   margin: 0;
-  box-shadow: inset 5px 3px 6px rgba(0, 0, 0, 0.4), 0 0 0 10px #fff;
+  box-shadow: inset 5px 3px 6px rgba(0, 0, 0, 0.4), 0 0 0 10px #fff, 5px 6px 4px 11px #0003;
   vertical-align: 100px;
   text-align: center;
+}
+
+.btn-sticker .img.print-ondemand {
+  background-image: url(images/order-icon.png);
+  background-repeat: no-repeat;
+  background-position: 26px 26px;
+}
+
+.btn-sticker .img.popular-sizes{
+  background-image: url(images/popular-icon.png);
+  background-repeat: no-repeat;
+  background-position: 28px 16px;
 }
 
 .smart-choise {
@@ -1489,6 +1556,11 @@ blockquote {
   padding: 40px;
   font-size: 16px;
   line-height: 27px;
+}
+
+.delivery-img  {
+  margin-top: -80px;
+  margin-bottom: 40px;
 }
 
 .p0 {
@@ -4215,7 +4287,11 @@ blockquote {
 .about-company p {
   margin: 25px 0;
 }
+.about-company li {
 
+    margin-bottom: 10px;
+
+}
 a.in-text {
   background: rgba(169, 5, 8, 1);
   background: -moz-linear-gradient(left, rgba(169, 5, 8, 1) 0%, rgba(251, 105, 100, 1) 100%);

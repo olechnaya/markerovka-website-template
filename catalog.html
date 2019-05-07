@@ -744,9 +744,7 @@ font-family: 'IBM Plex Serif', serif;
   <script>
 
   const siemas = document.querySelectorAll('.siema');
-  function notify() {
-    alert( "clicked" );
-  }
+
   // this is fairly new way of looping through DOM Elements
   // More about ithere: https://pawelgrzybek.com/loop-through-a-collection-of-dom-elements/
   // For better compatibility I suggest using for loop
@@ -763,9 +761,10 @@ font-family: 'IBM Plex Serif', serif;
                   threshold: 20,
                   rtl: false
               });
+
           // Add a function that generates pagination to prototype
               Siema.prototype.addPagination = function() {
-                //debugger;
+
                 var siemaInstance = this.selector.id;
 
                   switch (this.selector.id) {
@@ -776,8 +775,6 @@ $('#similarSiemaNav').on('click', 'span',notify )
                           span.on('click', () => {
                             console.log(i);
                             return this.goTo(i); });
-                          //span.addEventListener('click', () => this.goTo(i));
-                          //this.selector.appendChild(span);
                         }
                       break;
                     case "similarStuff":

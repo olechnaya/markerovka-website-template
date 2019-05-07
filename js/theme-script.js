@@ -24,7 +24,7 @@ jQuery(document).ready(function($) {
 			}
 
 
-			const mySiema = new Siema({
+			const a_sliderSiema = new Siema({
 			selector: '#a_slider .seima',
 			duration: 200,
 			easing: 'ease-out',
@@ -38,8 +38,8 @@ jQuery(document).ready(function($) {
 			onInit: () => {},
 			onChange: () => {},
 			});
-			document.querySelector('.prev').addEventListener('click', () => mySiema.prev());
-			document.querySelector('.next').addEventListener('click', () => mySiema.next());
+			document.querySelector('.prev').addEventListener('click', () => a_sliderSiema.prev());
+			document.querySelector('.next').addEventListener('click', () => a_sliderSiema.next());
 			// Add a function that generates pagination to prototype
 			Siema.prototype.addPagination = function() {
 			  for (let i = 0; i < this.innerElements.length; i++) {
@@ -51,7 +51,7 @@ jQuery(document).ready(function($) {
 			}
 
 			// Trigger pagination creator
-			mySiema.addPagination();
+			a_sliderSiema.addPagination();
 
 			$('body').materialScrollTop({
           revealElement: '#header',
