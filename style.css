@@ -1137,6 +1137,38 @@ blockquote {
   background-position: 0 -123px;
 }
 
+#saeSiemaSlider .application {
+  position: relative;
+}
+
+#saeSiemaSlider img {
+  width: 100%;
+}
+#saeSiemaSlider .application p {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 83px;
+  overflow: hidden;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 15px;
+  margin: 0;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+#saeSiemaSlider .blurme {
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  bottom: 0;
+  background-position: 0 100%;
+}
+
+.blurme {
+-webkikt-filter: url('#myblurfilter');
+filter: url('#myblurfilter'); }
+
 .latest {
   background: #f3f3f3;
   padding-top: 28px;
