@@ -148,11 +148,18 @@ hgroup h1 {
   background: #f3f3f3;
 }
 
-.catalog-articles,
 .related,
 .similar {
   background: #fff;
   width: 48%;
+}
+
+.catalog-articles {
+  background: #fff;
+  margin-top: 55px;
+  margin-bottom: 45px;
+  padding-bottom: 30px;
+
 }
 
 .related h2,
@@ -245,15 +252,17 @@ hgroup h1 {
   margin: 25px 0 45px 20px;
 }
 
-.catalog-articles h3 {
+.catalog-articles a {
+  display: block;
   font-weight: 700;
   font-size: 14px;
   position: relative;
   z-index: 0;
   margin: 0 0 13px 0px;
+  color: #2e2e2e;
 }
 
-.catalog-articles h3::before {
+.catalog-articles a::before {
   content: '';
   display: block;
   top: -15px;
@@ -263,4 +272,19 @@ hgroup h1 {
   background: #fcee7f;
   position: absolute;
   z-index: -1;
+}
+
+.what-else {
+  background: #f3f3f3;
+  font-size: 16px;
+  line-height: 24px;
+  padding-bottom: 70px;
+}
+
+.preview {
+  display: none;
+}
+
+.pl35 {
+  padding-left: 35px
 }
