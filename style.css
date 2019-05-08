@@ -26,7 +26,7 @@ h2 {
   font-size: 26px;
   text-shadow: 0px 1px 0px #fff, 1px 2px 0px #b7b7b7;
   text-transform: uppercase;
-  margin-top: 35px;
+  margin-top: 45px;
   font-family: 'IBM Plex Serif', serif;
   font-weight: 500;
 }
@@ -1149,7 +1149,7 @@ blockquote {
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 83px;
+  height: 70px;
   overflow: hidden;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -1157,26 +1157,6 @@ blockquote {
   margin: 0;
   background: rgba(255, 255, 255, 0.8);
 }
-
-#saeSiemaSlider .blurme {
-  position: absolute;
-
-  width: 100%;
-
-  height: 90px;
-
-  bottom: -10px;
-
-  background-position: 0 100%;
-
-  left: 12px;
-
-  right: -12px;
-}
-
-.blurme {
--webkikt-filter: url('#myblurfilter');
-filter: url('#myblurfilter'); }
 
 .latest {
   background: #f3f3f3;
@@ -1614,6 +1594,82 @@ filter: url('#myblurfilter'); }
   margin-bottom: 40px;
 }
 
+.ribbons {
+  font-size: 16px;
+  margin: 60px 0;
+}
+
+.ribbons dd:before {
+  content: "" !important;
+}
+
+.ribbons dt {
+  color: #000;
+
+  margin: 25px 0 40px;
+
+  position: relative;
+}
+
+.ribbons dt::after {
+
+    content: '';
+    position: absolute;
+    width: 80%;
+
+height: 1px;
+
+background-color: #8f8e8e;
+
+left: 50%;
+
+bottom: -30px;
+
+margin-left: -40%;
+
+}
+
+.ribbons dd {
+  color: #8f8e8e;
+  margin-top: 60px;
+
+position: relative;
+}
+
+
+.ribbons dd::after {
+  content: '';
+
+position: absolute;
+
+width: 140px;
+
+background: #e1e1e1 url(images/ribbons-ico.png) no-repeat;
+
+left: 50%;
+
+top: -48px;
+
+margin-left: -70px;
+  }
+
+  .ribbons  .wax dd::after {
+    background-position: 60% -33px;
+    height: 30px;
+  }
+
+  .ribbons  .wax-resine dd::after {
+    background-position: 50% 0;
+      height: 30px;
+  }
+
+
+  .ribbons  .resine dd::after {
+    background-position: 50% -65px;
+      height: 30px;
+  }
+
+
 .p0 {
   padding: 0 !important;
 }
@@ -1636,6 +1692,10 @@ filter: url('#myblurfilter'); }
 
 .ml-20 {
   margin-left: 20px;
+}
+
+.ta  {
+  text-align: center;
 }
 
 .article .img-holder {
