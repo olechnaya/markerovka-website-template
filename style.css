@@ -1594,7 +1594,7 @@ filter: url('#myblurfilter'); }
   background-image: url(images/advices-img-1.png);
   height: 243px;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 644px center;
   position: relative;
 }
 
@@ -2394,6 +2394,8 @@ filter: url('#myblurfilter'); }
   left: 50%;
   top: -40px;
   margin-left: -82px;
+  -webkit-box-sizing: 1px 1px 4px #00000080, 0 0 0px 6px #6ec7f6;
+  box-sizing: 2px 2px 3px #0003, 0 0 0px 6px #6ec7f6;
 }
 
 .blog-ct .inner .year {
@@ -2407,7 +2409,7 @@ filter: url('#myblurfilter'); }
   border-radius: 100px;
   box-sizing: border-box;
   margin: 0;
-  box-shadow: inset 5px 3px 6px rgba(0, 0, 0, 0.4), 0 0 0 10px #fff;
+  box-shadow: inset 5px 3px 6px rgba(0, 0, 0, 0.4), 0 0 0 10px #fff,5px 6px 4px 11px #0003;
   vertical-align: 100px;
   text-align: center;
 }
