@@ -30,8 +30,7 @@
 
 
   <link href="css/hamburgers.css" rel="stylesheet">
-  <link href="css/jquery.fancybox.min.css" rel="stylesheet">
-
+  <link rel="stylesheet" href="css/tooltipster.bundle.min.css" />
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
   <!--[if lt IE 9]>
@@ -370,24 +369,40 @@ font-family: 'IBM Plex Serif', serif;
 
             <div class="min-marg">
               <div class="row">
-                <div class="ct-item" id="cti_1">
-                  <img src="images/cat-img-md.jpg" alt="" class="img-md">
-                  <div class="rating magenta">
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star-o" aria-hidden="true"></i>
-                    <i class="fa fa-star-o" aria-hidden="true"></i>
-                    <i class="fa fa-star-o" aria-hidden="true"></i>
-                    <i class="fa fa-star-o" aria-hidden="true"></i>
-                    <span>1</span>
+                <div class="ct-item">
+                  <div class="tooltip" id="cti_1" data-tooltip-content="#preview_cti_1">
+                    <img src="images/cat-img-md.jpg" alt="" class="img-md">
+                    <div class="overlay">Быстрый просмотр</div>
+                    <div class="rating magenta">
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star-o" aria-hidden="true"></i>
+                      <i class="fa fa-star-o" aria-hidden="true"></i>
+                      <i class="fa fa-star-o" aria-hidden="true"></i>
+                      <i class="fa fa-star-o" aria-hidden="true"></i>
+                      <span>1</span>
+                    </div>
+                    <a href="" class="ct-item-title">Этикетка<br>21 мм на 12 мм</a>
                   </div>
-                  <a href="" class="ct-item-title">Этикетка<br>21 мм на 12 мм</a>
                   <a href="" class="price-request">Запросить цену</a>
                   <a href="" class="order" title="Заказать"><span></span></a>
                 </div>
-                <div style="display: none;" id="preview_cti_1">
-	<h2>Hello!</h2>
-	<p>You are awesome!</p>
-</div>
+
+                <div class="tooltip_templates" style="display: none;">
+                  <div id="preview_cti_1">
+                      <img src="images/cat-img-md.jpg" />
+                      <strong>Этикетка 21 мм на 12 мм</strong>
+                      <table>
+                        <tr>
+                          <td>11</td>
+                          <td>12</td>
+                        </tr>
+                        <tr>
+                          <td>21</td>
+                          <td>22</td>
+                        </tr>
+                      </table>
+                  </div>
+              </div>
                 <!-- <div class="preview" id="cti_1_preview">Wow!</div> -->
                 <div class="ct-item" id="cti_2">
                   <img src="images/cat-img-md.jpg" alt="" class="img-md">
@@ -746,7 +761,7 @@ font-family: 'IBM Plex Serif', serif;
   <script src="js/owl.carousel.min.js"></script>
   <script src="js/jquery.raty.js"></script>
   <script src="js/ui.js"></script>
-  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/tooltipster.bundle.min.js"></script>
   <script src="js/siema.min.js"></script>
   <script src="js/material-scrolltop.js"></script>
   <script src="js/theme-script.js"></script>

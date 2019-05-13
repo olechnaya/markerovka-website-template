@@ -54,36 +54,18 @@ for (const siema of siemas) {
 
 /////////////////////////////////////////////////////
 $('div[id^="cti_"]').each(function () {
-
-  $(this).click(function (e) {
-
   var elementIndex = this.id,
             target = '#preview_' + elementIndex;
-  $.fancybox.open({
-    src  : target,
-    type : 'inline',
-    opts : {
-      afterShow : function( instance, current ) {
-        console.info( target );
-      }
-    }
-  });
-  // $.fancybox.open($('#' + elementIndex + 'preview'), {
-  //   touch: false
-  // });
-});
+    ;
+
 })
 
-// $('div[id^="cti_"]').on('click', function() {
-//   var elementIndex = this.id,
-//             target = '#preview_' + elementIndex + '';
-//   $.fancybox.open({
-//     src  : target,
-//     type : 'inline',
-//     opts : {
-//       afterShow : function( instance, current ) {
-//         console.info( target );
-//       }
-//     }
-//   });
-// });
+
+$('.tooltip').tooltipster({
+    contentCloning: true,
+    functionPosition: function(instance, helper, position){
+      position.coord.top += 142;
+     position.coord.left += 10;
+        return position;
+    }
+});

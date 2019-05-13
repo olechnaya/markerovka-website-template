@@ -285,6 +285,19 @@ hgroup h1 {
   display: none;
 }
 
+.overlay {
+  display: none;
+  position: absolute;
+  width: 100%;
+  left:0;
+  top: 0;
+  text-align: center;
+  color: #fff;
+  font: 700 14px/20px 'Montserrat Alternates', sans-serif;
+background: rgba(0, 0, 0, 0.3);
+padding-left: 15px;
+padding-right: 15px;
+}
 .pl35 {
   padding-left: 35px
 }
