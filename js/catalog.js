@@ -56,16 +56,34 @@ for (const siema of siemas) {
 $('div[id^="cti_"]').each(function () {
   var elementIndex = this.id,
             target = '#preview_' + elementIndex;
-    ;
-
 })
 
 
-$('.tooltip').tooltipster({
+$('.product').tooltipster({
     contentCloning: true,
+    arrow: false,
+    interactive: true,
+    trigger: 'custom',
+      triggerOpen: {
+       mouseenter: true
+   },
+    triggerClose: {
+        click: true,
+        mouseleave: false
+    },
+    functionBefore: function(instance, helper) {
+  debugger;
+      $('.close').on('click', function(){
+        debugger;
+      })
+    },
     functionPosition: function(instance, helper, position){
-      position.coord.top += 142;
-     position.coord.left += 10;
-        return position;
+     //position.coord.top += 100;
+     //position.coord.left += 10;
+      //  return position;
     }
 });
+
+// $(document).on("click", ".close", function() {
+//     debugger;
+// });

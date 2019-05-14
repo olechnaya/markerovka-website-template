@@ -92,6 +92,20 @@ hgroup h1 {
   font-size: 12px;
 }
 
+.rating.magenta .order-num {
+  font-style: italic;
+  display: inline-block;
+  margin-left: 15px;
+}
+
+.product-short-dsc .rating {
+  padding-top: 7px;
+}
+
+.product-short-dsc strong {
+  font-size: 16px;
+  margin: 10px 0 20px;
+}
 .ct-item-title {
   font: 700 14px 'Montserrat Alternates', sans-serif;
   text-decoration: none;
@@ -104,15 +118,15 @@ hgroup h1 {
   color: #ee2455;
 }
 
-.price-request,
-.price-request:hover,
-.order:hover {
+.price_request,
+.price_request:hover,
+.order_request:hover {
   text-decoration: none;
   background: #e1e0e0;
   color: #2e2e2e;
 }
 
-.price-request {
+.price_request {
   position: absolute;
   right: 27px;
   bottom: -20px;
@@ -124,7 +138,7 @@ hgroup h1 {
   padding: 0 18px;
 }
 
-.order {
+.order_request {
   position: absolute;
   bottom: -20px;
   right: -8px;
@@ -137,7 +151,7 @@ hgroup h1 {
   line-height: 36px;
 }
 
-.order span {
+.order_request span {
   display: inline-block;
   width: 16px;
   height: 16px;
@@ -281,23 +295,119 @@ hgroup h1 {
   padding-bottom: 70px;
 }
 
-.preview {
-  display: none;
+.product-short-dsc strong {
+
 }
 
-.overlay {
-  display: none;
-  position: absolute;
-  width: 100%;
-  left:0;
-  top: 0;
-  text-align: center;
-  color: #fff;
-  font: 700 14px/20px 'Montserrat Alternates', sans-serif;
-background: rgba(0, 0, 0, 0.3);
-padding-left: 15px;
-padding-right: 15px;
+.product-short-dsc img.large {
+  padding: 10px;
+  margin-bottom: 15px;
+  background: url(images/img-shadow.png) no-repeat 5px 6px;
 }
+
+.product-short-dsc img.miniature {
+  border: 1px solid #ebebeb;
+  margin-right: 15px;
+}
+.product-short-dsc img.miniature:last-child {
+  margin-right: 0;
+}
+.product-short-dsc img.miniature.active {
+  border: 1px solid #a1a1a1;
+}
+
+.short-description .field-name {
+  font-weight: 700;
+      padding-left: 10px;
+}
+
+.short-description .field-value {
+
+}
+
+.short-description .icon span {
+  display: block;
+  margin: 5px auto;
+}
+
+.product-short-dsc .price_request,
+.product-short-dsc .order_request {
+  position: relative;
+display: inline-block;
+}
+
+.icon .color  {
+  width: 18px;
+      height: 18px;
+      background-image: url(images/cat-icons.png);
+      background-position: -3px -3px;
+}
+
+.icon .material  {
+  width: 16px;
+height: 16px;
+background-image: url(images/cat-icons.png);
+background-position: -3px -50px;
+}
+
+.icon .surface  {
+  width: 20px;
+height: 18px;
+background-image: url(images/cat-icons.png);
+background-position: -4px -116px;
+}
+
+.icon .w-l  {
+  width: 19px;
+    height: 19px;
+    background-image: url(images/cat-icons.png);
+    background-position: -3px -141px;
+}
+
+.icon .diam  {
+  width: 19px;
+  height: 19px;
+  background-image: url(images/cat-icons.png);  background-position: -3px -25px;
+}
+
+.icon .print-type  {
+  width: 19px;
+  height: 17px;
+  background-image: url(images/cat-icons.png);  background-position: -3px -94px;
+}
+
+.product-short-dsc {
+  position: relative;
+}
+
+
+.product-short-dsc .close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 32px;
+  height: 32px;
+  opacity: 0.3;
+  z-index: 1;
+}
+.product-short-dsc .close:hover {
+  opacity: 1;
+}
+.product-short-dsc .close:before, .product-short-dsc .close:after {
+  position: absolute;
+  left: 15px;
+  content: ' ';
+  height: 33px;
+  width: 2px;
+  background-color: #ee2455;
+}
+.product-short-dsc .close:before {
+  transform: rotate(45deg);
+}
+.product-short-dsc .close:after {
+  transform: rotate(-45deg);
+}
+
 .pl35 {
   padding-left: 35px
 }
