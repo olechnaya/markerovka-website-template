@@ -62,19 +62,10 @@ $('div[id^="cti_"]').each(function () {
 $('.product').tooltipster({
     contentCloning: true,
     arrow: false,
-    interactive: true,
-    trigger: 'custom',
-      triggerOpen: {
-       mouseenter: true
-   },
-    triggerClose: {
-        click: true,
-        mouseleave: false
-    },
+    interactive: true,   
     functionBefore: function(instance, helper) {
-  debugger;
-      $('.close').on('click', function(){
-        debugger;
+      $(document).on('click', '.close', function(instance){
+        $('.product').tooltipster('close')
       })
     },
     functionPosition: function(instance, helper, position){
