@@ -62,7 +62,7 @@ $('div[id^="cti_"]').each(function () {
 $('.product').tooltipster({
     contentCloning: true,
     arrow: false,
-    interactive: true,   
+    interactive: true,
     functionBefore: function(instance, helper) {
       $(document).on('click', '.close', function(instance){
         $('.product').tooltipster('close')
@@ -74,6 +74,15 @@ $('.product').tooltipster({
       //  return position;
     }
 });
+
+$(document).on('click', '.miniature', function(e) {
+    e.preventDefault();
+    var imgSource = $(this).attr('href'),
+        $targetImg = $(this).siblings( ".large" );
+
+    $targetImg.attr('src', imgSource)
+});
+
 
 // $(document).on("click", ".close", function() {
 //     debugger;

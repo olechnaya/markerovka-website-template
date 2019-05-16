@@ -302,19 +302,21 @@ hgroup h1 {
 }
 
 .product-short-dsc img.large {
+  width: 198px;
   padding: 10px;
   margin-bottom: 15px;
   background: url(images/img-shadow.png) no-repeat 5px 6px;
 }
 
-.product-short-dsc img.miniature {
+.product-short-dsc .miniature {
+  display: inline-block;
   border: 1px solid #ebebeb;
   margin-right: 15px;
 }
-.product-short-dsc img.miniature:last-child {
+.product-short-dsc .miniature:last-child {
   margin-right: 0;
 }
-.product-short-dsc img.miniature.active {
+.product-short-dsc .miniature.active {
   border: 1px solid #a1a1a1;
 }
 
