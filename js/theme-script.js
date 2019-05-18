@@ -100,7 +100,13 @@ jQuery(document).ready(function($) {
 							             $('.slidedown-city-office-selection').removeClass('active')))
 			         });
 
-
+	 // $('.call-back').tooltipster({
+	 //     interactive: true,
+		// 	  trigger: 'click',
+	 //     functionBefore: function(instance, helper) {
+	 //
+	 //     }
+	 // });
 
 			$(".owl-carousel").owlCarousel({
 				loop:true,

@@ -62,7 +62,7 @@
           </div>
         </div>
         <div class="head">
-          <img src="images/logo.svg" alt="">
+          <img src="images/logo-small.png" alt="">
           <span>Москва</span>
           <a href="#" class="js-close-popup">
             <svg viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -188,9 +188,14 @@
                 <ul class="nav navbar-nav secondary">
                   <li class="bh">Работаем <br> с 9:30 до 18:30 <br>с Пн по Пт</li>
                   <li class="delivery">Доставка в любую точку России</li>
-                  <li class=""><button class="btn btn-magenta btn-image call-back">Обратный звонок</button></li>
+                  <li class="">
+                    <button class="btn btn-magenta btn-image call-back" data-tooltip-content="#call-back-form">Обратный звонок</button></li>
                 </ul>
-
+                <div class="hide">
+                  <div id="call-back-form" style="position: relative">
+                    Form
+                  </div>
+                </div>
                 <!--  <ul class="nav navbar-nav navbar-right">
 
                                            <li class="menu-search-form">
@@ -1089,6 +1094,7 @@
   <script src="js/owl.carousel.min.js"></script>
   <script src="js/jquery.raty.js"></script>
   <script src="js/ui.js"></script>
+  <script src="js/tooltipster.bundle.min.js"></script>
   <script src="js/jquery.prettyPhoto.js"></script>
   <script src="js/jquery.selectbox-0.2.js"></script>
   <script src="js/siema.min.js"></script>

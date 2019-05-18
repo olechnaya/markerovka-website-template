@@ -4518,6 +4518,10 @@ a.in-text {
   -webkit-transition: all .3s ease;
 }
 
+.btn-magenta:active {
+  background: rgba(0, 0, 0, 0.07);
+}
+
 .btn:hover {
   --x: 100%;
 }
