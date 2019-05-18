@@ -44,155 +44,6 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-
-  <style media="screen">
-    .slidedown-city {
-      position: absolute;
-      left: 0;
-      top: 0;
-      z-index: 10;
-      width: 100%;
-      -webkit-transform: translate3d(0, -100%, 0);
-      transform: translate3d(0, -100%, 0);
-      background: #fff;
-      transition: box-shadow .25s ease-in-out, -webkit-transform .5s cubic-bezier(.215, .61, .355, 1);
-      transition: transform .5s cubic-bezier(.215, .61, .355, 1), box-shadow .25s ease-in-out;
-      transition: transform .5s cubic-bezier(.215, .61, .355, 1), box-shadow .25s ease-in-out, -webkit-transform .5s cubic-bezier(.215, .61, .355, 1);
-    }
-    .slidedown-city.active {
-      -webkit-transform: translate3d(0, 0, 0);
-      transform: translate3d(0, 0, 0);
-    }
-
-    .slidedown-city .container {
-      padding-top: 21px;
-      position: relative padding-bottom: 50px;
-    }
-    .slidedown-city-office-selection {
-      position: absolute;
-      left: 245px;
-      top: 100%;
-      margin-top: 70px;
-      width: 240px;
-      height: 97px;
-      transition: padding .25s ease-in-out, height .25s ease-in-out, -webkit-transform .25s ease-in-out;
-      transition: transform .25s ease-in-out, padding .25s ease-in-out, height .25s ease-in-out;
-      transition: transform .25s ease-in-out, padding .25s ease-in-out, height .25s ease-in-out, -webkit-transform .25s ease-in-out;
-  -webkit-box-sizing: content-box;
-  box-sizing: content-box;
-    }
-.slidedown-city-office-selection.active {
-  background: #fff;
-    padding: 20px 10px;
-    margin: 0;
-}
-    .slidedown-city-office-selection img {
-      position: absolute;
-      top: 4px;
-      right: 15px;
-      margin: auto;
-      transition: all .25s ease-in-out;
-      -webkit-transform: translate3d(0, 0, 0);
-      transform: translate3d(0, 0, 0);
-    }
-
-    .slidedown-city-office-selection.active img {
-      top: 22px;
-      -webkit-transform: rotate(180deg) translate3d(0,0,0);
-      transform: rotate(180deg) translate3d(0,0,0);
-    }
-    .location {
-      padding-left: 50px;
-      background: url(images/top-icon-point-marker.svg) 0 50% no-repeat;
-    }
-
-    .location .city span {
-      display: block;
-      color: #777;
-      font-size: 12px;
-    }
-.slidedown-city-office-selection .head {
-  position: relative;
-    zoom: 1;
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
-    min-height: 1px;
-}
-.slidedown-city .container {
-  position: relative;
-    padding-bottom: 50px;
-}
-
-.slidedown-city .worktime {
-  padding: 20px 0 25px;
-  border-bottom: 1px solid #e9e9e9;
-  border-top: 1px solid #e9e9e9;
-  margin: 20px 0 25px;
-}
-.slidedown-city .worktime .item {
-  display: inline-block;
-      vertical-align: top;
-      font-size: 16px;
-      font-weight: 500;
-      margin: 0 45px 0 0;
-}
-
-.slidedown-city .worktime .item .title {
-  position: relative;
-  width: 100%;
-  white-space: nowrap;
-}
-.slidedown-city .worktime .item .time {
-font-size: 12px;
-}
-body.overlay {
-    overflow: hidden;
-}
-body.overlay:after {
-    opacity: .9;
-    height: 100%;
-    transition: opacity .25s ease-in-out,height 0s,z-index 0s;
-}
-body:after {
-    content: '';
-    position: absolute;
-    z-index: 9;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 0;
-    opacity: 0;
-    background-color: #eaeef1;
-    transition: opacity .25s ease-in-out,height 0s .25s,z-index 0s .25s;
-}
-.slidedown-city .head {
-    position: relative;
-    zoom: 1;
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
-    min-height: 1px;
-}
-.slidedown-city .head img {
-  width: 136px;
-  height: 50px;
-  margin-right: 20px;
-}
-.slidedown-city .head span {
-  font-size: 18px;
-    color: #8f9599;
-    font-weight: 500;
-}
-.js-close-popup {
-  position: absolute;
-top: 15px;
-right: 0;
-}
-
-.js-close-popup svg {
-    width: 18px;
-    height: 18px;
-}
-  </style>
 </head>
 
 <body>
@@ -213,8 +64,10 @@ right: 0;
         <div class="head">
           <img src="images/logo.svg" alt="">
           <span>Москва</span>
-          <a href="/" class="js-close-popup">
-            <svg viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> <path d="M 16.6155 -0.3558 L 9 7.41 L 1.3845 -0.3558 L 0 1.056 L 7.615 8.82 L 0 16.5882 L 1.3845 18 L 9 10.235 L 16.6155 18 L 18 16.5882 L 10.385 8.82 L 18 1.056 L 16.6155 -0.3558 Z"></path> </svg>
+          <a href="#" class="js-close-popup">
+            <svg viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <path d="M 16.6155 -0.3558 L 9 7.41 L 1.3845 -0.3558 L 0 1.056 L 7.615 8.82 L 0 16.5882 L 1.3845 18 L 9 10.235 L 16.6155 18 L 18 16.5882 L 10.385 8.82 L 18 1.056 L 16.6155 -0.3558 Z"></path>
+            </svg>
           </a>
         </div>
         <ul class="worktime">
@@ -229,11 +82,64 @@ right: 0;
           </li>
           <li class="item">
             <p class="title">Офис Электролитный пр-д, 2</p>
-            <p class="time"></p>
+            <p class="time">
+              Будни: с 9.30 до 18.30 <br>
+              Без перерыва на обед<br>
+              Суббота - дежурный менеджер <br>
+              Воскресенье - выходной
+            </p>
           </li>
         </ul>
-        <p>Paragraph</p>
-        <div class="office-selection">Maps and list</div>
+        <p>Наши офисы:</p>
+        <div class="cities clearfix">
+          <div class="msk">
+            <spam class="name">Москва</spam>
+            <div class="block">
+              <img src="images/map_moscow.svg" alt="Карта Москвы">
+              <div class="radiodiv moscow1">
+                <input type="radio" name="office" id="moscow1" value="Офис 3-й Нижнелихоборский пр-д, 1А с6." checked="">
+                <label for="moscow1"><a href="/contacts.html">3-й Нижнелихоборский пр-д, <br> 1А с.6</a></label>
+                <svg class="city-check" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><use xlink:href="#red_check"></use></svg>
+              </div>
+              <div class="radiodiv moscow2">
+                <input type="radio" name="office" id="moscow2" value="Офис Электролитный пр-д, 2" checked="">
+                <label for="moscow2"><a href="/contacts.html">Электролитный пр-д, 2</a></label>
+                </div>
+            </div>
+          </div>
+          <div class="spb">
+            <spam class="name">Санкт-петербург</spam>
+            <div class="block">
+              <img src="images/map_spb.svg" alt="Карта Питера">
+              <div class="radiodiv spb1">
+                <input type="radio" name="office" id="spb1" value=" ул. Печатника Григорьева д.8" checked="">
+                <label for="spb1"><a href="/contacts.html"> ул. Печатника <br>Григорьева д.8</a></label>
+                <svg class="city-check" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><use xlink:href="#red_check"></use></svg>
+              </div>
+            </div>
+          </div>
+          <div class="other">
+            <div class="name">Другие города:</div>
+            <div class="block">
+              <div class="radiodiv">
+                    <input type="radio" name="office" id="belgorod" value="Белгород" checked="">
+                    <label for="belgorod"> Белгород <span> (4722) 232-783</span></label>
+                    <input type="radio" name="office" id="ekat" value="Екатеринбург" checked="">
+                    <label for="ekat">Екатеринбург   <span>(343) 227-9544</span></label>
+                    <input type="radio" name="office" id="kemerovo" value="Кемерово" checked="">
+                    <label for="kemerovo">Кемерово<span>(384) 278-0561</span> </label>
+                    <input type="radio" name="office" id="omsk" value="Омск" checked="">
+                    <label for="omsk"> Омск  <span>(381) 279-0350</span> </label>
+                    <input type="radio" name="office" id="nn" value="Нижний Новгород" checked="">
+                    <label for="nn"> Нижний Новгород <span>(831) 422-2537</span></label>
+                    <input type="radio" name="office" id="simf" value="Симферополь" checked="">
+                    <label for="simf">Симферополь <span> (978) 227-8078</span></label>
+
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <!-- wrapper -->

@@ -69,15 +69,37 @@ jQuery(document).ready(function($) {
           }
       });
 
-			$(".slidedown-city-office-selection").click(function() {
-            $(this).hasClass("active") ? ($(this).removeClass("active"),
-            															$(".slidedown-city").removeClass("active"),
-															            $("body").removeClass("overlay")) : ($(this).addClass("active"),
-															            $(".slidedown-city").addClass("active"),
+			$('.slidedown-city-office-selection').click(function() {
+            $(this).hasClass('active') ? ($(this).removeClass('active'),
+            															$(".slidedown-city").removeClass('active'),
+															            $('body').removeClass('overlay')) : ($(this).addClass('active'),
+															            $(".slidedown-city").addClass('active'),
 															            setTimeout(function() {
-															                $("body").addClass("overlay")
+															                $('body').addClass('overlay')
 															            }, 100))
         })
+
+			$('.cities .other label').hover(
+					function(){ $(this).addClass('hovered') },
+	       function(){ $(this).removeClass('hovered') }
+			);
+
+			$('body').add('.js-close-popup').on('click',function(e) {
+            $('body').hasClass('overlay')
+            && (
+              $('body').removeClass('overlay'),
+              $('.slidedown-city.active').removeClass('active'),
+              $(".slidedown-city-office-selection").removeClass('active'))
+        });
+				$(document).keyup(function(e) {
+			             27 === e.keyCode
+									 		&& (
+												$('body').hasClass('overlay')
+													&& ($('body').removeClass('overlay'),
+							             $('.slidedown-city.active').removeClass('active'),
+							             $('.slidedown-city-office-selection').removeClass('active')))
+			         });
+
 
 
 			$(".owl-carousel").owlCarousel({
@@ -111,120 +133,6 @@ jQuery(document).ready(function($) {
             pagination: false,
             navigation: false,
         });
-    });
-
-    /*------------------------------- Price range slider ---------------------------------------*/
-
-    $(function(){
-        $(function() {
-            $( "#range-slider" ).slider({
-                range: true,
-                min: 0,
-                max: 500,
-                values: [ 0, 85, ],
-                slide: function( event, ui ) {
-                    $( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
-                }
-            });
-            $( "#amount" ).val( "$" + $( "#range-slider" ).slider( "values", 0 ) +
-		  " - $" + $( "#range-slider" ).slider( "values", 1 ) );
-        });
-    });
-
-      /*------------------------------- search form ---------------------------------------*/
-    /*$(function() {
-        $(".dropdown").hover(
-        function() { $('.dropdown-menu', this).stop().fadeIn("fast");
-        },
-        function() { $('.dropdown-menu', this).stop().fadeOut("fast");
-    });
-    });*/
-    $(function() {
-		$("#open-srch-form").on('click', function() {
-		  $('.srch-form').toggl$('fast', function() {
-		  });
-		});
-	});
-
-    /*------------------------------- category open ---------------------------------------*/
-    $(function() {
-		$("#to-open-cat").on('click', function() {
-		  $('.this-cat').toggl$('fast', function() {
-		  });
-		});
-	});
-
-    /*------------------------------- Product preview ---------------------------------------*/
-
-
-    $(function(){
-        var sync1 = $("#detail-3");
-          var sync2 = $("#detail-control-3");
-
-          // sync1.owlCarousel({
-          //   singleItem : true,
-          //   slideSpeed : 1000,
-          //   navigation: false,
-          //   pagination:false,
-          //   afterAction : syncPosition,
-          //   responsiveRefreshRate : 200,
-          // });
-					//
-          // sync2.owlCarousel({
-          //   items : 3,
-          //   pagination:false,
-          //   navigation:false,
-          //   responsive:false,
-          //   responsiveRefreshRate : 100,
-          //   afterInit : function(el){
-          //     el.find(".owl-item").eq(0).addClass("synced");
-          //   }
-          // });
-
-          function syncPosition(el){
-            var current = this.currentItem;
-            $("#detail-control-3")
-              .find(".owl-item")
-              .removeClass("synced")
-              .eq(current)
-              .addClass("synced")
-            if($("#detail-control-3").data("owlCarousel") !== undefined){
-              center(current)
-            }
-          }
-
-          $("#detail-control-3").on("click", ".owl-item", function(e){
-            e.preventDefault();
-            var number = $(this).data("owlItem");
-            sync1.trigger("owl.goTo",number);
-          });
-
-          function center(number){
-            var sync2visible = sync2.data("owlCarousel").owl.visibleItems;
-            var num = number;
-            var found = false;
-            for(var i in sync2visible){
-              if(num === sync2visible[i]){
-                var found = true;
-              }
-            }
-
-            if(found===false){
-              if(num>sync2visible[sync2visible.length-1]){
-                sync2.trigger("owl.goTo", num - sync2visible.length+2)
-              }else{
-                if(num - 1 === -1){
-                  num = 0;
-                }
-                sync2.trigger("owl.goTo", num);
-              }
-            } else if(num === sync2visible[sync2visible.length-1]){
-              sync2.trigger("owl.goTo", sync2visible[1])
-            } else if(num === sync2visible[0]){
-              sync2.trigger("owl.goTo", num-1)
-            }
-
-          }
     });
 
 });
