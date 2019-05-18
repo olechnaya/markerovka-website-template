@@ -1,9 +1,6 @@
-/************************************************
-Template Name: Believe Boostrap Template
-Author: BoostrapMart
-Develop By: BoostrapMart
-Developer URL: http://info@bootstrapmart.com
-************************************************/
+@import 'css/slidedown-city-selection.css';
+
+
 @font-face {
   font-family: 'heading_pro_ultracompresseXBd';
   src: url('fonts/heading_pro_ultracompressed_extrabold-digits.woff2') format('woff2'),
@@ -407,22 +404,12 @@ blockquote {
   width: 16.66666667%;
 }
 
-.location {
-  background-image: url(images/top-icon-point-marker.svg);
-  padding-left: 40px;
-  margin-left: 30px;
-  width: 25% !important;
-}
-
-.location a {
-  margin-right: 25px;
-}
-
 .secondary a:hover {
   color: #777c80;
 }
 
 .bh {
+      margin-left: 320px;
   background-image: url(images/top-icon-clock.svg);
   padding-left: 70px;
 }
