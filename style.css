@@ -1,4 +1,5 @@
 @import 'css/slidedown-city-selection.css';
+
 @font-face {
   font-family: 'heading_pro_ultracompresseXBd';
   src: url('fonts/heading_pro_ultracompressed_extrabold-digits.woff2') format('woff2'),
@@ -407,7 +408,7 @@ blockquote {
 }
 
 .bh {
-      margin-left: 320px;
+  margin-left: 320px;
   background-image: url(images/top-icon-clock.svg);
   padding-left: 70px;
 }
@@ -1103,7 +1104,6 @@ blockquote {
   background-position: 0 -123px;
 }
 
-
 #saeSiemaSlider .prev {
   background-position: 0 0;
   left: -50px;
@@ -1130,6 +1130,7 @@ blockquote {
 #saeSiemaSlider img {
   width: 100%;
 }
+
 #saeSiemaSlider .application p {
   position: absolute;
   bottom: 0;
@@ -1590,69 +1591,51 @@ blockquote {
 
 .ribbons dt {
   color: #000;
-
   margin: 25px 0 40px;
-
   position: relative;
 }
 
 .ribbons dt::after {
-
-    content: '';
-    position: absolute;
-    width: 80%;
-
-height: 1px;
-
-background-color: #8f8e8e;
-
-left: 50%;
-
-bottom: -30px;
-
-margin-left: -40%;
-
+  content: '';
+  position: absolute;
+  width: 80%;
+  height: 1px;
+  background-color: #8f8e8e;
+  left: 50%;
+  bottom: -30px;
+  margin-left: -40%;
 }
 
 .ribbons dd {
   color: #8f8e8e;
   margin-top: 60px;
-
-position: relative;
+  position: relative;
 }
-
 
 .ribbons dd::after {
   content: '';
+  position: absolute;
+  width: 140px;
+  background: #e1e1e1 url(images/ribbons-ico.png) no-repeat;
+  left: 50%;
+  top: -48px;
+  margin-left: -70px;
+}
 
-position: absolute;
+.ribbons .wax dd::after {
+  background-position: 60% -33px;
+  height: 30px;
+}
 
-width: 140px;
+.ribbons .wax-resine dd::after {
+  background-position: 50% 0;
+  height: 30px;
+}
 
-background: #e1e1e1 url(images/ribbons-ico.png) no-repeat;
-
-left: 50%;
-
-top: -48px;
-
-margin-left: -70px;
-  }
-
-  .ribbons  .wax dd::after {
-    background-position: 60% -33px;
-    height: 30px;
-  }
-
-  .ribbons  .wax-resine dd::after {
-    background-position: 50% 0;
-      height: 30px;
-  }
-
-
-  .ribbons  .resine dd::after {
-    background-position: 50% -65px;
-      height: 30px;
-  }
+.ribbons .resine dd::after {
+  background-position: 50% -65px;
+  height: 30px;
+}
 
 .separator {
   margin: 40px -35px;
@@ -1690,7 +1673,7 @@ margin-left: -70px;
   margin-left: 20px;
 }
 
-.ta  {
+.ta {
   text-align: center;
 }
 
@@ -2465,7 +2448,7 @@ margin-left: -70px;
   border-radius: 100px;
   box-sizing: border-box;
   margin: 0;
-  box-shadow: inset 5px 3px 6px rgba(0, 0, 0, 0.4), 0 0 0 10px #fff,5px 6px 4px 11px #0003;
+  box-shadow: inset 5px 3px 6px rgba(0, 0, 0, 0.4), 0 0 0 10px #fff, 5px 6px 4px 11px #0003;
   vertical-align: 100px;
   text-align: center;
 }
@@ -4519,7 +4502,8 @@ a.in-text {
 }
 
 .btn-magenta:active {
-  background: rgba(0, 0, 0, 0.07);
+  background: #e42150;
+  ;
 }
 
 .btn:hover {

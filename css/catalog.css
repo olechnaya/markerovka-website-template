@@ -175,7 +175,6 @@ hgroup h1 {
   margin-top: 55px;
   margin-bottom: 45px;
   padding-bottom: 30px;
-
 }
 
 .related h2,
@@ -297,9 +296,7 @@ hgroup h1 {
   padding-bottom: 70px;
 }
 
-.product-short-dsc strong {
-
-}
+.product-short-dsc strong {}
 
 .product-short-dsc img.large {
   width: 198px;
@@ -313,17 +310,19 @@ hgroup h1 {
   border: 1px solid #ebebeb;
   margin-right: 15px;
 }
+
 .product-short-dsc .miniature:last-child {
   margin-right: 0;
 }
+
 .product-short-dsc .miniature.active {
   border: 1px solid #a1a1a1;
 }
 
 .short-description .field-name {
   font-weight: 700;
-      padding-left: 10px;
-      padding-right: 20px;
+  padding-left: 10px;
+  padding-right: 20px;
 }
 
 .short-description .icon span {
@@ -347,32 +346,35 @@ hgroup h1 {
 .product-short-dsc .price_request {
   background: #f3f3f3;
 }
+
 .product-short-dsc .price_request:hover,
 .more-info:hover {
   border-color: #e1e0e0;
-    background: #e1e0e0;
+  background: #e1e0e0;
 }
+
 .product-short-dsc .order_request {
-border: 4px solid #f3f3f3;
-padding: 0;
+  border: 4px solid #f3f3f3;
+  padding: 0;
 }
+
 .product-short-dsc .order_request span {
   margin-right: 5px;
   margin-bottom: -3px;
 }
 
 .product-short-dsc .order_request:hover {
-      background: #f3f3f3;
+  background: #f3f3f3;
 }
 
 .more-info {
   display: block;
   height: 38px;
-    background: #f3f3f3;
-    border-radius: 20px;
-    border: 4px solid #f3f3f3;
-    color: #2e2e2e;
-    font: 500 12px/16px 'Montserrat Alternates', sans-serif;
+  background: #f3f3f3;
+  border-radius: 20px;
+  border: 4px solid #f3f3f3;
+  color: #2e2e2e;
+  font: 500 12px/16px 'Montserrat Alternates', sans-serif;
 }
 
 .btns-col {
@@ -380,50 +382,51 @@ padding: 0;
   text-align: center;
 }
 
-.icon .color  {
+.icon .color {
   width: 18px;
-      height: 18px;
-      background-image: url(../images/cat-icons.png);
-      background-position: -3px -3px;
+  height: 18px;
+  background-image: url(../images/cat-icons.png);
+  background-position: -3px -3px;
 }
 
-.icon .material  {
+.icon .material {
   width: 16px;
-height: 16px;
-background-image: url(../images/cat-icons.png);
-background-position: -3px -50px;
+  height: 16px;
+  background-image: url(../images/cat-icons.png);
+  background-position: -3px -50px;
 }
 
-.icon .surface  {
+.icon .surface {
   width: 20px;
-height: 18px;
-background-image: url(../images/cat-icons.png);
-background-position: -4px -116px;
+  height: 18px;
+  background-image: url(../images/cat-icons.png);
+  background-position: -4px -116px;
 }
 
-.icon .w-l  {
-  width: 19px;
-    height: 19px;
-    background-image: url(../images/cat-icons.png);
-    background-position: -3px -141px;
-}
-
-.icon .diam  {
+.icon .w-l {
   width: 19px;
   height: 19px;
-  background-image: url(../images/cat-icons.png);  background-position: -3px -25px;
+  background-image: url(../images/cat-icons.png);
+  background-position: -3px -141px;
 }
 
-.icon .print-type  {
+.icon .diam {
+  width: 19px;
+  height: 19px;
+  background-image: url(../images/cat-icons.png);
+  background-position: -3px -25px;
+}
+
+.icon .print-type {
   width: 19px;
   height: 17px;
-  background-image: url(../images/cat-icons.png);  background-position: -3px -94px;
+  background-image: url(../images/cat-icons.png);
+  background-position: -3px -94px;
 }
 
 .product-short-dsc {
   position: relative;
 }
-
 
 .product-short-dsc .close {
   position: absolute;
@@ -434,9 +437,11 @@ background-position: -4px -116px;
   opacity: 0.3;
   z-index: 1;
 }
+
 .product-short-dsc .close:hover {
   opacity: 1;
 }
+
 .product-short-dsc .close:before, .product-short-dsc .close:after {
   position: absolute;
   left: 15px;
@@ -445,9 +450,11 @@ background-position: -4px -116px;
   width: 2px;
   background-color: #ee2455;
 }
+
 .product-short-dsc .close:before {
   transform: rotate(45deg);
 }
+
 .product-short-dsc .close:after {
   transform: rotate(-45deg);
 }

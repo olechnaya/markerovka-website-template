@@ -1,17 +1,20 @@
 @import "../font-awesome/css/font-awesome.css";
 
 .item {
-   background: #f3f3f3;
-   padding-bottom: 80px;
+  background: #f3f3f3;
+  padding-bottom: 80px;
 }
+
 hgroup h1 {
-    display: inline-block;
-    font: 700 43px 'IBM Plex Serif', serif;
-    margin-right: 15px;
+  display: inline-block;
+  font: 700 43px 'IBM Plex Serif', serif;
+  margin-right: 15px;
 }
+
 .breadcumbs {
-    margin-top: 26px;
+  margin-top: 26px;
 }
+
 .breadcumbs a {
   text-decoration: none;
   color: #2e2e2e;
@@ -29,6 +32,7 @@ hgroup h1 {
   top: 50%;
   margin-top: -5px;
 }
+
 .item-id {
   font-weight: 700;
 }
@@ -43,6 +47,7 @@ hgroup h1 {
   line-height: 25px;
   margin-left: 15px;
 }
+
 .item-id span:after,
 .item-id span:before {
   content: '';
@@ -74,7 +79,7 @@ hgroup h1 {
 
 hgroup {
   border-bottom: 3px solid;
-    margin-bottom: 55px;
+  margin-bottom: 55px;
 }
 
 .item-details {
@@ -82,21 +87,24 @@ hgroup {
 }
 
 .btn-dashed {
-  color:#2b2a2f;
+  color: #2b2a2f;
 }
 
 .btn-dashed:hover {
   text-decoration: none;
-   border-color: rgba(0,0,0,0);
+  border-color: rgba(0, 0, 0, 0);
 }
 
 .btn-dashed {
   border-bottom: 1px dashed;
   position: relative;
-  -webkit-transition: border-color .2s linear; /* Saf3.2+, Chrome */
-    -moz-transition: border-color .2s linear; /* FF3.7+ */
-      -o-transition: border-color .2s linear; /* Opera 10.5 */
-         transition: border-color .2s linear;
+  -webkit-transition: border-color .2s linear;
+  /* Saf3.2+, Chrome */
+  -moz-transition: border-color .2s linear;
+  /* FF3.7+ */
+  -o-transition: border-color .2s linear;
+  /* Opera 10.5 */
+  transition: border-color .2s linear;
 }
 
 .write-review a:before {
@@ -111,13 +119,14 @@ hgroup {
 }
 
 .print-page a {
-  float:right;
+  float: right;
 }
+
 .print-page a:before {
   width: 20px;
   height: 23px;
   background-position: -5px -331px;
-      left: -29px;
+  left: -29px;
 }
 
 .view-all {
@@ -132,26 +141,26 @@ hgroup {
   text-transform: uppercase;
   display: block;
   max-width: 250px;
-      margin: 0 auto;
+  margin: 0 auto;
 }
 
 .manager-i {
   position: relative;
-font-size: 11px;
-font-style: italic;
-color: #2e2e2e;
-display: block;
-max-width: 250px;
-margin: 20px auto;
-line-height: 31px;
-padding-left: 10px;
+  font-size: 11px;
+  font-style: italic;
+  color: #2e2e2e;
+  display: block;
+  max-width: 250px;
+  margin: 20px auto;
+  line-height: 31px;
+  padding-left: 10px;
 }
 
 .manager-i:before {
   width: 27px;
-height: 27px;
-background-position: -5px -159px;
-left: -27px;
+  height: 27px;
+  background-position: -5px -159px;
+  left: -27px;
 }
 
 .item-shrtcts label {
@@ -161,6 +170,7 @@ left: -27px;
 .item-shrtcts .jcf-select {
   min-width: 215px;
 }
+
 .item-shrtcts .jcf-select select {
   /* left:40px; */
 }
