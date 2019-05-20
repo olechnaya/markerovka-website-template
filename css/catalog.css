@@ -1,4 +1,4 @@
-@import "font-awesome/css/font-awesome.css";
+@import "../font-awesome/css/font-awesome.css";
 
 .breadcumbs {
   margin-top: 26px;
@@ -17,7 +17,7 @@
   right: 12px;
   width: 20px;
   height: 9px;
-  background: url(images/cat-icons.png) -3px -168px no-repeat;
+  background: url(../images/cat-icons.png) -3px -168px no-repeat;
   top: 50%;
   margin-top: -5px;
 }
@@ -157,7 +157,7 @@ hgroup h1 {
   display: inline-block;
   width: 16px;
   height: 16px;
-  background: url(images/cat-icons.png) -3px -72px;
+  background: url(../images/cat-icons.png) -3px -72px;
 }
 
 .additional {
@@ -305,7 +305,7 @@ hgroup h1 {
   width: 198px;
   padding: 10px;
   margin-bottom: 15px;
-  background: url(images/img-shadow.png) no-repeat 5px 6px;
+  background: url(../images/img-shadow.png) no-repeat 5px 6px;
 }
 
 .product-short-dsc .miniature {
@@ -383,41 +383,41 @@ padding: 0;
 .icon .color  {
   width: 18px;
       height: 18px;
-      background-image: url(images/cat-icons.png);
+      background-image: url(../images/cat-icons.png);
       background-position: -3px -3px;
 }
 
 .icon .material  {
   width: 16px;
 height: 16px;
-background-image: url(images/cat-icons.png);
+background-image: url(../images/cat-icons.png);
 background-position: -3px -50px;
 }
 
 .icon .surface  {
   width: 20px;
 height: 18px;
-background-image: url(images/cat-icons.png);
+background-image: url(../images/cat-icons.png);
 background-position: -4px -116px;
 }
 
 .icon .w-l  {
   width: 19px;
     height: 19px;
-    background-image: url(images/cat-icons.png);
+    background-image: url(../images/cat-icons.png);
     background-position: -3px -141px;
 }
 
 .icon .diam  {
   width: 19px;
   height: 19px;
-  background-image: url(images/cat-icons.png);  background-position: -3px -25px;
+  background-image: url(../images/cat-icons.png);  background-position: -3px -25px;
 }
 
 .icon .print-type  {
   width: 19px;
   height: 17px;
-  background-image: url(images/cat-icons.png);  background-position: -3px -94px;
+  background-image: url(../images/cat-icons.png);  background-position: -3px -94px;
 }
 
 .product-short-dsc {
