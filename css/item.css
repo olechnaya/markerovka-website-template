@@ -91,6 +91,7 @@ hgroup {
 }
 
 .btn-dashed:hover {
+  color: #2b2a2f;
   text-decoration: none;
   border-color: rgba(0, 0, 0, 0);
 }
@@ -171,6 +172,103 @@ hgroup {
   min-width: 215px;
 }
 
-.item-shrtcts .jcf-select select {
-  /* left:40px; */
+.icon-size:before,
+.icon-material:before,
+.icon-color:before {
+  content: '';
+  position: absolute;
+  background-image: url(../images/item-grpahics.png);
+  z-index: 2;
+}
+
+.icon-size:before {
+  width: 27px;
+  height: 27px;
+  background-position: -5px -400px;
+  margin: 6px;
+}
+
+.icon-color:before {
+  width: 26px;
+  height: 24px;
+  background-position: -5px -88px;
+  margin: 8px;
+}
+
+.icon-material:before {
+  width: 29px;
+  height: 26px;
+  background-position: -5px -364px;
+  margin: 8px 0 0 4px;
+}
+
+.btn-image.order {
+  margin: 0;
+}
+
+
+.photo-decor {
+  position: relative;
+  float: left;
+  padding: 3px 3px;
+  width: 294px;
+  height: 294px;
+  margin: -44px 25px 40px -30px;
+  /* background-color: #fefefe;
+      border: 1px solid #f64a2c;
+    -webkit-transition: all 0.1s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    transition: all 0.1s cubic-bezier(0.445, 0.05, 0.55, 0.95); */
+  border-top: 1px solid #ff7f00;
+  border-bottom: 1px solid #f54b30;
+  box-sizing: content-box;
+}
+
+.photo-decor:before,
+.photo-decor:after {
+  content: "";
+  position: absolute;
+  background-image: -webkit-gradient(linear,    0 0,    0 100%,    from(#ff7f00),    to(#f54b30));
+  background-image: -webkit-linear-gradient(#ff7f00, #f54b30);
+  background-image: -moz-linear-gradient(#ff7f00, #f54b30);
+  background-image: -o-linear-gradient(#ff7f00, #f54b30);
+  background-image: linear-gradient(#ff7f00, #f54b30);
+  top: -1px;
+  bottom: -1px;
+  width: 1px;
+}
+
+.photo-decor:before {
+  left: -1px;
+}
+
+.photo-decor:after {
+  right: -1px;
+}
+
+.photo-decor img {
+  width: 100%;
+  border-image: linear-gradient(#ff7f00,#f54b30) 34% / 1px stretch;
+  border-width: 1px;
+  border-style: solid;
+  position: relative;
+  z-index: 1;
+}
+
+.photo-decor .shadow {
+  position: absolute;
+width: 302px;
+height: 40px;
+background: url(../images/item-grpahics-shadow.png);
+bottom: -20px;
+z-index: 0;
+left: -1px;
+}
+
+a[data-fancybox="gallery"] {
+    display: block;
+    position: absolute;
+    left: 3px;
+    top: 3px;
+    width: 294px;
+    height: 294px;
 }

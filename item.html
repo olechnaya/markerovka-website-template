@@ -335,33 +335,52 @@ font-family: 'IBM Plex Serif', serif;
               </div>
             </div>
             <div class="row item-shrtcts">
-                <div class="col-md-3">img</div>
+                <div class="col-md-3 ta">
+                  <div class="photo-decor">
+
+<a data-fancybox="gallery" href="images/item-img-lg-1.jpg">
+                    <img src="images/item-img-md-1.jpg" alt="Термоэтикетка 40 х 30 мм" class="large" />
+</a>
+<a data-fancybox="gallery" href="images/item-img-lg-2.jpg">
+                    <img src="images/item-img-md-2.jpg" alt="Термоэтикетка 40 х 30 мм" class="large" />
+</a>
+                    <div class="shadow"></div>
+                  </div>
+                  <a href="images/item-img-md-1.jpg" class="miniature active"><img src="images/item-img-sm-1.jpg" alt="Термоэтикетка 40 х 30 мм миниатюра"></a>
+                  <a href="images/item-img-md-2.jpg"  class="miniature"><img src="images/item-img-sm-2.jpg" alt="Термоэтикетка 40 х 30 мм миниатюра"></a>
+                </div>
                 <div class="col-md-3">
                   <label for="size">Размер этикетки</label>
-                  <select name="size" id="size">
-                   <option value="40-30">40 х 30 мм</option>
-                   <option value="40-20">40 х 20 мм</option>
-                   <option value="40-15">40 х 15 мм</option>
-                   <option value="40-10">40 х 10 мм</option>
-                  </select>
+                  <div class="icon-size">
+                    <select name="size" id="size">
+                     <option value="40-30">40 х 30 мм</option>
+                     <option value="40-20">40 х 20 мм</option>
+                     <option value="40-15">40 х 15 мм</option>
+                     <option value="40-10">40 х 10 мм</option>
+                    </select>
+                  </div>
                   <label for="color">Цвет этикетки</label>
-                  <select name="color" id="color">
-                   <option value="white">Белый</option>
-                   <option value="yellow">Желтый</option>
-                   <option value="green">Зеленый</option>
-                   <option value="gold">Золотой</option>
-                  </select>
+                  <div class="icon-color">
+                    <select name="color" id="color">
+                     <option value="white">Белый</option>
+                     <option value="yellow">Желтый</option>
+                     <option value="green">Зеленый</option>
+                     <option value="gold">Золотой</option>
+                    </select>
+                  </div>
                   <label for="material">Материал этикетки</label>
-                  <select name="material" id="material">
-                    <option value="m1">Полуглянец (бумага)</option>
-                    <option value="m2">Матовый (бумага)</option>
-                    <option value="m3">Полипропилен</option>
-                    <option value="m4">Полиэтилен</option>
-                    <option value="m5">Полиэстерин</option>
-                    <option value="m6">Полиэстер</option>
-                    <option value="m7">Винил</option>
-                    <option value="m8">Полиимид</option>
-                  </select>
+                  <div class="icon-material">
+                    <select name="material" id="material">
+                      <option value="m1">Полуглянец (бумага)</option>
+                      <option value="m2">Матовый (бумага)</option>
+                      <option value="m3">Полипропилен</option>
+                      <option value="m4">Полиэтилен</option>
+                      <option value="m5">Полиэстерин</option>
+                      <option value="m6">Полиэстер</option>
+                      <option value="m7">Винил</option>
+                      <option value="m8">Полиимид</option>
+                    </select>
+                  </div>
                   <a href="" class="btn-dashed view-all">Смотреть всё описание</a>
                   <a href="" class="btn btn-magenta btn-image order">Заказать</a>
                   <i class="manager-i">Наличие уточнить у менеджера</i>
@@ -586,9 +605,11 @@ font-family: 'IBM Plex Serif', serif;
   <script src="js/tooltipster.bundle.min.js"></script>
   <script src="js/jquery.fancybox.min.js"></script>
   <script src="js/jcf.js"></script>
+  <script src="js/jcf.scrollable.js"></script>
 <script src="js/jcf.select.js"></script>
 <script src="js/jcf.checkbox.js"></script>
   <script src="js/material-scrolltop.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
   <script src="js/theme-script.js"></script>
 <script src="js/item.js"></script>
 </body>
