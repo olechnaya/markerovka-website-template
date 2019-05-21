@@ -1,65 +1,7 @@
-/************************************************
-Template Name: Believe Boostrap Template
-Author: BoostrapMart
-Develop By: BoostrapMart
-Developer URL: http://info@bootstrapmart.com
-************************************************/
-
 jQuery(document).ready(function($) {
   "use strict";
 
-
-  /*------------------------------- brand carousel ---------------------------------------*/
-
   $(function() {
-
-    const a_sliderSiema = new Siema({
-      selector: '#a_slider .siema',
-      duration: 200,
-      easing: 'ease-out',
-      perPage: 1,
-      startIndex: 0,
-      draggable: true,
-      multipleDrag: true,
-      threshold: 20,
-      loop: true,
-      rtl: false,
-      onInit: () => {},
-      onChange: () => {},
-    });
-    $('#a_slider').on('click', '.prev', () => a_sliderSiema.prev());
-    $('#a_slider').on('click', '.next', () => a_sliderSiema.next());
-    // // Add a function that generates pagination to prototype
-    // Siema.prototype.addPagination = function() {
-    //   for (let i = 0; i < this.innerElements.length; i++) {
-    //     const btn = document.createElement('button');
-    //     btn.textContent = i;
-    //     btn.addEventListener('click', () => this.goTo(i));
-    //     this.selector.appendChild(btn);
-    //   }
-    // }
-    //
-    // // Trigger pagination creator
-    // a_sliderSiema.addPagination();
-
-
-    const sae_sliderSiema = new Siema({
-      selector: '#saeSiemaSlider .siema',
-      duration: 200,
-      easing: 'ease-out',
-      perPage: 1,
-      startIndex: 0,
-      draggable: true,
-      multipleDrag: true,
-      threshold: 20,
-      loop: true,
-      rtl: false,
-      onInit: () => {},
-      onChange: () => {},
-    });
-    $('#saeSiemaSlider').on('click', '.prev', () => sae_sliderSiema.prev());
-    $('#saeSiemaSlider').on('click', '.next', () => sae_sliderSiema.next());
-
 
     $('body').materialScrollTop({
       revealElement: '#header',
@@ -128,7 +70,7 @@ jQuery(document).ready(function($) {
       margin: 30,
       stagePadding: 30,
     });
-		
+
     $("#brand-carousel").owlCarousel({
       autoPlay: 3000, //Set AutoPlay to 3 seconds
       items: 5,
