@@ -381,8 +381,8 @@ a[data-fancybox="gallery"] {
 
 .product {
   text-align: center;
-  margin: 0 0 30px 0;
-  padding-bottom: 30px;
+  margin: 0 0 25px 0;
+  padding-bottom: 20px;
   border-bottom: 1px solid #c1c1c1;
 }
 
@@ -394,7 +394,10 @@ a[data-fancybox="gallery"] {
   display: block;
   font-size: 12px;
 }
-
+.product img {
+    border: 1px solid #c1c1c1;
+    margin-bottom: 15px;
+}
 .product span {
   display: block;
 }
