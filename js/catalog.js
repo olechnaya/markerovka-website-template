@@ -53,10 +53,10 @@ for (const siema of siemas) {
 }
 
 /////////////////////////////////////////////////////
-$('div[id^="cti_"]').each(function () {
-  var elementIndex = this.id,
-            target = '#preview_' + elementIndex;
-})
+// $('div[id^="cti_"]').each(function () {
+//   var elementIndex = this.id,
+//             target = '#preview_' + elementIndex;
+// })
 
 
 $('.product').tooltipster({
@@ -80,10 +80,6 @@ $(document).on('click', '.miniature', function(e) {
     var imgSource = $(this).attr('href'),
         $targetImg = $(this).siblings( ".large" );
 
-    $targetImg.attr('src', imgSource)
+    $targetImg.attr('src', imgSource);
+    $(this).addClass('active').siblings().removeClass('active');
 });
-
-
-// $(document).on("click", ".close", function() {
-//     debugger;
-// });

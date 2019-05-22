@@ -3360,7 +3360,7 @@ input[type="button"].btn-block {
        -o-transition: opacity .15s linear;
           transition: opacity .15s linear;
 }
-.fade.in {
+.fade.show, .fade.in {
   opacity: 1;
 }
 .collapse {
