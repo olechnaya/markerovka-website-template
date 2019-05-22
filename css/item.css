@@ -138,6 +138,20 @@ hgroup {
   margin-bottom: 15px;
 }
 
+.icon-track {
+  position: relative;
+  margin-left: 36px;
+}
+
+.icon-track:before {
+  content: '';
+  background: url(../images/item-grpahics.png) no-repeat -6px -120px;
+  width: 24px;
+  height: 27px;
+  position: absolute;
+  left: -34px;
+}
+
 .order {
   text-transform: uppercase;
   display: block;
@@ -166,6 +180,7 @@ hgroup {
 
 .item-shrtcts label {
   display: block;
+  cursor: pointer;
 }
 
 .item-shrtcts .jcf-select {
@@ -206,13 +221,12 @@ hgroup {
   margin: 0;
 }
 
-
 .photo-decor {
   position: relative;
   padding: 3px 3px;
-  width: 294px;
-  height: 294px;
-  margin: -44px 25px 40px -30px;
+  width: 274px;
+  height: 274px;
+  margin: -44px 0px 28px -30px;
   /* background-color: #fefefe;
       border: 1px solid #f64a2c;
     -webkit-transition: all 0.1s cubic-bezier(0.445, 0.05, 0.55, 0.95);
@@ -226,7 +240,7 @@ hgroup {
 .photo-decor:after {
   content: "";
   position: absolute;
-  background-image: -webkit-gradient(linear,    0 0,    0 100%,    from(#ff7f00),    to(#f54b30));
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ff7f00), to(#f54b30));
   background-image: -webkit-linear-gradient(#ff7f00, #f54b30);
   background-image: -moz-linear-gradient(#ff7f00, #f54b30);
   background-image: -o-linear-gradient(#ff7f00, #f54b30);
@@ -246,36 +260,37 @@ hgroup {
 
 .photo-decor img {
   width: 100%;
-  border-image: linear-gradient(#ff7f00,#f54b30) 34% / 1px stretch;
+  border-image: linear-gradient(#ff7f00, #f54b30) 34% / 1px stretch;
   border-width: 1px;
   border-style: solid;
   position: relative;
   z-index: 1;
 }
+
 .photo-decor a:first-child {
   z-index: 2;
 }
+
 .photo-decor .shadow {
   position: absolute;
-width: 302px;
-height: 40px;
-background: url(../images/item-grpahics-shadow.png);
-bottom: -20px;
-z-index: 0;
-left: -1px;
+  width: 275px;
+  height: 40px;
+  background: url(../images/item-grpahics-shadow.png);
+  bottom: -20px;
+  z-index: 0;
+  left: -1px;
 }
 
 a[data-fancybox="gallery"] {
-    display: block;
-    position: absolute;
-    left: 3px;
-    top: 3px;
-    width: 294px;
-    height: 294px;
+  display: block;
+  position: absolute;
+  left: 3px;
+  top: 3px;
+  width: 274px;
 }
 
 .miniatures {
-      margin-left: -50px;
+  margin-left: -50px;
 }
 
 .miniature {
@@ -283,6 +298,7 @@ a[data-fancybox="gallery"] {
   border: 1px solid #dbdbdb;
   margin-right: 15px;
 }
+
 .miniature:last-child {
   margin-right: 0;
 }
@@ -293,12 +309,92 @@ a[data-fancybox="gallery"] {
 
 #popularProps:after,
 #relatedGoods:after {
-    content: '';
-    position: absolute;
-    width: 1px;
-    height: 210px;
-    background: #bdbdbd;
-    top: 26px;
-    right: 15px;
-    box-shadow: 1px 0 0 #fff;
+  content: '';
+  position: absolute;
+  width: 1px;
+  height: 210px;
+  background: #bdbdbd;
+  top: 26px;
+  right: 15px;
+  box-shadow: 1px 0 0 #fff;
+}
+
+#relatedGoods p {
+  margin-top: 15px;
+  margin-bottom: 22px;
+  text-align: center;
+}
+
+#deliveryDetails p {
+  margin-top: 15px;
+  margin-bottom: 22px;
+  font-style: italic;
+  font-size: 13px;
+  line-height: 24px;
+}
+
+#relatedGoods p a {
+  margin: 0 20px;
+  position: relative;
+}
+
+#relatedGoods a:after {
+  content: '';
+  position: absolute;
+  width: 21px;
+  height: 21px;
+  top: 50%;
+  margin-top: -10px;
+  background: url(../images/item-grpahics.png) -9px -196px;
+  right: -30px;
+}
+
+#relatedGoods a:last-child:after {
+  display: none;
+}
+
+#relatedGoods img {
+  width: 70px;
+  border: 1px solid #dcdad6;
+}
+
+#relatedGoods label {
+  font-weight: 400;
+  font-size: 12px;
+  opacity: .6;
+}
+
+#relatedGoods label.jcf-label-active {
+  opacity: 1;
+}
+
+.productBoxes {
+  background: #fff;
+  padding: 30px;
+}
+
+.productBoxes .heading {
+  font-size: 16px;
+  background: none;
+  color: #2e2e2e;
+}
+
+.product {
+  text-align: center;
+  margin: 0 0 30px 0;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #c1c1c1;
+}
+
+.product:last-child {
+  border: none;
+}
+
+.product a {
+  display: block;
+  font-size: 12px;
+}
+
+.product span {
+  display: block;
 }

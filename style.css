@@ -4514,10 +4514,21 @@ a.in-text {
   --c1: #ff7f00;
   --c2: #ee2455;
 }
+.btn-magenta.line {
+    background: none;
+    border: 3px solid #ee2455;
+    color: #ee2455;
+}
 
 .btn-magenta.sm {
   font-size: 12px;
   font-weight: 400;
+}
+
+a.btn.btn-magenta.line.btn-add-selected {
+    padding-left: 60px;
+    padding-right: 25px;
+    background: url(images/item-grpahics.png) no-repeat 17px 0;
 }
 
 .btn-blue {

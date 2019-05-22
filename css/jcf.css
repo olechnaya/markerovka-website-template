@@ -43,11 +43,8 @@
   vertical-align: middle;
   display: inline-block;
   position: relative;
-  overflow: hidden;
-  cursor: default;
-  background: #fff;
-  border: 1px solid #777;
-  margin: 0 3px 0 0;
+  background: url(../images/item-grpahics.png) -4px -62px;
+  margin: -3px 6px 5px 0;
   height: 16px;
   width: 16px;
 }
@@ -55,19 +52,13 @@
 .jcf-checkbox span {
   position: absolute;
   display: none;
-  height: 4px;
-  width: 8px;
-  top: 50%;
-  left: 50%;
+  height: 13px;
+  width: 18px;
+  bottom: 2px;
+  left: 6px;
   margin: -7px 0 0 -6px;
-  border: 3px solid #777;
-  border-width: 0 0 3px 3px;
-  -moz-transform: rotate(-45deg);
-  -ms-transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-  -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=0.7071067811865483, M12=0.7071067811865467, M21=-0.7071067811865467, M22=0.7071067811865483, SizingMethod='auto expand')";
-}
+  background: url(../images/item-grpahics.png) -3px -39px;
+  }
 
 :root .jcf-checkbox span {
   margin: -4px 0 0 -5px;

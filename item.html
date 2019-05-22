@@ -345,11 +345,11 @@ font-family: 'IBM Plex Serif', serif;
                   </a>
                   <div class="shadow"></div>
                 </div>
-<div class="miniatures">
-  <a href="images/item-img-md-1.jpg" data-id-link="imglink_1" class="miniature active"><img src="images/item-img-sm-1.jpg" alt="Термоэтикетка 40 х 30 мм миниатюра"></a>
-  <a href="images/item-img-md-2.jpg" data-id-link="imglink_2" class="miniature"><img src="images/item-img-sm-2.jpg" alt="Термоэтикетка 40 х 30 мм миниатюра"></a>
-</div>
+                <div class="miniatures">
+                  <a href="images/item-img-md-1.jpg" data-id-link="imglink_1" class="miniature active"><img src="images/item-img-sm-1.jpg" alt="Термоэтикетка 40 х 30 мм миниатюра"></a>
+                  <a href="images/item-img-md-2.jpg" data-id-link="imglink_2" class="miniature"><img src="images/item-img-sm-2.jpg" alt="Термоэтикетка 40 х 30 мм миниатюра"></a>
                 </div>
+              </div>
               <div class="col-md-3" id="popularProps">
                 <label for="size">Размер этикетки</label>
                 <div class="icon-size">
@@ -386,55 +386,44 @@ font-family: 'IBM Plex Serif', serif;
                 <a href="" class="btn btn-magenta btn-image order">Заказать</a>
                 <i class="manager-i">Наличие уточнить у менеджера</i>
               </div>
-              <div class="col-md-3" id="relatedGoods">
+              <div class="col-md-4" id="relatedGoods">
                 <strong>Часто заказывают вместе:</strong>
                 <p>
-                  <img src="images/item-img-3.jpg" alt="Этикетки 40 х 30 мм МК-56001">
-                  <img src="images/item-img-4.jpg" alt="Ювелирные этикетки Zebra МК-10010064">
-                  <img src="images/item-img-5.jpg" alt="Желтые этикетки Zebra 40 х 30 мм МК-56002">
+                  <a href=""><img src="images/item-img-3.jpg" alt="Этикетки 40 х 30 мм МК-56001"></a>
+                  <a href=""> <img src="images/item-img-4.jpg" alt="Ювелирные этикетки Zebra МК-10010064"></a>
+                  <a href=""><img src="images/item-img-5.jpg" alt="Желтые этикетки Zebra 40 х 30 мм МК-56002"></a>
                 </p>
-                <label for="МК-56001"><input type="checkbox" checked id="МК-56001" name="МК-56001"><b>Текущая позиция: </b>Этикетки 40 х 30 мм МК-56001 </label>
-                <label for="МК-10010064"><input type="checkbox" checked id="МК-10010064" name="МК-10010064">Ювелирные этикетки Zebra МК-10010064 </label>
-                <label for="МК-56002"><input type="checkbox" checked id="МК-56002" name="МК-56002">Желтые этикетки Zebra 40 х 30 мм МК-56002</label>
-                <a href="" class="btn btn-add-selected">Добавить выбранное в заказ</a>
+                <label for="МК-56001"><input type="checkbox" checked id="МК-56001" name="МК-56001"><b>Текущая позиция: </b><a href="" class="in-text">Этикетки 40 х 30 мм МК-56001 </a></label>
+                <label for="МК-10010064"><input type="checkbox" checked id="МК-10010064" name="МК-10010064"><a href="" class="in-text">Ювелирные этикетки Zebra МК-10010064 </a></label>
+                <label for="МК-56002"><input type="checkbox" checked id="МК-56002" name="МК-56002"><a href="" class="in-text">Желтые этикетки Zebra 40 х 30 мм МК-56002</a></label>
+                <a href="" class="btn btn-magenta line btn-add-selected">Добавить выбранное в заказ</a>
               </div>
-              <div class="col-md-3 delivery-details">
+              <div class="col-md-2" id="deliveryDetails">
                 <strong>Доставка</strong>
                 <p>Время, сроки, условия, стоимость доставки производится менеджером персонально в зависимости от заказа. </p>
-                <a href="#" class="show-more">Детали доставки</a>
+                <a href="#" class="btn-dashed view-all icon-track">Детали доставки</a>
               </div>
             </div>
             <div class="row">
-              <div class="col-md-9">
+              <div class="col-md-10">
                 <ul class="nav nav-pills mb-3" id="itemTab">
                   <li class="nav-item">
-                    <a class="nav-link active" id="itemTabDescription"
-                    data-toggle="pill"
-                    href="#description">Описание</a>
-                  </li><li class="nav-item">
-                    <a class="nav-link" id="itemTabSpec"
-                    data-toggle="pill"
-                    href="#spec">Спецификация</a>
+                    <a class="nav-link active" id="itemTabDescription" data-toggle="pill" href="#description">Описание</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" id="itemTabDeliveryPayments"
-                    data-toggle="pill"
-                    href="#delivery_payments">Доставка и Оплата</a>
+                    <a class="nav-link" id="itemTabSpec" data-toggle="pill" href="#spec">Спецификация</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" id="itemTabVideo"
-                    data-toggle="pill"
-                    href="#video">Видео</a>
+                    <a class="nav-link" id="itemTabDeliveryPayments" data-toggle="pill" href="#delivery_payments">Доставка и Оплата</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" id="itemTabFiles"
-                    data-toggle="pill"
-                    href="#files">Файлы</a>
+                    <a class="nav-link" id="itemTabVideo" data-toggle="pill" href="#video">Видео</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" id="itemTabReviews"
-                    data-toggle="pill"
-                    href="#reviews">Отзывы</a>
+                    <a class="nav-link" id="itemTabFiles" data-toggle="pill" href="#files">Файлы</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="itemTabReviews" data-toggle="pill" href="#reviews">Отзывы</a>
                   </li>
                 </ul>
                 <div class="tab-content" id="itemTabContent">
@@ -446,11 +435,13 @@ font-family: 'IBM Plex Serif', serif;
                   <div class="tab-pane fade" id="reviews">6</div>
                 </div>
               </div>
-              <div class="col-md-3 interests">
-                <p>Вам могут быть интересны следующие товары:</p>
-                <div class="row"><img src="images/item-img-6.jpg" alt="item-img-6"><a href="">Заголовок на две строки о чем-то важном</a></div>
-                <div class="row"><img src="images/item-img-7.jpg" alt="item-img-7"><a href="">Этикетки с пользовательской печатью</a></div>
-                <div class="row"><img src="images/item-img-8.jpg" alt="item-img-8"><a href="">Красные этикетки 13мм</a></div>
+              <div class="col-md-2 productBoxes">
+                <p class="heading">Вам могут быть интересны следующие товары:</p>
+                <div class="product">
+                  <a href="" class="in-text"><img src="images/item-img-6.jpg" alt="item-img-6"><span>Заголовок на две строки о чем-то важном</span></a>
+                </div>
+                <div class="product"><a href="" class="in-text"><img src="images/item-img-7.jpg" alt="item-img-7"><span>Этикетки с пользовательской печатью</span></a></div>
+                <div class="product"><a href="" class="in-text"><img src="images/item-img-8.jpg" alt="item-img-8"><span>Красные этикетки 13мм</span></a></div>
               </div>
             </div>
           </div>
@@ -629,7 +620,7 @@ font-family: 'IBM Plex Serif', serif;
   <!-- jQuery lib -->
   <script src="js/library.js"></script>
   <script src="js/owl.carousel.min.js"></script>
-    <!-- for tabs only -->
+  <!-- for tabs only -->
   <script src="js/bootstrap.min.js"></script>
   <script src="js/tooltipster.bundle.min.js"></script>
   <script src="js/jquery.fancybox.min.js"></script>
