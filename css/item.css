@@ -1,7 +1,10 @@
 @import "../font-awesome/css/font-awesome.css";
+
 body {
-  display: none; /* wait for all scenarious are done */
+  display: none;
+  /* wait for all scenarious are done */
 }
+
 .item {
   background: #f3f3f3;
   padding-bottom: 80px;
@@ -577,21 +580,66 @@ li:not(.active) #itemTabDescription {
   background-position-x: -1px;
   margin: 16px auto 6px;
 }
+
 .emoticon {
   text-align: center;
 }
+
 .icon-review.excellent {
   background-position-y: -85px;
 }
+
 .icon-review.good {
   background-position-y: -127px;
 }
+
 .icon-review.normal {
   background-position-y: -169px;
 }
+
 .icon-review.bad {
   background-position-y: -43px;
 }
+
 .icon-review.awful {
   background-position-y: -1px;
+}
+
+.file-type {
+  font-size: 12px;
+  padding: 16px 10px;
+  color: #2e2e2e;
+  text-align: center;
+}
+
+.file-type:hover {
+  background: rgba(244, 76, 117, 0.09);
+}
+
+.file-type>span {
+  display: block;
+  background-image: url(../images/item-grpahics-file-types.png);
+  margin: 0 auto 16px;
+}
+
+.file-type i {
+  font-style: normal;
+}
+
+.icon-pdf {
+  width: 57px;
+  height: 79px;
+  background-position: -1px -83px;
+}
+
+.icon-img {
+  width: 58px;
+  height: 79px;
+  background-position: -1px -1px;
+}
+
+.icon-video {
+  width: 76px;
+  height: 74px;
+  background-position: -1px -164px;
 }
