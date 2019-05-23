@@ -20,8 +20,27 @@ toolbar: false
         $(this).addClass('active').siblings().removeClass('active');
     });
 
-    $('#itemTab a').on('click', function (e) {
-      e.preventDefault()
-      $(this).tab('show')
-    })
+    // $('#itemTab a').on('click', function (e) {
+    //   e.preventDefault()
+    //   $(this).tab('show')
+    // })
+    $('#itemTab a').on('shown.bs.tab', function(e){
+    e.preventDefault()
+      var activeTab = $(e.target),
+          previousTab = $(e.relatedTarget),
+          activeTabPane = $(activeTab.attr('href')),
+          previousTabPane = $(previousTab.attr('href'));
+
+          activeTab.css({
+            'top':0
+          });
+          previousTab.removeAttr( 'style' );
+
+          activeTabPane.css({
+            'zIndex': 7,
+            'background-color': '#fffffe',
+            'top':0
+          });
+          previousTabPane.removeAttr( 'style' );
+  });
 });

@@ -6335,7 +6335,7 @@ button.close {
   display: none !important;
 }
 .show {
-  display: block !important;
+  /* display: block !important;  - works buggy in tabs*/
 }
 .invisible {
   visibility: hidden;

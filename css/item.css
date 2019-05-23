@@ -390,16 +390,125 @@ a[data-fancybox="gallery"] {
 .product span {
   display: block;
 }
-
-#itemTab > li > a{
-    background: #fff;
+#itemTabContent {
+  position: relative;
+}
+#itemTabContent .tab-pane {
+  background: #fffffe;
+  padding: 32px 20px;
+  display: block;
+  position: absolute;
+  visibility: visible;
+  opacity: 1;
+  top: 0;
+  left: 0;
+  right: 0;
+  -webkit-transition: top .15s linear;
+-o-transition: top .15s linear;
+transition: top .15s linear;
+}
+#itemTabContent #description {
+  z-index: 6;
+}
+#itemTabContent #spec {
+  z-index: 5;
+  top: -6px;
+  background: #f0efe9;
+}
+#itemTabContent #delivery_payments {
+  z-index: 4;
+  top: -13px;
+  background: #e9e8e2;
+}
+#itemTabContent #video {
+  z-index: 3;
+  top: -20px;
+  background: #dddad6;
+}
+#itemTabContent #files {
+  z-index: 2;
+  top: -27px;
+  background: #cbcac6;
+}
+#itemTabContent #reviews {
+  z-index: 1;
+  top: -32px;
+  background: #aeada9;
 }
 
-#itemTabContent .tab-pane {
-  background: #fff;
-  padding: 32px 20px;
+#itemTab li {
+  padding-left: 11px;
+  /* overflow: hidden; */
+  margin: 0;
+}
+#itemTab li a {
+  color: #2e2e2e;
+  border-radius: 10px 10px 0 0;
+  text-decoration: none;
+transition: top .3s ease;
+-moz-transition: top .3s ease;
+-webkit-transition: top .3s ease;
+}
+}
+
+#itemTab li:first-child  {
+    padding-left: 0;
+}
+/*
+#itemTab li a:not(.active) {
+  position: relative;
+} */
+#itemTab li:first-child:before {
+  content: '';
+  position: absolute;
+  width: 12px;
+  height: 40px;
+  background-color: #f3f3f3;
+  left: 0px;
+  z-index: 7;
+}
+#itemTab li:not(.active) a span {
+  content: '';
+  position: absolute;
+  width: 96px;
+  height: 87px;
+  left: -39px;
+  background-image: url(../images/item-grpahics-shadow-intab2.png);
+    background-repeat: no-repeat;
+}
+#itemTabDescription,
+#itemTab .nav-item.active a  {
+    background: #fffffe;
+    z-index: 6;
+}
+
+li:not(.active) #itemTabDescription {
+  background: #f7f7f1;
 }
 
 #itemTabSpec {
   background-color: #f0efe9;
+  z-index: 5;
+  top: -2px;
+}
+#itemTabDeliveryPayments {
+  background-color: #e9e8e2;
+  z-index: 4;
+  top: -5px;
+}
+#itemTabVideo {
+  background-color: #dcdad6;
+  z-index: 3;
+  top: -8px;
+}
+#itemTabFiles {
+  background-color: #cbcac6;
+  z-index: 2;
+  top: -12px;
+}
+
+#itemTabReviews {
+  background-color: #b3b2ae;
+  z-index: 1;
+  top:-17px;
 }
