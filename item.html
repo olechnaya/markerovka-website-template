@@ -125,7 +125,6 @@ font-family: 'IBM Plex Serif', serif;
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="cat-nav-mega">
               <ul class="nav navbar-nav">
-                <!-- <li class="active"><a href="index.html">Каталог</a></li> -->
 
                 <li class="dropdown menu-large">
 
@@ -172,112 +171,7 @@ font-family: 'IBM Plex Serif', serif;
                             <li><a href="">Boots</a></li>
                           </ul>
                         </div>
-                        <div class="mega-product">
-                          <div class="mega-sub-title">Featured products</div>
-                          <div class="row">
-                            <div class="col-md-6 prdct-grid">
-                              <div class="product-fade">
-                                <div class="product-fade-wrap">
-                                  <div id="product-image10" class="owl-carousel owl-theme">
-                                    <div class="item"><img src="images/p-9.jpg" alt="" class="img-responsive"></div>
-                                    <div class="item"><img src="images/p-3.jpg" alt="" class="img-responsive"></div>
-                                    <div class="item"><img src="images/p-4.jpg" alt="" class="img-responsive"></div>
-                                    <div class="item"><img src="images/p-5.jpg" alt="" class="img-responsive"></div>
-                                    <div class="item"><img src="images/p-2.jpg" alt="" class="img-responsive"></div>
-                                  </div>
-                                  <div class="product-fade-ct">
-                                    <div class="product-fade-control">
-                                      <div class="to-left">
-                                        <a href=""><i class="fa fa-heart"></i></a>
-                                        <a href=""><i class="fa fa-retweet"></i></a>
-                                        <a href=""><i class="fa fa-search"></i></a>
-                                      </div>
-                                      <div class="to-right">
-                                        <div id="product-control10" class="owl-carousel owl-theme">
-                                          <div class="item">
-                                            <div class="bullets"></div>
-                                          </div>
-                                          <div class="item">
-                                            <div class="bullets"></div>
-                                          </div>
-                                          <div class="item">
-                                            <div class="bullets"></div>
-                                          </div>
-                                          <div class="item">
-                                            <div class="bullets"></div>
-                                          </div>
-                                        </div>
-                                      </div>
-                                      <div class="clearfix"></div>
-                                      <a href="" class="btn btn-to-cart"><span class="bag"></span><span>Add To cart</span>
-                                        <div class="clearfix"></div>
-                                      </a>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="product-name">
-                                Striped Men's Round Neck T-Shirt
-                              </div>
-                              <div class="star-1"></div>
-                              <div class="product-price">
-                                <span>$19.00</span> $15.00
-                              </div>
-                            </div>
-                            <div class="col-md-6 prdct-grid">
-                              <div class="product-fade">
-                                <div class="product-fade-wrap">
-                                  <div id="product-image11" class="owl-carousel owl-theme">
-                                    <div class="item"><img src="images/p-1.jpg" alt="" class="img-responsive"></div>
-                                    <div class="item"><img src="images/p-3.jpg" alt="" class="img-responsive"></div>
-                                    <div class="item"><img src="images/p-4.jpg" alt="" class="img-responsive"></div>
-                                    <div class="item"><img src="images/p-5.jpg" alt="" class="img-responsive"></div>
-                                    <div class="item"><img src="images/p-1.jpg" alt="" class="img-responsive"></div>
-                                  </div>
-                                  <div class="product-fade-ct">
-                                    <div class="product-fade-control">
-                                      <div class="to-left">
-                                        <a href=""><i class="fa fa-heart"></i></a>
-                                        <a href=""><i class="fa fa-retweet"></i></a>
-                                        <a href=""><i class="fa fa-search"></i></a>
-                                      </div>
-                                      <div class="to-right">
-                                        <div id="product-control11" class="owl-carousel owl-theme">
-                                          <div class="item">
-                                            <div class="bullets"></div>
-                                          </div>
-                                          <div class="item">
-                                            <div class="bullets"></div>
-                                          </div>
-                                          <div class="item">
-                                            <div class="bullets"></div>
-                                          </div>
-                                          <div class="item">
-                                            <div class="bullets"></div>
-                                          </div>
-                                        </div>
-                                      </div>
-                                      <div class="clearfix"></div>
-                                      <a href="" class="btn btn-to-cart"><span class="bag"></span><span>Add To cart</span>
-                                        <div class="clearfix"></div>
-                                      </a>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="product-name">
-                                Striped Men's Round Neck T-Shirt
-                              </div>
-                              <div class="star-1"></div>
-                              <div class="product-price">
-                                <span>$19.00</span> $15.00
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="mega-offers">
-                          <a href=""><img src="images/mega-offers.jpg" class="img-responsive" alt=""></a>
-                        </div>
+
                         <div class="clearfix"></div>
                       </div>
                     </li>
@@ -383,7 +277,7 @@ font-family: 'IBM Plex Serif', serif;
                   </select>
                 </div>
                 <a href="" class="btn-dashed view-all">Смотреть всё описание</a>
-                <a href="" class="btn btn-magenta btn-image order">Заказать</a>
+                <a href="" class="btn btn-magenta btn-order" id="orderCurrentProduct"><span></span>Заказать</a>
                 <i class="manager-i">Наличие уточнить у менеджера</i>
               </div>
               <div class="col-md-4" id="relatedGoods">
@@ -396,7 +290,9 @@ font-family: 'IBM Plex Serif', serif;
                 <label for="МК-56001"><input type="checkbox" checked id="МК-56001" name="МК-56001"><b>Текущая позиция: </b><a href="" class="in-text">Этикетки 40 х 30 мм МК-56001 </a></label>
                 <label for="МК-10010064"><input type="checkbox" checked id="МК-10010064" name="МК-10010064"><a href="" class="in-text">Ювелирные этикетки Zebra МК-10010064 </a></label>
                 <label for="МК-56002"><input type="checkbox" checked id="МК-56002" name="МК-56002"><a href="" class="in-text">Желтые этикетки Zebra 40 х 30 мм МК-56002</a></label>
-                <a href="" class="btn btn-magenta line btn-add-selected">Добавить выбранное в заказ</a>
+
+                  <a href="" class="btn btn-magenta line btn-add-selected" id="orderSelectedProducts">Добавить выбранное в заказ</a>
+
               </div>
               <div class="col-md-2" id="deliveryDetails">
                 <strong>Доставка</strong>
@@ -404,6 +300,7 @@ font-family: 'IBM Plex Serif', serif;
                 <a href="#" class="btn-dashed view-all icon-track">Детали доставки</a>
               </div>
             </div>
+
             <div class="row">
               <div class="col-md-10">
                 <ul class="nav nav-pills mb-3" id="itemTab">

@@ -4525,10 +4525,34 @@ a.in-text {
   font-weight: 400;
 }
 
-a.btn.btn-magenta.line.btn-add-selected {
+.btn.btn-magenta.line.btn-add-selected {
     padding-left: 60px;
     padding-right: 25px;
     background: url(images/item-grpahics.png) no-repeat 17px 0;
+    margin-top: 47px;
+}
+
+.btn-magenta.line.btn-add-selected:hover {
+background-color: rgba(238, 36, 85, 0.08);
+}
+
+.btn.btn-magenta.btn-order span{
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background-image: url(images/item-grpahics.png);
+  background-position: -8px -229px;
+  background-repeat: no-repeat;
+  left: 30px;
+}
+
+.btn-order {
+  position: relative;
+  text-transform: uppercase;
+  display: block;
+  max-width: 262px;
+  margin: 0;
+padding: 7px 25px 9px 60px;
 }
 
 .btn-blue {

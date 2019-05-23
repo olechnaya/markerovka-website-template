@@ -152,13 +152,6 @@ hgroup {
   left: -34px;
 }
 
-.order {
-  text-transform: uppercase;
-  display: block;
-  max-width: 250px;
-  margin: 0 auto;
-}
-
 .manager-i {
   position: relative;
   font-size: 11px;
@@ -216,11 +209,6 @@ hgroup {
   background-position: -5px -364px;
   margin: 8px 0 0 4px;
 }
-
-.btn-image.order {
-  margin: 0;
-}
-
 .photo-decor {
   position: relative;
   padding: 3px 3px;
@@ -362,6 +350,7 @@ a[data-fancybox="gallery"] {
   font-weight: 400;
   font-size: 12px;
   opacity: .6;
+  margin-bottom: 12px;
 }
 
 #relatedGoods label.jcf-label-active {
@@ -400,4 +389,17 @@ a[data-fancybox="gallery"] {
 }
 .product span {
   display: block;
+}
+
+#itemTab > li > a{
+    background: #fff;
+}
+
+#itemTabContent .tab-pane {
+  background: #fff;
+  padding: 32px 20px;
+}
+
+#itemTabSpec {
+  background-color: #f0efe9;
 }
