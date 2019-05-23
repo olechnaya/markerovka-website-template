@@ -395,6 +395,7 @@ a[data-fancybox="gallery"] {
 }
 #itemTabContent .tab-pane {
   background: #fffffe;
+  border-top-right-radius: 10px;
   padding: 32px 20px;
   display: block;
   position: absolute;
@@ -414,26 +415,31 @@ transition: top .15s linear;
   z-index: 5;
   top: -6px;
   background: #f0efe9;
+  right: 10px;
 }
 #itemTabContent #delivery_payments {
   z-index: 4;
   top: -13px;
   background: #e9e8e2;
+  right: 20px;
 }
 #itemTabContent #video {
   z-index: 3;
   top: -20px;
   background: #dddad6;
+  right: 30px;
 }
 #itemTabContent #files {
   z-index: 2;
   top: -27px;
   background: #cbcac6;
+  right: 40px;
 }
 #itemTabContent #reviews {
   z-index: 1;
   top: -32px;
   background: #aeada9;
+  right: 50px;
 }
 
 #itemTab li {
@@ -445,10 +451,13 @@ transition: top .15s linear;
   color: #2e2e2e;
   border-radius: 10px 10px 0 0;
   text-decoration: none;
-transition: top .3s ease;
+  opacity: .9;
+/* transition: top .3s ease;
 -moz-transition: top .3s ease;
--webkit-transition: top .3s ease;
-}
+-webkit-transition: top .3s ease; - twoo buggy with tab-pane divs sliding*/
+transition:none;
+-moz-transition:none;
+-webkit-transition:none;
 }
 
 #itemTab li:first-child  {
@@ -459,27 +468,29 @@ transition: top .3s ease;
   position: relative;
 } */
 #itemTab li:first-child:before {
-  content: '';
+  /* content: '';
   position: absolute;
   width: 12px;
   height: 40px;
   background-color: #f3f3f3;
   left: 0px;
-  z-index: 7;
+  z-index: 7; */
 }
 #itemTab li:not(.active) a span {
-  content: '';
+  /* in progress */
+  /* content: '';
   position: absolute;
   width: 96px;
   height: 87px;
   left: -39px;
   background-image: url(../images/item-grpahics-shadow-intab2.png);
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
 }
 #itemTabDescription,
 #itemTab .nav-item.active a  {
     background: #fffffe;
     z-index: 6;
+    opacity: 1;
 }
 
 li:not(.active) #itemTabDescription {
@@ -504,11 +515,15 @@ li:not(.active) #itemTabDescription {
 #itemTabFiles {
   background-color: #cbcac6;
   z-index: 2;
-  top: -12px;
+  top: -15px;
 }
 
 #itemTabReviews {
   background-color: #b3b2ae;
   z-index: 1;
-  top:-17px;
+  top:-21px;
+    opacity: 1!important;
+}
+#itemTabReviews .opacityOnly {
+  opacity: 0.8;
 }
