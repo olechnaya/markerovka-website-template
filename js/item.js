@@ -1,4 +1,8 @@
 $(function() {
+  $(document).ready(function() {
+      $('body').fadeIn(1000);
+  });
+
   jcf.setOptions('Select', {
     wrapNative: false,
     fakeDropInBody: false,
@@ -39,7 +43,8 @@ toolbar: false
           activeTabPane.css({
             'zIndex': 7,
             'background-color': '#fffffe',
-            'top':0
+            'top':0,
+            'width':'100%'
           });
           previousTabPane.removeAttr( 'style' );
   });

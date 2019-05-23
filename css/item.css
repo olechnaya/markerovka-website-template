@@ -1,5 +1,7 @@
 @import "../font-awesome/css/font-awesome.css";
-
+body {
+  display: none; /* wait for all scenarious are done */
+}
 .item {
   background: #f3f3f3;
   padding-bottom: 80px;
@@ -42,7 +44,7 @@ hgroup h1 {
   display: inline-block;
   padding: 0 5px;
   position: relative;
-  background: url(../images/item-grpahics-2.png);
+  background: url(../images/item-grpahics-label.png);
   height: 25px;
   line-height: 25px;
   margin-left: 15px;
@@ -209,6 +211,7 @@ hgroup {
   background-position: -5px -364px;
   margin: 8px 0 0 4px;
 }
+
 .photo-decor {
   position: relative;
   padding: 3px 3px;
@@ -383,16 +386,20 @@ a[data-fancybox="gallery"] {
   display: block;
   font-size: 12px;
 }
+
 .product img {
-    border: 1px solid #c1c1c1;
-    margin-bottom: 15px;
+  border: 1px solid #c1c1c1;
+  margin-bottom: 15px;
 }
+
 .product span {
   display: block;
 }
+
 #itemTabContent {
   position: relative;
 }
+
 #itemTabContent .tab-pane {
   background: #fffffe;
   border-top-right-radius: 10px;
@@ -405,36 +412,42 @@ a[data-fancybox="gallery"] {
   left: 0;
   right: 0;
   -webkit-transition: top .15s linear;
--o-transition: top .15s linear;
-transition: top .15s linear;
+  -o-transition: top .15s linear;
+  transition: top .15s linear;
 }
+
 #itemTabContent #description {
   z-index: 6;
 }
+
 #itemTabContent #spec {
   z-index: 5;
   top: -6px;
   background: #f0efe9;
   right: 10px;
 }
+
 #itemTabContent #delivery_payments {
   z-index: 4;
   top: -13px;
   background: #e9e8e2;
   right: 20px;
 }
+
 #itemTabContent #video {
   z-index: 3;
   top: -20px;
   background: #dddad6;
   right: 30px;
 }
+
 #itemTabContent #files {
   z-index: 2;
   top: -27px;
   background: #cbcac6;
   right: 40px;
 }
+
 #itemTabContent #reviews {
   z-index: 1;
   top: -32px;
@@ -447,22 +460,24 @@ transition: top .15s linear;
   /* overflow: hidden; */
   margin: 0;
 }
+
 #itemTab li a {
   color: #2e2e2e;
   border-radius: 10px 10px 0 0;
   text-decoration: none;
   opacity: .9;
-/* transition: top .3s ease;
+  /* transition: top .3s ease;
 -moz-transition: top .3s ease;
 -webkit-transition: top .3s ease; - twoo buggy with tab-pane divs sliding*/
-transition:none;
--moz-transition:none;
--webkit-transition:none;
+  transition: none;
+  -moz-transition: none;
+  -webkit-transition: none;
 }
 
-#itemTab li:first-child  {
-    padding-left: 0;
+#itemTab li:first-child {
+  padding-left: 0;
 }
+
 /*
 #itemTab li a:not(.active) {
   position: relative;
@@ -476,6 +491,7 @@ transition:none;
   left: 0px;
   z-index: 7; */
 }
+
 #itemTab li:not(.active) a span {
   /* in progress */
   /* content: '';
@@ -486,11 +502,12 @@ transition:none;
   background-image: url(../images/item-grpahics-shadow-intab2.png);
     background-repeat: no-repeat; */
 }
+
 #itemTabDescription,
-#itemTab .nav-item.active a  {
-    background: #fffffe;
-    z-index: 6;
-    opacity: 1;
+#itemTab .nav-item.active a {
+  background: #fffffe;
+  z-index: 6;
+  opacity: 1;
 }
 
 li:not(.active) #itemTabDescription {
@@ -502,16 +519,19 @@ li:not(.active) #itemTabDescription {
   z-index: 5;
   top: -2px;
 }
+
 #itemTabDeliveryPayments {
   background-color: #e9e8e2;
   z-index: 4;
   top: -5px;
 }
+
 #itemTabVideo {
   background-color: #dcdad6;
   z-index: 3;
   top: -8px;
 }
+
 #itemTabFiles {
   background-color: #cbcac6;
   z-index: 2;
@@ -521,9 +541,57 @@ li:not(.active) #itemTabDescription {
 #itemTabReviews {
   background-color: #b3b2ae;
   z-index: 1;
-  top:-21px;
-    opacity: 1!important;
+  top: -21px;
+  opacity: 1 !important;
 }
+
 #itemTabReviews .opacityOnly {
   opacity: 0.8;
+}
+
+.review-item {
+  font-size: 12px;
+  margin: 0;
+}
+
+.review-item:nth-child(odd) {
+  background-color: #fdf5f7;
+}
+
+.review-item i {
+  background: none;
+  color: #000;
+  font-weight: 700;
+  display: block;
+  margin: 15px 0 0;
+}
+
+.review-item p {
+  margin: 10px 0 20px;
+}
+
+.icon-review {
+  width: 40px;
+  height: 40px;
+  background-image: url(../images/item-grpahics-emoticons.png);
+  background-position-x: -1px;
+  margin: 16px auto 6px;
+}
+.emoticon {
+  text-align: center;
+}
+.icon-review.excellent {
+  background-position-y: -85px;
+}
+.icon-review.good {
+  background-position-y: -127px;
+}
+.icon-review.normal {
+  background-position-y: -169px;
+}
+.icon-review.bad {
+  background-position-y: -43px;
+}
+.icon-review.awful {
+  background-position-y: -1px;
 }
