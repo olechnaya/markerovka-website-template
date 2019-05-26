@@ -1657,6 +1657,14 @@ blockquote {
   margin-bottom: 40px !important;
 }
 
+.mb15 {
+  margin-bottom: 15px;
+}
+
+.ml20 {
+  margin-left: 20px;
+}
+
 .fr {
   float: right;
 }
@@ -1668,11 +1676,9 @@ blockquote {
 .w50 {
   width: 50%;
 }
-
-.ml20 {
-  margin-left: 20px;
+.w80 {
+  width: 80%;
 }
-
 .ta {
   text-align: center;
 }

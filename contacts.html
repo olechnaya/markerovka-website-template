@@ -352,43 +352,47 @@ font-family: 'IBM Plex Serif', serif;
 
 
                 <!-- Tab panes -->
-                <div class="tab-content min-marg">
+                <div class="tab-content min-marg" id="citiesTabPane">
                   <div class="tab-pane active" id="msk">
                     <div class="row">
                       <div class="col-md-6">
                         <h2>Центральный офис</h2>
                         <div class="row">
-                          <div class="col-md-2 ta-r"><strong>Адрес</strong></div>
-                          <div class="col-md-10"><i class="map-point"></i>г. Москва, 3-й Нижнелихоборский пр-д, 1А с.6 </div>
+                          <div class="col-md-4 ta-r"><strong>Адрес</strong></div>
+                          <div class="col-md-8 mb15"><i class="icon map-point"></i>г. Москва, 3-й Нижнелихоборский пр-д, 1А с.6 </div>
                         </div>
                         <div class="row">
-                          <div class="col-md-2 ta-r"><strong>Ближайшее метро</strong></div>
-                          <div class="col-md-10"><i class="map-point"></i> м. Петровско-Разумовская  </div>
+                          <div class="col-md-4 ta-r"><strong>Ближайшее метро</strong></div>
+                          <div class="col-md-8 mb15"><i class="icon metro"></i> м. Петровско-Разумовская  </div>
                         </div>
                         <div class="row">
-                          <div class="col-md-2 ta-r"><strong>Почта</strong></div>
-                          <div class="col-md-10"><i class="map-point"></i>blabla@mail.ru </div>
+                          <div class="col-md-4 ta-r"><strong>Почта</strong></div>
+                          <div class="col-md-8 mb15"><i class="icon mail"></i>blabla@mail.ru </div>
                         </div>
                         <div class="row">
-                          <div class="col-md-2 ta-r"><strong>Телефон</strong></div>
-                          <div class="col-md-10"><i class="map-point"></i>+7 (495) 123-36-00  </div>
+                          <div class="col-md-4 ta-r"><strong>Телефон</strong></div>
+                          <div class="col-md-8 mb15"><i class="icon phone"></i>+7 (495) 123-36-00  </div>
                         </div>
                         <div class="row">
-                          <div class="col-md-2 ta-r"><strong>Время работы</strong></div>
-                          <div class="col-md-10"><i class="map-point"></i>Будни: с 9.30 до 18.30 <br>Без перерыва на обед<br>Суббота - дежурный менеджер <br>Воскресенье - выходной</div>
+                          <div class="col-md-4 ta-r"><strong>Время работы</strong></div>
+                          <div class="col-md-8 mb15"><i class="icon working-hours"></i>Будни: с 9.30 до 18.30 <br>Без перерыва на обед<br>Суббота - дежурный менеджер <br>Воскресенье - выходной</div>
                         </div>
                         <div class="row">
-                          <div class="col-md-2 ta-r"><strong>Как пройти</strong></div>
-                          <div class="col-md-10"><i class="map-point"></i>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.  </div>
+                          <div class="col-md-4 ta-r"><strong>Как пройти</strong></div>
+                          <div class="col-md-8 mb15 expandable in"><i class="icon walk fl"></i><p class="fl w80">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p> </div>
                         </div>
                         <div class="row">
-                          <div class="col-md-2 ta-r"><strong>Как проехать</strong></div>
-                          <div class="col-md-10"><i class="map-point"></i>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </div>
+                          <div class="col-md-4 ta-r"><strong>Как проехать</strong></div>
+                          <div class="col-md-8 mb15 expandable in"><i class="icon drive fl"></i><p class="fl w80">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p></div>
                         </div>
                       </div>
                       <div class="col-md-6">
-                        <img src="images/contacts-map-placeholder-1.png" alt="Центральный офис">
+                        <img src="images/contacts-map-placeholder-1.png" alt="Центральный офис" class="placeholder-map">
+                        Карта Фото
                       </div>
+                    </div>
+                    <div class="row min-marg">
+                      <hr>
                     </div>
                     <div class="row">
                       <div class="col-md-6">
@@ -499,7 +503,7 @@ font-family: 'IBM Plex Serif', serif;
               <div class="clearfix"></div>
             </div>
           </div>
-          <div class="col-md-2 col-md-offset-1">
+          <div class="col-md-4 col-md-offset-1">
             <div class="quick-links">
               <ul>
                 <li><a href="" class="btn btn-white"> On-Line Заказ</a></li>
