@@ -1676,6 +1676,9 @@ blockquote {
 .ta {
   text-align: center;
 }
+.ta-r {
+  text-align: right;
+}
 
 .article .img-holder {
   border: 1px solid #ef2950;
