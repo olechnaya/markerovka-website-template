@@ -47,26 +47,34 @@ hgroup h1 {
   display: inline-block;
   padding: 0 5px;
   position: relative;
-  background: url(../images/item-grpahics-label.png);
+  background-image: url(../images/item-grpahics-label-c.png);
+  background-position: 0;
+background-repeat: repeat-x;
   height: 25px;
   line-height: 25px;
   margin-left: 15px;
+
 }
 
 .item-id span:after,
 .item-id span:before {
   content: '';
   position: absolute;
-  background-image: url(../images/item-grpahics.png);
+  background-image: url(../images/item-grpahics-label-l-r.png);
 }
 
 .item-id span:before {
-  left: -8px;
-  width: 8px;
+  left: -7px;
+  width: 7px;
   height: 25px;
-  background-position: -5px -231px;
+  background-position: 0px -51px;
 }
-
+.item-id span:after {
+  right: -6px;
+  width: 6px;
+  height: 25px;
+  background-position: -1px -26px;
+}
 .write-review a:before,
 .print-page a:before,
 .manager-i:before {
@@ -75,12 +83,6 @@ hgroup h1 {
   background: url(../images/item-grpahics.png);
 }
 
-.item-id span:after {
-  right: -8px;
-  width: 8px;
-  height: 25px;
-  background-position: -5px -266px;
-}
 
 hgroup {
   border-bottom: 3px solid;
