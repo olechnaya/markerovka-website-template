@@ -312,7 +312,7 @@ font-family: 'IBM Plex Serif', serif;
             <div class="map"></div>
           </hgroup>
         </div>
-        <div class="item">
+        <div class="markerovka-contacts">
           <div class="container">
             <div class="row cities-tab-list">
               <!-- Nav tabs -->
@@ -381,14 +381,14 @@ font-family: 'IBM Plex Serif', serif;
                     </div>
                     <div class="row">
                       <div class="col-md-4 ta-r"><strong>Как пройти</strong></div>
-                      <div class="col-md-8 mb15 expandable in"><i class="icon walk fl"></i>
+                      <div class="col-md-8 mb15 expandable collapsed"><i class="icon walk fl"></i>
                         <p class="fl w80">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan
                           lacus vel facilisis. </p>
                       </div>
                     </div>
                     <div class="row">
                       <div class="col-md-4 ta-r"><strong>Как проехать</strong></div>
-                      <div class="col-md-8 mb15 expandable in"><i class="icon drive fl"></i>
+                      <div class="col-md-8 mb15 expandable collapsed"><i class="icon drive fl"></i>
                         <p class="fl w80">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan
                           lacus vel facilisis. </p>
                       </div>
@@ -429,14 +429,14 @@ font-family: 'IBM Plex Serif', serif;
                     </div>
                     <div class="row">
                       <div class="col-md-4 ta-r"><strong>Как пройти</strong></div>
-                      <div class="col-md-8 mb15 expandable in"><i class="icon walk fl"></i>
+                      <div class="col-md-8 mb15 expandable collapsed"><i class="icon walk fl"></i>
                         <p class="fl w80">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan
                           lacus vel facilisis. </p>
                       </div>
                     </div>
                     <div class="row">
                       <div class="col-md-4 ta-r"><strong>Как проехать</strong></div>
-                      <div class="col-md-8 mb15 expandable in"><i class="icon drive fl"></i>
+                      <div class="col-md-8 mb15 expandable collapsed"><i class="icon drive fl"></i>
                         <p class="fl w80">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan
                           lacus vel facilisis. </p>
                       </div>
@@ -709,6 +709,11 @@ font-family: 'IBM Plex Serif', serif;
     $('#citiesTab a').on('click', function(e) {
       e.preventDefault()
       $(this).tab('show')
+    })
+
+    $('.expandable').on('click', function(e) {
+      //$(this).css('height', 'auto')
+      $(this).toggleClass( "collapsed" )
     })
   </script>
   <!-- <script src="js/item.js"></script> -->

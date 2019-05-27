@@ -6,9 +6,8 @@
   font-style: normal;
 }
 
-.item {
+.markerovka-contacts {
   background: #f3f3f3;
-  padding-bottom: 80px;
 }
 
 hgroup h1 {
@@ -143,11 +142,18 @@ hgroup {
 }
 
 .expandable {
-  height: 3em;
+  cursor: pointer;
   overflow: hidden;
+  transition:max-height 0.3s ease-out;
+  height:auto;
+  max-height:600px;
+      padding-bottom: 4px;
+}
+.expandable.collapsed {
+  max-height:3em;
 }
 
-.expandable.in:after {
+.expandable:after {
   content: '';
   position: absolute;
   bottom: 0;
@@ -222,7 +228,7 @@ hgroup {
   background-image: url(../images/contacts-bg.png);
   background-repeat: no-repeat;
   width: 1430px;
-  height: 672px;
+  height: 580px;
   left: -160px;
   top: -20px;
 }
@@ -332,18 +338,11 @@ hgroup {
 }
 
 .col-5 {
-  left: -174px;
-  bottom: -30px;
+  right: 83px;
+top: 200px;
 }
 
 .col-5 .circle {
-  .col-4 {
-    left: 775px;
-    top: 146px;
+  left: -174px;
+  bottom: -30px;
   }
-
-  .col-4 .circle {
-    left: -185px;
-    bottom: 0px;
-  }
-}
