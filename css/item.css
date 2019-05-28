@@ -49,11 +49,10 @@ hgroup h1 {
   position: relative;
   background-image: url(../images/item-grpahics-label-c.png);
   background-position: 0;
-background-repeat: repeat-x;
+  background-repeat: repeat-x;
   height: 25px;
   line-height: 25px;
   margin-left: 15px;
-
 }
 
 .item-id span:after,
@@ -69,12 +68,14 @@ background-repeat: repeat-x;
   height: 25px;
   background-position: 0px -51px;
 }
+
 .item-id span:after {
   right: -6px;
   width: 6px;
   height: 25px;
   background-position: -1px -26px;
 }
+
 .write-review a:before,
 .print-page a:before,
 .manager-i:before {
@@ -82,7 +83,6 @@ background-repeat: repeat-x;
   position: absolute;
   background: url(../images/item-grpahics.png);
 }
-
 
 hgroup {
   border-bottom: 3px solid;
@@ -413,6 +413,7 @@ a[data-fancybox="gallery"] {
   position: absolute;
   visibility: visible;
   opacity: 1;
+  overflow: hidden;
   top: 0;
   left: 0;
   right: 0;
@@ -644,4 +645,105 @@ li:not(.active) #itemTabDescription {
   width: 76px;
   height: 74px;
   background-position: -1px -164px;
+}
+
+#spec table {
+  width: 100%;
+  margin-right: 50px;
+}
+
+#spec table tr:nth-child(even) {
+  background-color: #faf7f1;
+}
+
+#spec table td:first-child {
+  font-weight: bold;
+  text-align: right;
+  padding: 5px 40px 5px 15px;
+  width: 1%;
+  white-space: nowrap;
+}
+
+.delivery-cost {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  padding: 5px 100px 5px 31px;
+  text-align: center;
+  font-size: 10px;
+  line-height: normal;
+  background: #fdda01;
+  color: #46464e;
+  padding-right: 100px;
+  text-align: left;
+}
+
+.delivery-cost:hover {
+  color: #46464e;
+}
+
+.delivery-cost:before {
+  content: '';
+  position: absolute;
+  width: 121px;
+  height: 30px;
+  top: -23px;
+  left: 0;
+  background: #fffffe;
+  transform-origin: 18% 0;
+  transform: rotate(105deg);
+  z-index: 0;
+}
+
+.delivery-cost i, .delivery-cost b {
+  font-size: 17px;
+  text-transform: uppercase;
+}
+
+.delivery-cost i {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-style: italic;
+}
+
+.delivery-cost span {
+  display: block;
+}
+
+.slogan {
+  font-weight: 700;
+  font-style: italic;
+  font-size: 19px;
+  padding-left: 5px;
+}
+
+.slogan {
+  width: 28%;
+  margin-top: 35px;
+}
+
+.slogan span {
+  text-transform: uppercase;
+}
+
+.slogan i {
+  font-weight: 300;
+  font-size: 23px;
+  color: #f1d352;
+}
+
+.delivery-text {
+  width: 70%;
+  padding-left: 40px;
+  margin-top: 32px;
+}
+
+.arrow-icon {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  margin-top: -35px;
+}
+
+.tab-pane {
+  line-height: 26px;
 }
