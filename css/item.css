@@ -114,7 +114,9 @@ hgroup {
   /* Opera 10.5 */
   transition: border-color .2s linear;
 }
-
+.btn-dashed:active {
+      color: #2b2a2f;
+}
 .write-review a:before {
   width: 20px;
   height: 20px;
@@ -748,6 +750,6 @@ li:not(.active) #itemTabDescription {
   line-height: 26px;
 }
 
-.tab-container {
+.tabs-container {
       margin: 45px 60px 0 -27px;
 }

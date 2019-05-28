@@ -1094,7 +1094,7 @@ a {
 }
 a:hover,
 a:focus {
-  color: #23527c;
+  color: #2b2a2f;
   text-decoration: none!important;/*глюки с кликом на ссылки  в . item-details - проявляется как underline*/
 }
 a:focus {
