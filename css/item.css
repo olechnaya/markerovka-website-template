@@ -747,3 +747,7 @@ li:not(.active) #itemTabDescription {
 .tab-pane {
   line-height: 26px;
 }
+
+.tab-container {
+      margin: 45px 60px 0 -27px;
+}
