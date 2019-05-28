@@ -395,8 +395,23 @@ font-family: 'IBM Plex Serif', serif;
                     </div>
                   </div>
                   <div class="col-md-6">
-                    <img src="images/contacts-map-placeholder-1.png" alt="Центральный офис" class="placeholder-map">
-                    Карта Фото
+                  <div class=" office-route">
+                    <div id="mainOfficeMap">
+                      <img src="images/contacts-map-placeholder-1.png" alt="Центральный офис" class="placeholder-map">
+                    </div>
+                    <div id="mainOfficerouteSiemaSlider">
+                      <div class="siema">
+                        <img src="images/contacts-office-placeholder-1.png" alt="Офис нагорная">
+                        <img src="images/contacts-office-placeholder-1.png" alt="Офис нагорная">
+                        <img src="images/contacts-office-placeholder-1.png" alt="Офис нагорная">
+                      </div>
+</div>
+                      <ul class="switches">
+                        <li><a href="#mainOfficeMap" class="active">Карта</a></li>
+                        <li><a href="#mainOfficerouteSiemaSlider">Фото</a></li>
+
+
+
                   </div>
                 </div>
                 <div class="row min-marg">
@@ -444,6 +459,8 @@ font-family: 'IBM Plex Serif', serif;
                   </div>
                   <div class="col-md-6">
                     <img src="images/contacts-map-placeholder-2.png" alt="Офис нагорная">
+
+                    </div>
                   </div>
                 </div>
               </div>
@@ -704,6 +721,7 @@ font-family: 'IBM Plex Serif', serif;
   <script src="js/bootstrap.min.js"></script>
   <script src="js/tooltipster.bundle.min.js"></script>
   <script src="js/material-scrolltop.js"></script>
+<script src="js/siema.min.js"></script>
   <script src="js/theme-script.js"></script>
   <script>
     $('#citiesTab a').on('click', function(e) {
@@ -715,6 +733,36 @@ font-family: 'IBM Plex Serif', serif;
       //$(this).css('height', 'auto')
       $(this).toggleClass( "collapsed" )
     })
+    $('.switches a').on('click', function(e) {
+      e.preventDefault();
+        var targetDiv =  $(this).attr('href');
+
+      if($(this).hasClass('active')) return;
+
+      $('.switches a').removeClass('active');
+
+    $('.office-route').children('div').css({'zIndex': 0, opacity: 0})
+    $(targetDiv).css({'zIndex': 1, opacity: 1})
+      $(this).addClass('active');
+    })
+
+    const sae_sliderSiema = new Siema({
+      selector: '#mainOfficerouteSiemaSlider .siema',
+      duration: 200,
+      easing: 'ease-out',
+      perPage: 1,
+      startIndex: 0,
+      draggable: true,
+      multipleDrag: true,
+      threshold: 20,
+      loop: true,
+      rtl: false,
+      onInit: () => {},
+      onChange: () => {},
+    });
+    $('#routeSiemaSlider').on('click', '.prev', () => sae_sliderSiema.prev());
+    $('#routeSiemaSlider').on('click', '.next', () => sae_sliderSiema.next());
+
   </script>
   <!-- <script src="js/item.js"></script> -->
 </body>
