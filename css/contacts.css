@@ -354,18 +354,22 @@ hgroup {
   height: 230px;
 }
 
-.office-route>div {
+.office-route > div {
   position: absolute;
   width: 100%;
 }
 
-#mainOfficeMap {
-  z-index: 1;
-}
-
-#mainOfficerouteSiemaSlider {
+.route-item {
+  /* display: none; */
   z-index: 0;
   opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.route-item.active {
+  display: block;
+  z-index: 1;
+  opacity: 1;
 }
 
 .switches {
@@ -376,7 +380,8 @@ hgroup {
   list-style: none;
 }
 .switches li {
-  float: left;
+  display: inline-block;
+vertical-align: bottom;
 }
 
 .switches li a {
@@ -384,10 +389,61 @@ hgroup {
   background: #fff;
   padding: 6px 20px;
   color: #2e2e2e;
+  transition: padding 0.4s linear;
 }
 .switches li a:first-child {
   margin-right: 5px;
 }
 .switches li a.active {
   font-weight: 700;
+  padding: 8px 25px;
+}
+
+.prev, .next {
+  cursor: pointer;
+  opacity: 0;
+  width: 83px;
+  height: 40px;
+  position: absolute;
+  top:50%;
+  margin-top: -20px;
+  background: url(../images/contacts-siema-arrow.png);
+}
+.route-item.active .prev,
+.route-item.active .next {
+  opacity: 1;
+}
+.prev {
+  left:-42px;
+}
+.next {
+  right: -42px;
+  -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+.siema {
+  text-align: center;
+}
+.navigation {
+  display: inline-block;
+  position: relative;
+  top: -10px;
+}
+.navigation button {
+  width: 16px;
+  height: 16px;
+  border: 1px solid #b7b7b7;
+  background: #f5f5f5;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 1px;
+}
+
+.navigation button.active {
+  border-color: #ed145b;
+width: 20px;
+height: 20px;
 }
