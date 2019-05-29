@@ -90,4 +90,31 @@ jQuery(document).ready(function($) {
     });
   });
 
+  const annualadding1_sliderSiema = new Siema({
+    selector: '#mainOfficeRouteSiemaSlider .siema',
+    duration: 200,
+    easing: 'ease-out',
+    perPage: 1,
+    startIndex: 0,
+    draggable: true,
+    multipleDrag: true,
+    threshold: 20,
+    loop: true,
+    rtl: false//,
+    //onChange: onChangeCallback,
+  });
+  Siema.prototype.addPagination = function(instance) {
+    var test = document.createElement('div');
+    //  debugger;
+    test.setAttribute("id", $(instance).parent().attr('id') + "Nav");
+    test.setAttribute("class", "navigation");
+    this.selector.appendChild(test);
+
+    for (let i = 0; i < this.innerElements.length; i++) {
+      const btn = document.createElement('button');
+      if (i == 0) btn.setAttribute("class", "active");
+      btn.addEventListener('click', () => this.goTo(i));
+      test.appendChild(btn);
+    }
+  }
 });
