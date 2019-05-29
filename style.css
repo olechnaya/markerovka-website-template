@@ -1168,6 +1168,27 @@ blockquote {
   background: -ms-linear-gradient(left, rgba(172, 8, 11, 1) 0%, rgba(246, 99, 94, 1) 100%);
   background: linear-gradient(to right, rgba(172, 8, 11, 1) 0%, rgba(246, 99, 94, 1) 100%);
 }
+
+.violet .text {
+  background: rgba(94, 34, 95, 1);
+background: -moz-linear-gradient(left, rgba(94, 34, 95, 1) 0%, rgba(143, 106, 140, 1) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(94, 34, 95, 1)), color-stop(100%, rgba(143, 106, 140, 1)));
+background: -webkit-linear-gradient(left, rgba(94, 34, 95, 1) 0%, rgba(143, 106, 140, 1) 100%);
+background: -o-linear-gradient(left, rgba(94, 34, 95, 1) 0%, rgba(143, 106, 140, 1) 100%);
+background: -ms-linear-gradient(left, rgba(94, 34, 95, 1) 0%, rgba(143, 106, 140, 1) 100%);
+background: linear-gradient(to right, rgba(94, 34, 95, 1) 0%, rgba(143, 106, 140, 1) 100%);
+}
+
+.blue .text {
+  background: rgba(44,172,232,1);
+background: -moz-linear-gradient(-45deg, rgba(44,172,232,1) 0%, rgba(44,172,232,1) 1%, rgba(138,210,252,1) 100%);
+background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(44,172,232,1)), color-stop(1%, rgba(44,172,232,1)), color-stop(100%, rgba(138,210,252,1)));
+background: -webkit-linear-gradient(-45deg, rgba(44,172,232,1) 0%, rgba(44,172,232,1) 1%, rgba(138,210,252,1) 100%);
+background: -o-linear-gradient(-45deg, rgba(44,172,232,1) 0%, rgba(44,172,232,1) 1%, rgba(138,210,252,1) 100%);
+background: -ms-linear-gradient(-45deg, rgba(44,172,232,1) 0%, rgba(44,172,232,1) 1%, rgba(138,210,252,1) 100%);
+background: linear-gradient(135deg, rgba(44,172,232,1) 0%, rgba(44,172,232,1) 1%, rgba(138,210,252,1) 100%);
+}
+
 .circle.orange {
   color: #ed9b31;
   background: rgba(228, 142, 43, 1);
@@ -1411,7 +1432,7 @@ background: linear-gradient(135deg, rgba(44,172,232,1) 0%, rgba(44,172,232,1) 1%
   position: absolute;
   top: 20px;
   left: 50%;
-  bottom: 10px;
+  bottom: -20px;
   width: 4px;
 }
 
@@ -1520,6 +1541,45 @@ background: linear-gradient(135deg, rgba(44,172,232,1) 0%, rgba(44,172,232,1) 1%
     top: 50px;
     right: 11px;
 }
+
+.annual-addings:first-child .images.right {
+    top: -60px;
+}
+.images.left {
+    width: 600px;
+    left: 0;
+    position: absolute;
+    top: 0;
+}
+.images.right {
+    width: 600px;
+    right: 0;
+    position: absolute;
+    top: 0;
+    text-align: center;
+}
+.images.left .img-container,
+.images.right .img-container {
+  position: absolute;
+  left: 50%;
+  visibility: hidden;
+  opacity: 0;
+  transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -webkit-transition: all .3s ease;
+}
+.images.left .img-container.active,
+.images.right .img-container.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.images.left img,
+.images.right img {
+  position: relative;
+  left: -50%;
+}
+
 .btn-sticker .link {
   position: relative;
   display: inline-block;
@@ -1551,9 +1611,56 @@ background: linear-gradient(135deg, rgba(44,172,232,1) 0%, rgba(44,172,232,1) 1%
 
 
 .annual-addings .btn-sticker .arrow-icon {
-  top:24px;
-  right: 30px;
+  position: relative;
+top: auto;
+right: auto;
 }
+
+.annual-addings .navigation {
+    position: absolute;
+    top: 104px;
+}
+.annual-addings .right .navigation {
+    left: 90px;
+}
+.annual-addings .left .navigation {
+    right: 0;
+    left: auto;
+    margin-right: 140px;
+}
+
+.annual-addings .navigation button {
+  width: 12px;
+      height: 12px;
+      border-radius: 10px;
+      border: 1px solid #fff;
+
+      padding: 0;
+      display: inline-block;
+      vertical-align: middle;
+      margin: 0 1px;
+}
+.annual-addings.red .navigation button {
+    background: #b51315;
+}
+.annual-addings.violet .navigation button {
+    background: #5e225f;
+}
+.annual-addings.orange .navigation button {
+    background: #ed9b31;
+}
+.annual-addings.green .navigation button {
+    background: #6bab12;
+}
+.annual-addings.blue .navigation button {
+    background: #48b8ee;
+}
+.annual-addings .navigation button.active {
+    width: 16px;
+    height: 16px;
+    border-radius: 20px;
+}
+
 .btn-sticker .circle {
   position: absolute;
   width: 90px;
