@@ -1435,6 +1435,9 @@ background: linear-gradient(135deg, rgba(44,172,232,1) 0%, rgba(44,172,232,1) 1%
   bottom: -20px;
   width: 4px;
 }
+.annual-addings:last-child::before {
+    content: none;
+}
 
 .annual-addings .date {
   color: #fff;
@@ -1443,6 +1446,14 @@ background: linear-gradient(135deg, rgba(44,172,232,1) 0%, rgba(44,172,232,1) 1%
       letter-spacing: 2px;
       display: inline-block;
       margin-right: 19px;
+}
+
+.description span.title {
+    width: 210px;
+}
+a.description.link-arrowed > * {
+    display: inline-block;
+    vertical-align: middle;
 }
 
 .annual-addings .description {

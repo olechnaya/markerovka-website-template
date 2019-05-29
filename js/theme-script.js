@@ -195,6 +195,6 @@ jQuery(document).ready(function($) {
       annualadding4_sliderSiema.addPagination(annualadding4_sliderSiema.selector);
 
       //TODO:
-      // declare siema object for 
+      // declare siema object for
       // array ['addingsOf2015','addingsOf2016','addingsOf2017', 'addingsOf2018','addingsOf2019']
 });
