@@ -6016,6 +6016,7 @@ a.in-text {
 
 #cat-nav  .dropdown-menu {
   border-top: 3px solid #ee2455;
+  padding-left: 32px;
 }
 
 .mega-sub {
@@ -6023,7 +6024,8 @@ a.in-text {
   margin-top: 20px;
 }
 
-#cat-nav .mega-sub ul li a {
+#cat-nav .mega-sub ul li a,
+#cat-nav .mega-sub a.show-all {
   color: #2e2e2e;
   font-size: 12px;
   font-family: 'Montserrat Alternates', sans-serif;
@@ -6041,9 +6043,7 @@ text-decoration: underline!important;
 }
 .mega-sub-title:before {
     content: '';
-    width: 17px;
-    height: 17px;
-    background: red;
+    background-image: url(images/sub-menu-icons.png);
     display: block;
     float: left;
     margin-right: 15px;
@@ -6055,4 +6055,29 @@ text-decoration: underline!important;
     margin-bottom: 15px;
     margin-left: -30px;
     position: relative;
+}
+
+.mega-sub-title.sizes:before {
+  background-position: -2px -125px;
+  width: 25px;
+  height: 25px;
+}
+.mega-sub-title.material:before {
+  background-position: -2px -95px;
+  width: 28px;
+  height: 26px;
+  margin-left: -15px;
+margin-right: 15px;
+}
+.mega-sub-title.application:before {
+  background-position: -2px -61px;
+  width: 31px;
+  height: 28px;    margin-left: -15px;
+    margin-right: 15px;
+}
+.mega-sub-title.function:before {
+  background-position: -2px -153px;
+  width: 28px;
+  height: 28px;    margin-left: -15px;
+    margin-right: 15px;
 }
