@@ -639,7 +639,7 @@ blockquote {
   position: relative;
 }
 
-#cat-nav ul li a {
+#cat-nav-mega > ul >li >a {
   color: #ee2455;
   font-size: 17px;
   font-family: 'IBM Plex Serif', serif;
@@ -728,7 +728,7 @@ blockquote {
   display: none;
 }
 
-#cat-nav ul li a:hover {
+#cat-nav-mega > ul > li > a:hover {
   background: #fcf0ef;
   transition: all .3s ease;
   -moz-transition: all .3s ease;
@@ -5939,13 +5939,6 @@ a.in-text {
   white-space: normal;
 }
 
-.megamenu>li ul>li>a:hover,
-.megamenu>li ul>li>a:focus {
-  text-decoration: none;
-  color: #262626;
-  background-color: #f5f5f5;
-}
-
 .megamenu.disabled>a,
 .megamenu.disabled>a:hover,
 .megamenu.disabled>a:focus {
@@ -6026,18 +6019,23 @@ a.in-text {
 
 #cat-nav .mega-sub ul li a,
 #cat-nav .mega-sub a.show-all {
+  position: relative;
   color: #2e2e2e;
   font-size: 12px;
-  font-family: 'Montserrat Alternates', sans-serif;
   text-transform: none;
-      padding: 2px;
+  padding: 2px;
 }
+#cat-nav .mega-sub a.show-all  {
+  padding-right: 34px;
+      background: url(images/cat-icons.png) 100% -162px no-repeat;
+  }
 
 #cat-nav .mega-sub ul li:last-child {
   margin-bottom:  20px;
 }
 
-#cat-nav .mega-sub ul li a:hover {
+#cat-nav .mega-sub ul li a:hover,
+#cat-nav .mega-sub a.show-all:hover {
   background: none;
 text-decoration: underline!important;
 }
@@ -6080,4 +6078,31 @@ margin-right: 15px;
   width: 28px;
   height: 28px;    margin-left: -15px;
     margin-right: 15px;
+}
+
+.mega-sub a.icon:before {
+  content: '';
+  position: absolute;
+  left: -23px;
+  width: 18px;
+  height: 18px;
+  background-image: url(images/sub-menu-icons.png);
+}
+.mega-sub a.icon.hit {
+  background: #f7d3d0;
+}
+.mega-sub a.icon.hit:before {
+  background-position: -1px -2px;
+}
+.mega-sub a.icon.new {
+  background: #dceefa;;
+}
+.mega-sub a.icon.new:before {
+    background-position: -1px -22px;
+}
+.mega-sub a.icon.sale {
+  background: #dff0da;
+}
+.mega-sub a.icon.sale:before {
+    background-position: -1px -42px;
 }
