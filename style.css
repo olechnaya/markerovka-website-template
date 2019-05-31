@@ -736,13 +736,6 @@ blockquote {
   -webkit-transition: all .3s ease;
 }
 
-#cat-nav ul li:first-child a {
-  padding-left: 0;
-}
-
-.homepage-2 #cat-nav ul li {
-  border-right: none;
-}
 
 #cat-nav ul li:last-child {
   border-right: none;
@@ -4326,7 +4319,7 @@ a.description.link-arrowed>* {
 
 .quick-links.other-links .wid-title {
   color: #a4b8d6;
-  text-shadow: 2px 1px 0px #282f39, 1px 2px 0px #b7b7b7;
+  text-shadow: 2px 1px 0px #282f39, 1px 2px 0px rgba(183, 183, 183, 0.29);
   text-transform: uppercase;
   margin-bottom: 30px;
   font: 700 normal 16px 'IBM Plex Serif', serif;
@@ -5908,9 +5901,9 @@ a.in-text {
   padding-right: 0;
 }
 
-#cat-nav ul li:first-child a {
+/* #cat-nav ul li:first-child a {
   padding-left: 17px;
-}
+} */
 
 .menu-large {
   position: static !important;
@@ -6017,9 +6010,24 @@ a.in-text {
   padding: 0;
 }
 #catalogDropdown a {
-  padding: 14px 35px 14px 65px!important;
+  padding: 14px 35px 14px 65px;
   line-height: normal;
 }
+#catalogDropdown a.active {
+  background: #ee2455;
+  color: #fff;
+}
+
+.dropdown-menu.sub-menu.click-activation.show {
+    border-left: 3px solid #ee2455;
+}
+#catalogDropdown .dropdown-menu.sub-menu {
+  padding-left: 0;
+}
+#catalogDropdown .sub-menu a{
+  padding-left: 35px;
+}
+
 #catalogDropdown .dropdown-toggle:after {
   content: '';
 position: absolute;
@@ -6047,12 +6055,20 @@ margin-top: -4px;
   margin-top: -16px;
 }
 
+#catalogDropdown .icon.labels.active:before {
+  background-position: 0 -149px;
+}
+
 #catalogDropdown .icon.ribbons:before {
   width: 41px;
-height: 31px;
+height: 30px;
 background-position: 0px -253px;
 margin-top: -16px;
 margin-left: -2px;
+}
+
+#catalogDropdown .icon.ribbons.active:before {
+background-position: 0px -284px;
 }
 
 #catalogDropdown .icon.textile:before {
@@ -6094,10 +6110,10 @@ margin-top: -16px;
 }
 .dropright .dropdown-menu{
   position: absolute;
-  transform: translate3d(309px, 0px, 0px);
+  /* transform: translate3d(309px, 0px, 0px); */
   top: -3px;
-  right: 0px;
-  left: auto;
+  /* right: 0px;
+  left: auto; */
 }
 .mega-sub {
   margin-bottom: 20px;

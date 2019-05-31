@@ -64,11 +64,16 @@ jQuery(document).ready(function($) {
       theme: 'tooltipster-noir'
     });
 
+    $('.dropdown.menu-large').on('click', function(e) {
+      $(this).find('.hamburger').toggleClass('is-active');
+    })
     //$('.dropdown-toggle').dropdown()
     $('.dropdown-menu a.dropdown-toggle').on('click', function(e) {
       //debugger;
+      $(this).toggleClass('active');
+      $(this).next().height($(this).parents('.dropdown-menu').height());
   	  if (!$(this).next().hasClass('show')) {
-  		$(this).parents('.dropdown-menu').first().find('.show').removeClass("show");
+  	  	$(this).parents('.dropdown-menu').first().find('.show').removeClass("show");
   	  }
   	  var $subMenu = $(this).next(".dropdown-menu");
   	  $subMenu.toggleClass('show');
