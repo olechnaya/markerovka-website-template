@@ -554,8 +554,9 @@ blockquote {
   display: block;
   padding: 3px 20px;
   clear: both;
-  font-weight: 700;
-  line-height: 1.42857143;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 2;
   color: #333;
   white-space: nowrap;
 }
@@ -576,7 +577,7 @@ blockquote {
   visibility: visible;
 }
 
-.dropdown:hover .dropdown-menu {
+.dropdown:not(.click-activation):hover .dropdown-menu {
   display: block;
 }
 
@@ -1758,7 +1759,7 @@ a.description.link-arrowed>* {
   margin-bottom: 40px;
 }
 
-.ribbons {
+.row.ribbons {
   font-size: 16px;
   margin: 60px 0;
 }
@@ -6012,6 +6013,92 @@ a.in-text {
   padding-left: 32px;
 }
 
+#catalogDropdown.dropdown-menu {
+  padding: 0;
+}
+#catalogDropdown a {
+  padding: 14px 35px 14px 65px!important;
+  line-height: normal;
+}
+#catalogDropdown .dropdown-toggle:after {
+  content: '';
+position: absolute;
+right: 14px;
+width: 0;
+height: 0;
+border-style: solid;
+border-width: 4px 0 4px 6px;
+border-color: transparent transparent transparent #ee2455;
+top: 50%;
+margin-top: -4px;
+}
+#catalogDropdown .icon:before {
+  content: '';
+  position: absolute;
+  background-image: url(images/sub-menu-icons-catalog.png);
+  left: 19px;
+      top: 50%;
+}
+
+#catalogDropdown .icon.labels:before {
+  width: 31px;
+  height: 35px;
+  background-position: 0 -114px;
+  margin-top: -16px;
+}
+
+#catalogDropdown .icon.ribbons:before {
+  width: 41px;
+height: 31px;
+background-position: 0px -253px;
+margin-top: -16px;
+margin-left: -2px;
+}
+
+#catalogDropdown .icon.textile:before {
+  width: 36px;
+  height: 34px;
+  background-position: 0 -315px;
+  margin-top: -16px;
+}
+
+#catalogDropdown .icon.foil:before {
+  width: 31px;
+  height: 33px;
+background-position: 0 0;
+margin-top: -16px;
+}
+
+#catalogDropdown .icon.gunlabels:before {
+  width: 37px;
+  height: 24px;
+  background-position: 4px -66px;
+  margin-top: -16px;
+}
+#catalogDropdown .icon.printheads:before {
+  width: 41px;
+  height: 35px;
+  background-position: 0 -185px;
+  margin-top: -16px;
+  margin-left: -3px;
+}
+#catalogDropdown .icon.tickets:before {
+  width: 38px;
+  height: 33px;
+  background-position: 0 -384px;
+  margin-top: -16px;
+}
+
+#cat-nav .dropdown-menu.show {
+    display: block;
+}
+.dropright .dropdown-menu{
+  position: absolute;
+  transform: translate3d(309px, 0px, 0px);
+  top: -3px;
+  right: 0px;
+  left: auto;
+}
 .mega-sub {
   margin-bottom: 20px;
   margin-top: 20px;
@@ -6036,7 +6123,6 @@ a.in-text {
 
 #cat-nav .mega-sub ul li a:hover,
 #cat-nav .mega-sub a.show-all:hover {
-  background: none;
 text-decoration: underline!important;
 }
 .mega-sub-title:before {
