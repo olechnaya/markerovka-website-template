@@ -304,12 +304,6 @@
         width:auto;
         float:left;
     }
-    .checkout .btn-magenta.show-mobile{
-        display:block;
-    }
-    .checkout .btn-magenta{
-        display:none;
-    }
 }
 
 @media (max-width:735px){
@@ -612,15 +606,6 @@
         font-size: 14px;
         margin-top: 15px;
     }
-    .homepage-2 .cat-sec-1 .cat-desc.fourth p{
-        margin:0;
-    }
-    .shop-page.sing .shop-control .right .view-opt, .short-form{
-        float:none;
-        margin-bottom: 15px;
-        clear: both !important;
-    }
-
 }
 @media (max-width: 400px){
 
@@ -643,16 +628,7 @@
         max-width: none;
         width: auto;
     }
-    .page-title h3, .breadcumb {
-        float: none;
-        margin-bottom:10px;
-        width:100%;
-    }
-    .homepage-2 .top-control a, .welcome{
-        font-size: 10px;
-        text-align:center;
-    }
-
+    
 }
 @media (max-width: 340px){
 
