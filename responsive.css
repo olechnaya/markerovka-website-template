@@ -1,6 +1,3 @@
-.top-offers.show-mobile, #open-srch-form-mod{
-    display:none;
-}
 .wrap-cat{
     position: relative;
 }
@@ -43,7 +40,7 @@
     .mega-product{
         width:70%;
         max-width: none;
-        
+
     }
     .mega-offers{
         width:30%;
@@ -116,48 +113,11 @@
     .navbar-default .navbar-collapse, .navbar-default .navbar-form{
         border:none;
     }
-    #open-srch-form{
-        display:none !important;
-    }
-    #open-srch-form-mod{
-        display:block;
-    }
-    #brand-carousel-2 ul li{
-        width:33.333%;
-    }
-    
-    
+
 }
 
 @media (max-width:1190px){
-    .homepage-2 .wrap-cat .btn-default{
-        display: inline-block;
-        background: #f1f4f7;
-        color: #364a62;
-    }
-    .homepage-2 .this-cat{
-        display:none;
-    }
-    .homepage-2 #cat-nav ul li{
-        float:none;
-        
-    }
-    .homepage-2 #cat-nav ul li a{
-        text-align: left;
-    }
-    .homepage-2 #cat-nav ul li.cat-lab, .homepage-2 #cat-nav ul li.for-rsch{
-        display:none;
-    }
-    .for-rsch-res{
-        display: block;
-        float: right;
-    }
-    .for-rsch-res .side-search {
-        border-bottom: none;
-        padding-bottom: 0px;
-        margin-bottom: 0px;
-        margin:10px 0;
-    }
+
 }
 @media (max-width:1040px){
     .col-sm-6 {
@@ -178,10 +138,7 @@
     }
 }
 @media (max-width:1190px){
-    .slider-desc {
-        top: 10%;
-    }
-    .detail-2 .gobuy .form-group{
+      .detail-2 .gobuy .form-group{
         float:none;
         width:100%;
     }
@@ -213,7 +170,7 @@
     .res-sec-3 .col-md-12 .item img, .res-sec-3 .col-md-12 img{
          width:100%;
     }
-    
+
 }
 
 @media (max-width:1000px){
@@ -226,8 +183,8 @@
     }
 }
 @media (max-width:980px){
-    
-    
+
+
     .navbar-nav .open .dropdown-menu{
         background: #fff !important;
     }
@@ -272,16 +229,16 @@
     .author-block .col-md-3{
         width:25%;
         float:left;
-        
+
     }
     .author-block .col-md-9{
         width:75%;
         float:left;
-        
+
     }
     .author-block .col-md-3 img{
         margin-bottom:20px;
-        
+
     }
     .loc-det .col-md-4{
         width:50%;
@@ -296,7 +253,7 @@
         width:65%;
         float:left;
     }
-    
+
     .detail-product .col-md-5{
         width:50%;
         float:left;
@@ -389,7 +346,7 @@
         float:left;
         width:75%;
     }
-    
+
 
 }
 
@@ -455,8 +412,8 @@
         font-size: 18px;
         margin-bottom: 5px;
     }
-    
-    
+
+
 }
 @media (max-width:560px){
     #sect-1 .slider-desc a.btn, #sect-2 .slider-desc a.btn{
@@ -517,7 +474,7 @@
         width: 100%;
         float: none;
     }
-    
+
 }
 @media (max-width: 490px){
     .res-sec-4 .col-md-12{
@@ -544,7 +501,7 @@
         width:100%;
         float:none;
     }
-    
+
     .wrap-cat .btn-default{
         display:inline-block;
     }
@@ -559,9 +516,6 @@
         float:none;
         max-width:none;
         width:100%;
-    }
-    .ct-offers-title{
-        font-size:28px;
     }
     .ct-offers p{
         margin:10px 0;
@@ -585,11 +539,11 @@
         width:100%;
         float:none;
         margin-bottom:15px;
-    } 
+    }
     .media-left, .media-body{
         display:block;
         margin-bottom:15px;
-    } 
+    }
     .loc-det .col-md-4{
         width:100%;
         float:none;
@@ -611,7 +565,7 @@
         float:none;
         width:100%;
         text-align: center;
-        
+
     }
     .tab-2 .nav-tabs>li>a, .tab-3 .nav-tabs>li>a {
         margin:0;
@@ -619,7 +573,7 @@
     .tab-2 .nav-tabs, .tab-2 .tab-content, .tab-3 .nav-tabs, .tab-3 .tab-content{
         float:none;
         width:100%;
-        
+
     }
     .tab-3 .nav-tabs{
         margin-top:-2px;
@@ -666,10 +620,10 @@
         margin-bottom: 15px;
         clear: both !important;
     }
-    
+
 }
 @media (max-width: 400px){
-    
+
 }
 @media (max-width: 360px){
     .nav-tabs.newest>li{
@@ -698,10 +652,10 @@
         font-size: 10px;
         text-align:center;
     }
-    
+
 }
 @media (max-width: 340px){
-    
+
     .buy-on-page{
         padding:15px 20px;
     }
@@ -734,14 +688,14 @@
         padding-left:10px;
         padding-right:10px;
     }
-    
+
 }
 
 @media (max-width: 310px){
     .slider-desc{
         display:none;
     }
-    
+
 
 }
 @media (max-width: 290px){
@@ -783,11 +737,11 @@
     .homepage-2 .cat-sec-1 .cat-desc .white .cat-title{
         font-size: 13px;
         margin-bottom: 8px;
-        
+
     }
     .navbar-default .navbar-toggle, #markerovka-nav .navbar-brand h1{
         font-size: 24px;
-        
+
     }
     #sect-1 .slider-desc, #sect-2 .slider-desc{
         display: block;
