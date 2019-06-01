@@ -1,5 +1,6 @@
 @import 'css/slidedown-city-selection.css';
 
+/* ТОЛЬКО ЦИФРЫ В ФАЙЛАХ - ONLY DIGITS IN FONT FILES*/
 @font-face {
   font-family: 'heading_pro_ultracompresseXBd';
   src: url('fonts/heading_pro_ultracompressed_extrabold-digits.woff2') format('woff2'),
@@ -577,7 +578,9 @@ blockquote {
     visibility: visible;
 }
 .dropdown:not(.click-activation):hover .dropdown-menu {
-  display: block;
+  /* display: block; */
+  visibility: visible;
+    opacity: 1;
 }
 
 .nav-tabs .dropdown-menu, .nav-pills .dropdown-menu, .navbar .dropdown-menu {
@@ -6105,9 +6108,17 @@ margin-top: -16px;
   background-position: 0 -384px;
   margin-top: -16px;
 }
+#catalogDropdown.dropdown-menu,
+.dropdown-menu.sub-menu {
+  transition-delay: 0s;
+  transition-duration: .1s
+}
+#cat-nav .dropdown-menu {
 
-#cat-nav .dropdown-menu.show {
+  }.show {
     display: block;
+    visibility: visible;
+      opacity: 1;
 }
 .dropright .dropdown-menu{
   position: absolute;
