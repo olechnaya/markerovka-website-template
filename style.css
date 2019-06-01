@@ -573,10 +573,9 @@ blockquote {
   margin-top: -3px;
 }
 
-.dropdown-menu li:hover .sub-menu {
-  visibility: visible;
+.dropdown-menu .sub-menu.show {
+    visibility: visible;
 }
-
 .dropdown:not(.click-activation):hover .dropdown-menu {
   display: block;
 }
@@ -637,7 +636,7 @@ blockquote {
   transition: all .3s ease;
   -moz-transition: all .3s ease;
   -webkit-transition: all .3s ease;
-  position: relative;
+  position: initial;
 }
 
 #cat-nav-mega > ul >li >a {
@@ -6012,6 +6011,7 @@ a.in-text {
 #catalogDropdown a {
   padding: 14px 35px 14px 65px;
   line-height: normal;
+  position: relative;
 }
 #catalogDropdown a.active {
   background: #ee2455;
@@ -6023,6 +6023,7 @@ a.in-text {
 }
 #catalogDropdown .dropdown-menu.sub-menu {
   padding-left: 0;
+  top:-3px;
 }
 #catalogDropdown .sub-menu a{
   padding-left: 35px;

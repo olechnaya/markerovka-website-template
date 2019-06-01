@@ -215,7 +215,7 @@
               <ul class="nav navbar-nav">
                 <!-- <li class="active"><a href="index.html">Каталог</a></li> -->
 
-                <li class="dropdown menu-large click-activation">
+                <li class="dropdown menu-large click-activation" id="hamburger-container">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
                     <button class="hamburger hamburger hamburger--minus js-hamburger" type="button">
                       <span class="hamburger-box">
@@ -224,14 +224,6 @@
                     </button>Каталог
                   </a>
                   <ul class="dropdown-menu" id="catalogDropdown">
-                    <!-- <li class="dropdown click-activation">
-                      <a href="" class="dropdown-toggle"  data-toggle="dropdown">Этикетки</a>
-                      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                          <a class="dropdown-item" href="#">Action</a>
-                          <a class="dropdown-item" href="#">Another action</a>
-                          <a class="dropdown-item" href="#">Something else here</a>
-                        </div>
-                      </li> -->
                     <li class="dropdown click-activation">
                       <a class="dropdown-toggle icon labels" href="#"
                           data-toggle="dropdown">Этикетки</a>
@@ -248,7 +240,7 @@
                     </li>
                     <li><a  class="dropdown-toggle icon ribbons" href="#"
                         data-toggle="dropdown">Риббоны <br> (Термотрансферная лента )</a>
-                        <ul class="dropdown-menu">
+                        <ul class="dropdown-menu sub-menu click-activation">
                           <li><a href="#">Zebra</a></li>
                         </ul>
                       </li>
