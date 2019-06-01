@@ -124,7 +124,7 @@ jQuery(document).ready(function($) {
       //TODO:
       // declare siema object for
       // array ['addingsOf2015','addingsOf2016','addingsOf2017', 'addingsOf2018','addingsOf2019']
-  
+
 });
 
 function onChangeCallback() {
@@ -144,6 +144,6 @@ function onChangeCallback() {
                   .removeClass('active');
 
   $($(this.selector).parents('.annual-addings')
-                    .find('.img-container')[this.currentSlide]
-                    .addClass('active'));
+                    .find('.img-container')[this.currentSlide])
+                    .addClass('active');
 }
