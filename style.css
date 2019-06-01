@@ -35,6 +35,10 @@ a {
   -moz-transition: all .3s ease;
   -webkit-transition: all .3s ease;
 }
+a:focus,
+a:active {
+  outline: none;
+}
 
 .no-padd {
   padding: 0;
