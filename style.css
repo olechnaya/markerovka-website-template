@@ -2301,8 +2301,18 @@ a.in-text {
 
 #main-cat {
   padding: 35px 0 0px;
+  position: relative;
 }
-
+#main-cat:before {
+    content: '';
+    left: 0;
+    right: 0;
+    z-index: 2;
+    height: 1px;
+    top: -3px;
+    position: absolute;
+    box-shadow: 0 6px 5px #af0d36;
+}
 #main-cat .item:hover {
   text-decoration: none;
   color: inherit;
