@@ -119,8 +119,6 @@
                 <label for="nn"> Нижний Новгород <span>(831) 422-2537</span></label>
                 <input type="radio" name="office" id="simf" value="Симферополь" checked="">
                 <label for="simf">Симферополь <span> (978) 227-8078</span></label>
-
-                </ul>
               </div>
             </div>
           </div>
@@ -128,7 +126,7 @@
       </div>
     </div>
     <!-- wrapper -->
-    <div id="header">
+    <header>
       <!-- header -->
       <div class="top">
         <!-- top -->
@@ -180,7 +178,6 @@
                     Form
                   </div>
                 </div>
-                </ul>
 
               </div>
             </nav>
@@ -254,7 +251,6 @@
                     <li><a href="">Кашированная фольга </a></li>
                     <li><a href="">Термотрансферная бумага</a></li>
                     <li><a href=""> Пленка для ламинирования</a></li>
-                </li>
               </ul>
               </li>
               <li class="dropdown menu-large">
@@ -392,7 +388,7 @@
                               По применению
                             </div>
                             <ul>
-                              <li><a href="">Продукты питания
+                              <li><a href="">Продукты питания</a></li>
                               <li><a href="">Фармацевтика</a></li>
                               <li><a href="">Одежда и обувь</a></li>
                               <li><a href="">Бытовая и автохимия</a></li>
@@ -451,7 +447,7 @@
           </nav>
         </div>
       </div>
-    </div>
+    </header>
     <!-- header -->
 
     <div id="content">
@@ -1160,8 +1156,7 @@
 
     </div>
      <!-- Content -->
-       <?php include 'includes/footer.php';?>
-    <div id="footer">
+    <footer>
       <div class="footer-widget">
         <div class="container">
           <div class="row">
@@ -1246,8 +1241,13 @@
           <a href="">Все города</a>
         </div>
       </div>
-    </div> <!-- wrapper -->
+    </footer> <!-- wrapper -->
     <button class="material-scrolltop" type="button"></button>
+    <script>
+    if( !!navigator.userAgent.match(/Trident.*rv\:11\./)) {
+      document.getElementsByTagName('body')[0].classList.add('ie11');
+    }
+    </script>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="js/library.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->

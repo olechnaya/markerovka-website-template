@@ -3,8 +3,12 @@ jQuery(document).ready(function($) {
 
   $(function() {
 
+    if( !!navigator.userAgent.match(/Trident.*rv\:11\./)) {
+      document.getElementsByTagName('body')[0].classList.add('ie11');
+    }
+
     $('body').materialScrollTop({
-      revealElement: '#header',
+      revealElement: 'header',
       revealPosition: 'bottom',
       onScrollEnd: function() {
         console.log('Scrolling End');

@@ -1450,15 +1450,15 @@ a.description.link-arrowed>* {
   box-sizing: 2px 2px 3px #0003, 0 0 0px 6px #6ec7f6;
 }
 .blog-ct .inner .circle:before {
-    content: " ";
-    position: absolute;
-    z-index: 0;
-    top: -2px;
-    left: -4px;
-    right: -3px;
-    bottom: -4px;
-    border: 6px solid #6ec7f6;
-    border-radius: 75px;
+  content: " ";
+position: absolute;
+z-index: 0;
+top: -10px;
+left: -10px;
+right: -10px;
+bottom: -10px;
+border: 6px solid #6ec7f6;
+border-radius: 88px;
 }
 .blog-ct .inner .year {
   position: absolute;
@@ -1805,6 +1805,19 @@ a.in-text {
   transition: background 1s ease-out;
 }
 
+.ie11 a.in-text{
+  color:#ee2455;
+  background: none;
+  border-bottom: 1px solid;
+  -webkit-transition: all .3s ease-out;
+  -moz-transition: all .3s ease-out;
+  -o-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+}
+.ie11 a.in-text:hover {
+  border-bottom-color: transparent;
+}
+
 .in-text:hover {
   background: -moz-linear-gradient(left, rgba(169, 5, 8, 1) 0%, rgba(181, 23, 20, 1) 100%);
   background: -webkit-gradient(left top, right top, color-stop(0%, rgba(169, 5, 8, 1)), color-stop(100%, rgba(181, 23, 20, 1)));
@@ -1869,8 +1882,8 @@ a.in-text {
 }
 
 .btn-magenta {
+  background:#ee2455;
   background: linear-gradient(90deg, var(--c1, #f6d365), var(--c2, #fda085) 21%, var(--c1, #f65527)) var(--x, 0)/ 200%;
-  /* background:#ee2455; */
   color: #fff;
   font-weight: 700;
   border-radius: 20px;

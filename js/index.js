@@ -15,8 +15,12 @@ jQuery(document).ready(function($) {
       loop: true,
       rtl: false
     });
-    $('#a_slider').on('click', '.prev', () => a_sliderSiema.prev());
-    $('#a_slider').on('click', '.next', () => a_sliderSiema.next());
+    $('#a_slider').on('click', '.prev', function() {
+      return a_sliderSiema.prev()
+    });
+    $('#a_slider').on('click', '.next', function() {
+    return a_sliderSiema.next()
+    });
 
     const sae_sliderSiema = new Siema({
       selector: '#saeSiemaSlider .siema',
@@ -30,8 +34,8 @@ jQuery(document).ready(function($) {
       loop: true,
       rtl: false
     });
-    $('#saeSiemaSlider').on('click', '.prev', () => sae_sliderSiema.prev());
-    $('#saeSiemaSlider').on('click', '.next', () => sae_sliderSiema.next());
+  //  $('#saeSiemaSlider').on('click', '.prev', () => sae_sliderSiema.prev());
+  //  $('#saeSiemaSlider').on('click', '.next', () => sae_sliderSiema.next());
   });
 
   // govnocode is starting
@@ -58,8 +62,13 @@ jQuery(document).ready(function($) {
 
     for (let i = 0; i < this.innerElements.length; i++) {
       const btn = document.createElement('button');
+
+      var that = this;
       if (i == 0) btn.setAttribute("class", "active");
-      btn.addEventListener('click', () => this.goTo(i));
+
+      $(btn).on('click', function(e){
+        that.goTo(i)
+      });
       navDiv.appendChild(btn);
     }
   }
