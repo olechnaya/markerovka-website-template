@@ -13,9 +13,7 @@ jQuery(document).ready(function($) {
       multipleDrag: true,
       threshold: 20,
       loop: true,
-      rtl: false,
-      onInit: () => {},
-      onChange: () => {},
+      rtl: false
     });
     $('#a_slider').on('click', '.prev', () => a_sliderSiema.prev());
     $('#a_slider').on('click', '.next', () => a_sliderSiema.next());
@@ -30,9 +28,7 @@ jQuery(document).ready(function($) {
       multipleDrag: true,
       threshold: 20,
       loop: true,
-      rtl: false,
-      onInit: () => {},
-      onChange: () => {},
+      rtl: false
     });
     $('#saeSiemaSlider').on('click', '.prev', () => sae_sliderSiema.prev());
     $('#saeSiemaSlider').on('click', '.next', () => sae_sliderSiema.next());
@@ -50,7 +46,7 @@ jQuery(document).ready(function($) {
     threshold: 20,
     loop: false,
     rtl: false,
-    onChange: onChangeCallback,
+    onChange: onChangeCallback
   });
   Siema.prototype.addPagination = function(instance) {
     var navDiv = document.createElement('div');
@@ -82,7 +78,7 @@ jQuery(document).ready(function($) {
     threshold: 20,
     loop: false,
     rtl: false,
-    onChange: onChangeCallback,
+    onChange: onChangeCallback
   });
 
   annualadding2_sliderSiema.addPagination(annualadding2_sliderSiema.selector);
@@ -99,7 +95,7 @@ jQuery(document).ready(function($) {
       threshold: 20,
       loop: false,
       rtl: false,
-      onChange: onChangeCallback,
+      onChange: onChangeCallback
     });
 
     annualadding3_sliderSiema.addPagination(annualadding3_sliderSiema.selector);
@@ -116,7 +112,7 @@ jQuery(document).ready(function($) {
         threshold: 20,
         loop: false,
         rtl: false,
-        onChange: onChangeCallback,
+        onChange: onChangeCallback
       });
 
       annualadding4_sliderSiema.addPagination(annualadding4_sliderSiema.selector);
