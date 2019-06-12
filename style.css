@@ -529,16 +529,14 @@ a:active {
   position: relative;
 }
 
-#a_slider button, #saeSiemaSlider button {
-  background: url(images/articles-arrows.png) no-repeat;
-  color: transparent;
+/* #a_slider button, #saeSiemaSlider button { */
+#a_slider .carousel-control-prev span,
+#a_slider .carousel-control-next span {
+    background: url(images/articles-arrows.png) no-repeat;
   margin: 0;
-  opacity: 1;
   position: absolute;
   width: 23px;
   height: 41px;
-  padding: 0;
-  border: none;
 }
 
 #a_slider .article {
@@ -549,11 +547,11 @@ a:active {
   transition: all .2s ease-in;
 }
 
-#a_slider .buttons,
-#saeSiemaSlider .buttons {
+/* #a_slider .buttons,
+#saeSiemaSlider .buttons { */
+#a_slider .carousel-control-prev span,
+#a_slider .carousel-control-next span {
   position: absolute;
-  left: 0;
-  right: 0;
   top: 50%;
   margin-top: -21px;
 }
@@ -561,21 +559,23 @@ a:active {
 #saeSiemaSlider .buttons:active {
 outline:none;
 }
-#a_slider .prev {
+#a_slider .carousel-control-prev span {
   background-position: 0 0;
   left: 0;
 }
-
-#a_slider .next {
+#a_slider .carousel-control-next {
+  right: 45px;
+}
+#a_slider .carousel-control-next span {
   background-position: 0 -41px;
   right: 0;
 }
 
-#a_slider .prev:hover {
+#a_slider .carousel-control-prev:hover span {
   background-position: 0 -82px;
 }
 
-#a_slider .next:hover {
+#a_slider .carousel-control-next:hover span{
   background-position: 0 -123px;
 }
 
