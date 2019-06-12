@@ -529,9 +529,10 @@ a:active {
   position: relative;
 }
 
-/* #a_slider button, #saeSiemaSlider button { */
 #a_slider .carousel-control-prev span,
-#a_slider .carousel-control-next span {
+#a_slider .carousel-control-next span,
+#saeSiemaSlider .carousel-control-prev span,
+#saeSiemaSlider .carousel-control-next span {
     background: url(images/articles-arrows.png) no-repeat;
   margin: 0;
   position: absolute;
@@ -547,17 +548,18 @@ a:active {
   transition: all .2s ease-in;
 }
 
-/* #a_slider .buttons,
-#saeSiemaSlider .buttons { */
 #a_slider .carousel-control-prev span,
-#a_slider .carousel-control-next span {
+#a_slider .carousel-control-next span,
+#saeSiemaSlider .carousel-control-prev span,
+#saeSiemaSlider .carousel-control-next span {
   position: absolute;
   top: 50%;
   margin-top: -21px;
 }
-#a_slider .buttons:active,
-#saeSiemaSlider .buttons:active {
-outline:none;
+
+#a_slider a:active,
+#saeSiemaSlider a:active {
+  outline:none;
 }
 #a_slider .carousel-control-prev span {
   background-position: 0 0;
@@ -578,22 +580,28 @@ outline:none;
 #a_slider .carousel-control-next:hover span{
   background-position: 0 -123px;
 }
+#saeSiemaSlider .carousel-control-prev {
+  left: 0;
+}
+#saeSiemaSlider .carousel-control-next {
+  right: 0;
+}
 
-#saeSiemaSlider .prev {
+#saeSiemaSlider .carousel-control-prev span {
   background-position: 0 0;
-  left: -50px;
+  left: -30px;
 }
 
-#saeSiemaSlider .next {
+#saeSiemaSlider .carousel-control-next span{
   background-position: 0 -41px;
-  right: -50px;
+  right: -30px;
 }
 
-#saeSiemaSlider .prev:hover {
+#saeSiemaSlider .carousel-control-prev:hover {
   background-position: 0 -82px;
 }
 
-#saeSiemaSlider .next:hover {
+#saeSiemaSlider .carousel-control-next:hover {
   background-position: 0 -123px;
 }
 
@@ -2509,12 +2517,7 @@ h3.item a span {
   top: 0;
   bottom: 0;
   z-index: 1;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-align: center;
-  align-items: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  display: block;
   width: 15%;
   color: #fff;
   text-align: center;
@@ -2537,14 +2540,14 @@ h3.item a span {
   outline: 0;
   opacity: 0.9;
 }
-
+/*
 .carousel-control-prev {
   left: 0;
 }
 
 .carousel-control-next {
   right: 0;
-}
+} */
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
