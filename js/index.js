@@ -2,6 +2,7 @@ jQuery(document).ready(function($) {
   "use strict";
 
   $(function() {
+    $('.carousel').carousel()
 
     const a_sliderSiema = new Siema({
       selector: '#a_slider .siema',
