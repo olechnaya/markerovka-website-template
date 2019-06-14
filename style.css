@@ -233,7 +233,6 @@ a:active {
   padding: 20px 0 0;
 }
 
-
 #markerovka-nav .navbar-default {
   border: none;
   margin: 0;
@@ -315,6 +314,7 @@ a:active {
   justify-content: center;
   flex-direction: column;
 }
+
 .min-marg {
   margin-left: -35px;
   margin-right: -35px;
@@ -533,7 +533,7 @@ a:active {
 #a_slider .carousel-control-next span,
 #saeSiemaSlider .carousel-control-prev span,
 #saeSiemaSlider .carousel-control-next span {
-    background: url(images/articles-arrows.png) no-repeat;
+  background: url(images/articles-arrows.png) no-repeat;
   margin: 0;
   position: absolute;
   width: 23px;
@@ -559,15 +559,18 @@ a:active {
 
 #a_slider a:active,
 #saeSiemaSlider a:active {
-  outline:none;
+  outline: none;
 }
+
 #a_slider .carousel-control-prev span {
   background-position: 0 0;
   left: 0;
 }
+
 #a_slider .carousel-control-next {
   right: 45px;
 }
+
 #a_slider .carousel-control-next span {
   background-position: 0 -41px;
   right: 0;
@@ -577,12 +580,14 @@ a:active {
   background-position: 0 -82px;
 }
 
-#a_slider .carousel-control-next:hover span{
+#a_slider .carousel-control-next:hover span {
   background-position: 0 -123px;
 }
+
 #saeSiemaSlider .carousel-control-prev {
   left: 0;
 }
+
 #saeSiemaSlider .carousel-control-next {
   right: 0;
 }
@@ -592,7 +597,7 @@ a:active {
   left: -30px;
 }
 
-#saeSiemaSlider .carousel-control-next span{
+#saeSiemaSlider .carousel-control-next span {
   background-position: 0 -41px;
   right: -30px;
 }
@@ -933,13 +938,14 @@ a:active {
   margin-right: 19px;
 }
 
-.description span.title {
-  width: 210px;
+.description.link-arrowed>* {
+    display: inline-block;
+    line-height: normal;
+    vertical-align: middle;
 }
 
-a.description.link-arrowed>* {
-  display: inline-block;
-  vertical-align: middle;
+.description span.title {
+  width: 210px;
 }
 
 .annual-addings .description {
@@ -947,6 +953,8 @@ a.description.link-arrowed>* {
   font-style: italic;
   color: #fff;
   padding-left: 15px;
+  height: 92px;
+  line-height: 92px;
 }
 
 .annual-addings .description:hover {
@@ -1115,22 +1123,28 @@ a.description.link-arrowed>* {
   right: auto;
 }
 
-.annual-addings .navigation {
+.annual-addings .carousel-indicators {
   position: absolute;
-  top: 104px;
+  top: 70px;
+  width: auto;
+  display: inline-block;
+  margin: 0;
 }
 
-.annual-addings .right .navigation {
-  left: 90px;
+.annual-addings .right .carousel-indicators {
+  right: auto;
+  left: 5px;
+  display: inline-block;
+  margin: 0;
+  text-align: right;
 }
 
-.annual-addings .left .navigation {
+.annual-addings .left .carousel-indicators {
   right: 0;
-  left: auto;
-  margin-right: 140px;
+  text-align: right;
 }
 
-.annual-addings .navigation button {
+.annual-addings .carousel-indicators li {
   width: 13px;
   height: 13px;
   border-radius: 13px;
@@ -1138,30 +1152,30 @@ a.description.link-arrowed>* {
   padding: 0;
   display: inline-block;
   vertical-align: middle;
-  margin: 0 1px;
+  margin: 0;
 }
 
-.annual-addings.red .navigation button {
+.annual-addings.red .carousel-indicators li {
   background: #b51315;
 }
 
-.annual-addings.violet .navigation button {
+.annual-addings.violet .carousel-indicators li {
   background: #5e225f;
 }
 
-.annual-addings.orange .navigation button {
+.annual-addings.orange .carousel-indicators li {
   background: #ed9b31;
 }
 
-.annual-addings.green .navigation button {
+.annual-addings.green .carousel-indicators li {
   background: #6bab12;
 }
 
-.annual-addings.blue .navigation button {
+.annual-addings.blue .carousel-indicators li {
   background: #48b8ee;
 }
 
-.annual-addings .navigation button.active {
+.annual-addings .carousel-indicators li.active {
   width: 16px;
   height: 16px;
   border-radius: 20px;
@@ -1457,17 +1471,19 @@ a.description.link-arrowed>* {
   -webkit-box-sizing: 1px 1px 4px #00000080, 0 0 0px 6px #6ec7f6;
   box-sizing: 2px 2px 3px #0003, 0 0 0px 6px #6ec7f6;
 }
+
 .blog-ct .inner .circle:before {
   content: " ";
-position: absolute;
-z-index: 0;
-top: -10px;
-left: -10px;
-right: -10px;
-bottom: -10px;
-border: 6px solid #6ec7f6;
-border-radius: 88px;
+  position: absolute;
+  z-index: 0;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  border: 6px solid #6ec7f6;
+  border-radius: 88px;
 }
+
 .blog-ct .inner .year {
   position: absolute;
   width: 100px;
@@ -1813,8 +1829,8 @@ a.in-text {
   transition: background 1s ease-out;
 }
 
-.ie11 a.in-text{
-  color:#ee2455;
+.ie11 a.in-text {
+  color: #ee2455;
   background: none;
   border-bottom: 1px solid;
   -webkit-transition: all .3s ease-out;
@@ -1822,6 +1838,7 @@ a.in-text {
   -o-transition: all .3s ease-out;
   transition: all .3s ease-out;
 }
+
 .ie11 a.in-text:hover {
   border-bottom-color: transparent;
 }
@@ -1890,7 +1907,7 @@ a.in-text {
 }
 
 .btn-magenta {
-  background:#ee2455;
+  background: #ee2455;
   background: linear-gradient(90deg, var(--c1, #f6d365), var(--c2, #fda085) 21%, var(--c1, #f65527)) var(--x, 0)/ 200%;
   color: #fff;
   font-weight: 700;
@@ -2319,21 +2336,22 @@ a.in-text {
   background-position: -1px -42px;
 }
 
-
 #main-cat {
   padding: 35px 0 0px;
   position: relative;
 }
+
 #main-cat:before {
-    content: '';
-    left: 0;
-    right: 0;
-    z-index: 2;
-    height: 1px;
-    top: -3px;
-    position: absolute;
-    box-shadow: 0 6px 5px #af0d36;
+  content: '';
+  left: 0;
+  right: 0;
+  z-index: 2;
+  height: 1px;
+  top: -3px;
+  position: absolute;
+  box-shadow: 0 6px 5px #af0d36;
 }
+
 #main-cat .item:hover {
   text-decoration: none;
   color: inherit;
@@ -2378,6 +2396,7 @@ h3.item {
   margin-right: 20px;
   margin-bottom: 40px;
 }
+
 h3.item::before, h3.item::after {
   content: "";
   position: absolute;
@@ -2401,21 +2420,20 @@ h3.item {
 }
 
 h3.item a {
-
-    display: block;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    background: rgba(94,34,95,1);
-background: -moz-linear-gradient(45deg, rgba(94,34,95,1) 0%, rgba(94,34,95,1) 38%, rgba(143,106,140,1) 100%);
-background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(94,34,95,1)), color-stop(38%, rgba(94,34,95,1)), color-stop(100%, rgba(143,106,140,1)));
-background: -webkit-linear-gradient(45deg, rgba(94,34,95,1) 0%, rgba(94,34,95,1) 38%, rgba(143,106,140,1) 100%);
-background: -o-linear-gradient(45deg, rgba(94,34,95,1) 0%, rgba(94,34,95,1) 38%, rgba(143,106,140,1) 100%);
-background: -ms-linear-gradient(45deg, rgba(94,34,95,1) 0%, rgba(94,34,95,1) 38%, rgba(143,106,140,1) 100%);
-background: linear-gradient(45deg, rgba(94,34,95,1) 0%, rgba(94,34,95,1) 38%, rgba(143,106,140,1) 100%);
-    margin: 3px 0px 3px 5px;
-    right: 5px;
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(94, 34, 95, 1);
+  background: -moz-linear-gradient(45deg, rgba(94, 34, 95, 1) 0%, rgba(94, 34, 95, 1) 38%, rgba(143, 106, 140, 1) 100%);
+  background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(94, 34, 95, 1)), color-stop(38%, rgba(94, 34, 95, 1)), color-stop(100%, rgba(143, 106, 140, 1)));
+  background: -webkit-linear-gradient(45deg, rgba(94, 34, 95, 1) 0%, rgba(94, 34, 95, 1) 38%, rgba(143, 106, 140, 1) 100%);
+  background: -o-linear-gradient(45deg, rgba(94, 34, 95, 1) 0%, rgba(94, 34, 95, 1) 38%, rgba(143, 106, 140, 1) 100%);
+  background: -ms-linear-gradient(45deg, rgba(94, 34, 95, 1) 0%, rgba(94, 34, 95, 1) 38%, rgba(143, 106, 140, 1) 100%);
+  background: linear-gradient(45deg, rgba(94, 34, 95, 1) 0%, rgba(94, 34, 95, 1) 38%, rgba(143, 106, 140, 1) 100%);
+  margin: 3px 0px 3px 5px;
+  right: 5px;
 }
 
 h3.item a span {
@@ -2432,12 +2450,6 @@ h3.item a span {
 .carousel.pointer-event {
   -ms-touch-action: pan-y;
   touch-action: pan-y;
-}
-
-.carousel-inner {
-  position: relative;
-  width: 100%;
-  overflow: hidden;
 }
 
 .carousel-inner::after {
@@ -2505,6 +2517,7 @@ h3.item a span {
 }
 
 @media (prefers-reduced-motion: reduce) {
+
   .carousel-fade .active.carousel-item-left,
   .carousel-fade .active.carousel-item-right {
     transition: none;
@@ -2526,6 +2539,7 @@ h3.item a span {
 }
 
 @media (prefers-reduced-motion: reduce) {
+
   .carousel-control-prev,
   .carousel-control-next {
     transition: none;
@@ -2540,6 +2554,7 @@ h3.item a span {
   outline: 0;
   opacity: 0.9;
 }
+
 /*
 .carousel-control-prev {
   left: 0;
@@ -2548,7 +2563,6 @@ h3.item a span {
 .carousel-control-next {
   right: 0;
 } */
-
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
   display: inline-block;
