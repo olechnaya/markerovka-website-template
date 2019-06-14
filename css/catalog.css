@@ -210,6 +210,10 @@ hgroup h1 {
 .related h2 .siema-nav,
 .similar h2 .siema-nav {
   float: right;
+position: relative;
+display: block;
+margin: 0;
+width: auto;
 }
 
 .related h2 .siema-nav span,
@@ -239,8 +243,8 @@ hgroup h1 {
   background: #ee2455;
 }
 
-.related .siema .item,
-.similar .siema .item {
+.related .carousel .item,
+.similar .carousel .item {
   display: block;
   float: left;
   text-align: center;
@@ -252,13 +256,16 @@ hgroup h1 {
   width: 33.3333%;
 }
 
-.related .siema .item img,
-.similar .siema .item img {
-  margin-bottom: 15px;
+.related .carousel .item img,
+.similar .carousel .item img {
+  margin:0 auto 15px;
+  display: block;
+  max-width: 100%;
+    height: auto;
 }
 
-.related .siema .item:hover,
-.similar .siema .item:hover {
+.related .carousel .item:hover,
+.similar .carousel .item:hover {
   background: #fafafa;
 }
 
