@@ -1,4 +1,10 @@
 $(function() {
+  var ifIE = false;
+
+  if( !!navigator.userAgent.match(/Trident.*rv\:11\./)) {
+    ifIE =  true;
+  };
+
   $(document).ready(function() {
     $('body').fadeIn(1000);
   });
@@ -57,7 +63,7 @@ $(function() {
       'height': 'auto',
       'zIndex': 7,
       'background-color': '#fffffe',
-      'top': 0,
+      'top': ifIE ? -1 : 0,
       'width': '100%'
     });
     previousTabPane.removeAttr('style');
