@@ -39,7 +39,6 @@ $(function() {
 
   $('#itemTab a').on('shown.bs.tab', function(e) {
 
-    e.preventDefault()
     var activeTab = $(e.target),
       previousTab = $(e.relatedTarget),
       activeTabPane = $(activeTab.attr('href')),
@@ -47,7 +46,9 @@ $(function() {
       minHeight = Math.min.apply(null, heights);
 
     activeTab.css({
-      'top': 0
+      'top': 0,
+      'background-color': '#fffffe',
+      'opacity': 1
     });
 
     previousTab.removeAttr('style');
