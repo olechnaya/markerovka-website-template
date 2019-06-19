@@ -543,18 +543,27 @@
                       <div id="mainOfficeMap" class="route-item active">
                         <img src="images/contacts-map-placeholder-1.png" alt="Центральный офис" class="placeholder-map">
                       </div>
-                      <div id="mainOfficeRouteSiemaSlider" class="route-item">
-                        <div class="siema">
-                          <img src="images/contacts-office-placeholder-1.png" alt="Центральный офис">
-                          <img src="images/contacts-office-placeholder-1.png" alt="Центральный офис">
-                          <img src="images/contacts-office-placeholder-1.png" alt="Центральный офис">
+
+                      <div id="mainOfficeRoute" class="route-item">
+                        <div id="mainOfficeRouteSlider" class="carousel slide" data-ride="carousel" data-interval="false">
+                          <div class="carousel-inner">
+                            <img class="carousel-item active" src="images/contacts-office-placeholder-1.png" alt="Центральный офис">
+                            <img class="carousel-item" src="images/contacts-office-placeholder-1.png" alt="Центральный офис">
+                            <img class="carousel-item" src="images/contacts-office-placeholder-1.png" alt="Центральный офис">
+                          </div>
+                          <ol class="carousel-indicators">
+                            <li data-target="#mainOfficeRouteSlider" data-slide-to="0" class="active"></li>
+                            <li data-target="#mainOfficeRouteSlider" data-slide-to="1"></li>
+                            <li data-target="#mainOfficeRouteSlider" data-slide-to="2"></li>
+                          </ol>
                         </div>
-                        <div class="prev"></div>
-                        <div class="next"></div>
+                        <a class="carousel-control-prev" href="#mainOfficeRouteSlider" role="button" data-slide="prev"></a>
+                        <a class="carousel-control-next" href="#mainOfficeRouteSlider" role="button" data-slide="next"></a>
                       </div>
                       <ul class="switches">
                         <li><a href="#mainOfficeMap" class="active">Карта</a></li>
-                        <li><a href="#mainOfficeRouteSiemaSlider">Фото</a></li>
+                        <li><a href="#mainOfficeRoute">Фото</a></li>
+                      </ul>
                     </div>
                   </div>
                   <div class="row min-marg">
@@ -605,18 +614,20 @@
                         <div id="nagornayaOfficeMap" class="route-item active">
                           <img src="images/contacts-map-placeholder-2.png" alt="Офис нагорная" class="placeholder-map">
                         </div>
-                        <div id="nagornayaOfficeRouteSiemaSlider" class="route-item">
-                          <div class="siema">
-                            <img src="images/contacts-office-placeholder-1.png" alt="Офис нагорная">
-                            <img src="images/contacts-office-placeholder-1.png" alt="Офис нагорная">
-                            <img src="images/contacts-office-placeholder-1.png" alt="Офис нагорная">
+                        <div id="nagornayaOfficeRoute" class="route-item">
+                          <div id="nagornayaOfficeRouteSlider" class="carousel slide" data-ride="carousel" data-interval="false">
+                            <div class="carousel-inner">
+                              <img class="carousel-item active" src="images/contacts-office-placeholder-1.png" alt="Офис нагорная">
+                              <img class="carousel-item" src="images/contacts-office-placeholder-1.png" alt="Офис нагорная">
+                              <img class="carousel-item" src="images/contacts-office-placeholder-1.png" alt="Офис нагорная">
+                            </div>
                           </div>
-                          <div class="prev"></div>
-                          <div class="next"></div>
+                          <a class="carousel-control-prev" href="#nagornayaOfficeRouteSlider" role="button" data-slide="prev"></a>
+                          <a class="carousel-control-next" href="#nagornayaOfficeRouteSlider" role="button" data-slide="next"></a>
                         </div>
                         <ul class="switches">
                           <li><a href="#nagornayaOfficeMap" class="active">Карта</a></li>
-                          <li><a href="#nagornayaOfficeRouteSiemaSlider">Фото</a></li>
+                          <li><a href="#nagornayaOfficeRoute">Фото</a></li>
                         </ul>
                       </div>
                     </div>
@@ -868,7 +879,6 @@
   <script src="js/bootstrap.min.js"></script>
   <script src="js/tooltipster.bundle.min.js"></script>
   <script src="js/material-scrolltop.js"></script>
-  <script src="js/siema.min.js"></script>
   <script src="js/theme-script.js"></script>
   <script src="js/contacts.js"></script>
 </body>

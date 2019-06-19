@@ -399,7 +399,8 @@ vertical-align: bottom;
   padding: 8px 25px;
 }
 
-.prev, .next {
+.carousel-control-prev, .carousel-control-next {
+  display: block;
   cursor: pointer;
   opacity: 0;
   width: 83px;
@@ -409,14 +410,15 @@ vertical-align: bottom;
   margin-top: -20px;
   background: url(../images/contacts-siema-arrow.png);
 }
-.route-item.active .prev,
-.route-item.active .next {
+.route-item.active .carousel-control-prev,
+.route-item.active .carousel-control-next {
   opacity: 1;
 }
-.prev {
+
+.carousel-control-prev {
   left:-42px;
 }
-.next {
+.carousel-control-next {
   right: -42px;
   -webkit-transform: rotate(180deg);
     -moz-transform: rotate(180deg);
@@ -424,17 +426,18 @@ vertical-align: bottom;
     -o-transform: rotate(180deg);
     transform: rotate(180deg);
 }
-.siema {
+.carousel {
   text-align: center;
 }
-.navigation {
+.carousel-indicators {
   display: inline-block;
   position: relative;
   top: -10px;
 }
-.navigation button {
+.carousel-indicators li {
   width: 16px;
   height: 16px;
+  border-radius: 0;
   border: 1px solid #b7b7b7;
   background: #f5f5f5;
   display: inline-block;
@@ -442,7 +445,7 @@ vertical-align: bottom;
   margin: 0 1px;
 }
 
-.navigation button.active {
+.carousel-indicators li.active {
   border-color: #ed145b;
 width: 20px;
 height: 20px;
