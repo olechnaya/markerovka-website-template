@@ -207,8 +207,8 @@ hgroup h1 {
   text-shadow: 0px 1px 0px #fe9200, 1px 2px 0px #ffea8f;
 }
 
-.related h2 .siema-nav,
-.similar h2 .siema-nav {
+.related h2 .carousel-indicators,
+.similar h2 .carousel-indicators {
   float: right;
 position: relative;
 display: block;
@@ -216,8 +216,8 @@ margin: 0;
 width: auto;
 }
 
-.related h2 .siema-nav span,
-.similar h2 .siema-nav span {
+.related h2 .carousel-indicators span,
+.similar h2 .carousel-indicators span {
   color: transparent;
   display: inline-block;
   width: 12px;
@@ -233,13 +233,13 @@ width: auto;
   display: none;
 }
 
-.related h2 .siema-nav span:hover,
-.similar h2 .siema-nav span:hover {
+.related h2 .carousel-indicators span:hover,
+.similar h2 .carousel-indicators span:hover {
   background: #000;
 }
 
-.related h2 .siema-nav span.active,
-.similar h2 .siema-nav span.active {
+.related h2 .carousel-indicators span.active,
+.similar h2 .carousel-indicators span.active {
   background: #ee2455;
 }
 
