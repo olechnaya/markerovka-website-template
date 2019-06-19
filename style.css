@@ -2634,3 +2634,24 @@ h3.item a span {
   color: #fff;
   text-align: center;
 }
+.modal-dialog-centered {
+  position: relative;
+  top: 50%;
+transform: translateY(-50%);
+}
+
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    background-color: #000;
+}
+.modal-backdrop.fade {
+    opacity: 0;
+}
+.modal-backdrop.show {
+    opacity: .5;
+}

@@ -17,9 +17,7 @@ $('.product').tooltipster({
       })
     },
     functionPosition: function(instance, helper, position){
-     //position.coord.top += 100;
-     //position.coord.left += 10;
-      //  return position;
+      
     }
 });
 

@@ -65,23 +65,6 @@ jQuery(document).ready(function($) {
             }
     });
 
-    $('.call-back').tooltipster({
-      interactive: true,
-      trigger: 'click',
-      functionBefore: function(i, h) {
-        $('body').addClass('overlay');
-        $('.slidedown-city').css('z-index', '0');
-      },
-      functionAfter: function(i, h) {
-        $('body').removeClass('overlay');
-        $('.slidedown-city').css('z-index', '10')
-      }
-    });
-
-    $('.tooltip').tooltipster({
-      theme: 'tooltipster-noir'
-    });
-
     $('#hamburger-container a').on('click', function(e) {
       $(this).find('.hamburger').toggleClass('is-active');
       $('#catalogDropdown .dropdown.click-activation').removeClass('open');

@@ -3,6 +3,12 @@
 @media all and (max-width: 991px) {
  }
 @media all and (max-width: 768px) {
+  .top-support li a span {
+    display: none;
+}
  }
 @media all and (max-width: 575px) {
+  .top-support li a span {
+    display: none;
+}
  }
